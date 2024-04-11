@@ -1,0 +1,21 @@
+.horizontalLineBlue{
+    width: 60px;
+    height: 5px;
+    background-color: rgb(93, 199, 209);
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.spanTitle1{
+    font-size: 18px !important;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
+    white-space: pre-wrap;
+    padding: 0px;
+    line-height: 26px !important;
+}
+
+
+

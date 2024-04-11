@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 100px 30px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.image-stack {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px; /* Add some gap between grid items */
+}
+
+.image-stack__item {
+  grid-row: 1;
+}
+
+.image-stack__item--top {
+  grid-column: 1 / span 8;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.image-stack__item--middle {
+  grid-column: 3 / span 9; /* Adjusted to accommodate the width of image3 */
+  
+}
+
+.image-stack__item--bottom {
+  grid-column: 6 / span 7; /* Span across columns 6 to 12 */
+  z-index: 3; /* Ensure it's above the middle and top items */
+  align-self: end; /* Align to the bottom */
+  margin-top: 15rem;
+}
+
+@media (max-width: 1020px) {
+  .image-stack__item--bottom {
+    margin-top: 0; /* Change margin top to 0 on max-width 1020px */
+  }
+}
+
+.greenLine{
+    width: 60px;
+    height: 4px;
+    background-color: rgb(35, 179, 103);
+}
+
+@font-face {
+  font-family:  "Futura PT Book-Normal-PEtZdOHA";
+  src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.summerComfort{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Futura PT Book-Normal-PEtZdOHA";
+  line-height: 30px;
+}

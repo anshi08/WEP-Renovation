@@ -1,0 +1,29 @@
+.line{
+    width: 59px;
+    height: 5px;
+    background-color: rgb(40, 92, 170);
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.SmartTechText{
+    font-size: 20px !important;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
+    text-align: left !important;
+    line-height: 30px !important;
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.footertext{
+    font-size: 17px !important;
+    color: rgb(0, 0, 0);
+    /* z-index: 48; */
+    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
+    line-height: 27px !important;
+}

@@ -1,0 +1,91 @@
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X";
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+
+.contructionHeading{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    text-align: left;
+    line-height: 64px;
+}
+
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X" ;
+    src: url("../../fonts/futuraptdemi.woff") format('woff');
+}
+.date{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 29px;
+}
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.vedioTitle{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 24px;
+}
+
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    src: url('../../fonts/futuraptdemi.woff');
+}
+.WEPHeading{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 31px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 56px;
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff');
+}
+.updatetext{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 34px;
+}
+
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.dateImage{
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 29px;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.imageTitle{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 24px;
+}
+

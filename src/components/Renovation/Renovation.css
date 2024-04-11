@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.paragraph{
+    
+    font-size: 25px !important;
+    color: rgb(255, 255, 255);
+    font-family: "Futura PT Demi-Normal-5taag63X"!important;
+    white-space: pre-wrap !important;
+    line-height: 40px !important;
+}
+
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.FollowTheText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 108px;
+    color: rgb(255, 255, 255);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 101px;   
+}

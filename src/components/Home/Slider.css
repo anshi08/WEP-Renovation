@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column1 {
+    float: right;
+    width: 40%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+@font-face {
+  font-family: "Futura PT Book-Normal-PEtZdOHA";
+  src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.restaurantInterior{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-family: "Futura PT Book-Normal-PEtZdOHA";
+  line-height: 22px;
+}
