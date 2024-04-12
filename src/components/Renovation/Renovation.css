@@ -23,3 +23,17 @@
     font-family: "Futura PT Demi-Normal-5taag63X";
     line-height: 101px;   
 }
+
+@media (max-width:670px){
+    .FollowTheText{
+        font-size: 50px ;
+        line-height: normal !important;
+    }
+}
+
+@media (max-width:320px) {
+    .FollowTheText{
+        font-size: 20px;
+        line-height: normal !important;
+    }
+}

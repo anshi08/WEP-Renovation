@@ -4,6 +4,8 @@ import SouthIcon from '@mui/icons-material/South';
 import "./Renovation.css"
 import UnderConstructions from './UnderConstructions';
 import Gallery from './Gallery';
+import GroundFloorRetail from './GroundFloorRetail';
+import FoodCourt from './FoodCourt';
 
 const Renovation = () => {
 
@@ -29,7 +31,7 @@ const Renovation = () => {
             opacity:'1'
       }}>
           <p className='FollowTheText'>
-              Follow<br />the build.
+              Follow the build.
           </p>
 
           <p className='paragraph'>
@@ -47,6 +49,8 @@ const Renovation = () => {
   <div style={{backgroundColor:'rgb(249,250,252)'}}>
      <UnderConstructions />
      <Gallery />
+     <GroundFloorRetail />
+     <FoodCourt />
   </div>
   </>
   )

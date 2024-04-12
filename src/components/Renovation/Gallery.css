@@ -27,4 +27,30 @@
     font-family: "Futura PT Demi-Normal-5taag63X";
     text-align: left;
     line-height: 52px;
+    opacity: 1;
+  }
+
+  @font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+  }
+  .GalleryTitle{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    word-break: break-all;
+    line-height: 22px;
+  }
+
+  @media (max-width:530px){
+    .GalleryTitle{
+      font-size: 8px;
+      line-height: normal;
+    }
+    .gallery{
+      font-size: 20px;
+    }
   }
