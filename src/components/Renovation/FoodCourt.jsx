@@ -38,23 +38,26 @@ const FoodCourt = () => {
             </div>
 
             <div style={{ padding: '0 1rem 1rem' }}>
-    {/* Semi-transparent overlay */}
-    <div style={{ position: 'relative', backgroundColor: 'rgba(29, 29, 29, 0.85)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', alignItems: 'center' }}>
+                {/* Semi-transparent overlay */}
+                <div style={{ position: 'relative', backgroundColor: 'rgba(29, 29, 29, 0.85)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', alignItems: 'center' }}>
 
-        {/* First column */}
-        <div style={{ flex: '1 1 50%', padding: '1rem' }}>
-            <p style={{ color: '#fff', fontSize: '1.2rem' }}>Your text goes here...</p>
-        </div>
+                    {/* First column */}
+                    <div style={{ flex: '1 1 50%', padding: '1rem' }}>
+                        <p style={{ color: '#fff' }}>On the Look Out
+                            to Lease? Take a Look!</p>
+                    </div>
 
-        {/* Second column */}
-        <div style={{ flex: '1 1 50%', padding: '1rem' }}>
-            <p style={{ color: '#fff', fontSize: '1.2rem' }}>Your text goes here...</p>
-        </div>
+                    {/* Second column */}
+                    <div style={{ flex: '1 1 50%', padding: '1rem' }}>
+                        <p style={{ color: '#fff' }}>
+                            Curious about our new look and the opportunities that are here?
+                            Food Court locations to retail shops.</p>
+                    </div>
 
-        {/* Watermark image */}
-        <img src={bgWatermark} style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.26 }} />
-    </div>
-</div>
+                    {/* Watermark image */}
+                    <img src={bgWatermark} style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.26 }} />
+                </div>
+            </div>
 
         </>
     )
