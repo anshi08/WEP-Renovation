@@ -45,6 +45,7 @@ import comm1 from "../../assets/comm1.jpg";
 import comm2 from "../../assets/comm2.jpg";
 import comm3 from "../../assets/comm3.jpg";
 import comm4 from "../../assets/comm4.jpg";
+import { motion } from 'framer-motion'
 
 const videos = [
     {
@@ -266,7 +267,24 @@ const UnderConstructions = () => {
 
             {/* Right Side  */}
             <Grid item xs={12} md={6} padding={2}>
-                <p className='contructionHeading'>Watch Construction Updates Here</p>
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 50,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                        },
+                    }}
+                    viewport={{ once: true }}
+                // style={{ padding: '3rem 0' }}
+
+                >
+                    <p className='contructionHeading'>Watch Construction Updates Here</p>
+                </motion.div>
                 {selectedVideo && (
                     <div>
                         <ReactPlayer url={selectedVideo} controls width="100%" height="auto"
@@ -294,8 +312,43 @@ const UnderConstructions = () => {
             {/* vertical Line */}
 
             <Grid item xs={12} md={6} padding={2} >
-                <p className='WEPHeading'>WEP’s Exciting Renovation is Well Underway. </p>
-                <p className='updatetext'>Click on each tab and you’ll be able to keep pace with our updates.</p>
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 50,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                        },
+                    }}
+                    viewport={{ once: true }}
+                // style={{ padding: '3rem 0' }}
+
+                >
+                    <p className='WEPHeading'>WEP’s Exciting Renovation is Well Underway. </p>
+                </motion.div>
+
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        y: 50,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            duration: 1,
+                        },
+                    }}
+                    viewport={{ once: true }}
+                // style={{ padding: '3rem 0' }}
+
+                >
+                    <p className='updatetext'>Click on each tab and you’ll be able to keep pace with our updates.</p>
+                </motion.div>
                 <Box sx={{ width: '100%', typography: 'body1' }}>
                     <TabContext value={value}>
 
@@ -308,10 +361,27 @@ const UnderConstructions = () => {
                                 <Tab
                                     value="1"
                                     label={
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                            <img src={TabSvg2} alt="Construction" /> {/* Make sure to add the alt attribute */}
-                                            Construction
-                                        </div>
+
+                                        <motion.div
+                                            initial={{
+                                                opacity: 0,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                // y: 0,
+                                                transition: {
+                                                    duration: 2,
+                                                },
+                                            }}
+                                            viewport={{ once: true }}
+                                        // style={{ padding: '3rem 0' }}
+
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                                <img src={TabSvg2} alt="Construction" /> {/* Make sure to add the alt attribute */}
+                                                Construction
+                                            </div>
+                                        </motion.div>
                                     }
                                     className={value === '1' ? 'construction' : 'notSelected'}
 
@@ -320,19 +390,51 @@ const UnderConstructions = () => {
                                 <Tab
                                     value="2"
                                     label={
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                            <img src={TabSvg1} alt="Tenants" /> {/* Make sure to add the alt attribute */}
-                                            Tenants
-                                        </div>
+                                        <motion.div
+                                            initial={{
+                                                opacity: 0,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                // y: 0,
+                                                transition: {
+                                                    duration: 2,
+                                                },
+                                            }}
+                                            viewport={{ once: true }}
+                                        // style={{ padding: '3rem 0' }}
+
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                                <img src={TabSvg1} alt="Tenants" /> {/* Make sure to add the alt attribute */}
+                                                Tenants
+                                            </div>
+                                        </motion.div>
                                     }
                                     className={value === '2' ? 'tenants' : 'notSelected'}
                                 />
                                 <Tab value="3"
                                     label={
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                            <img src={TabSvg3} alt="Community" /> {/* Make sure to add the alt attribute */}
-                                            Community
-                                        </div>
+                                        <motion.div
+                                            initial={{
+                                                opacity: 0,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                // y: 0,
+                                                transition: {
+                                                    duration: 2,
+                                                },
+                                            }}
+                                            viewport={{ once: true }}
+                                        // style={{ padding: '3rem 0' }}
+
+                                        >
+                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                                <img src={TabSvg3} alt="Community" /> {/* Make sure to add the alt attribute */}
+                                                Community
+                                            </div>
+                                        </motion.div>
                                     }
                                     className={value === '3' ? 'community' : 'notSelected'}
                                 />
@@ -346,14 +448,87 @@ const UnderConstructions = () => {
                                         <>
 
                                             <div className='flex flex-col flex-wrap' style={{ maxHeight: '100%', width: '100%' }}>
-                                                <p className='dateImage'>{selectedCarousal.date}</p>
-                                                <p className='imageTitle'>{selectedCarousal.title}</p>
-                                                <img src={selectedCarousal.image1} className='mt-2 imageStyle' />
+                                                <motion.div
+                                                    key={selectedCarousal.date}
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 50,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                // style={{ padding: '3rem 0' }}
+
+                                                >
+                                                    <p className='dateImage'>{selectedCarousal.date}</p>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    key={selectedCarousal.title}
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 50,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                // style={{ padding: '3rem 0' }}
+
+                                                >
+                                                    <p className='imageTitle'>{selectedCarousal.title}</p>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    key={selectedCarousal.image1}
+                                                    initial={{
+                                                        opacity: 0,
+                                                        x: -50,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        x: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+
+                                                    <img src={selectedCarousal.image1} className='mt-2 imageStyle' />
+                                                </motion.div>
                                             </div>
-                                            <div className='flex ml-2 imageStyle2' style={{ maxHeight: '100%', width: '100%' }}>
+
+                                            <motion.div
+                                                key={selectedCarousal.id}
+                                                initial={{
+                                                    opacity: 0,
+                                                    x: -100,
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    x: 0,
+                                                    transition: {
+                                                        duration: 1,
+                                                    },
+                                                }}
+                                                viewport={{ once: true }}
+                                                className='flex ml-2 imageStyle2'
+                                                style={{ maxHeight: '100%', width: '100%' }}
+                                            >
                                                 <img src={selectedCarousal.image2}
                                                     style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
-                                            </div>
+
+                                            </motion.div>
                                         </>
                                     </div>
                                     <div className='flex mt-2 justify-center'>
@@ -367,7 +542,24 @@ const UnderConstructions = () => {
                         }
                         <TabPanel value="2">
                             <div className='flex flex-col'>
-                                <p className='panel2'>Meet Our Tenants!</p>
+                                <motion.div
+                                    initial={{
+                                        opacity: 0,
+                                        y: 50,
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        y: 0,
+                                        transition: {
+                                            duration: 1,
+                                        },
+                                    }}
+                                    viewport={{ once: true }}
+                                // style={{ padding: '3rem 0' }}
+
+                                >
+                                    <p className='panel2'>Meet Our Tenants!</p>
+                                </motion.div>
 
                                 {/* Content 1 */}
                                 {TenantsContent.map((content) => (
@@ -383,33 +575,87 @@ const UnderConstructions = () => {
                         </TabPanel>
 
                         <TabPanel value="3">
-                            {selectedCommunityContent && 
-                            <Grid container>
-                                <Grid item xs={12} md={6}>
-                                  <div className='flex flex-col'>
-                                   <p className='commDate'>{selectedCommunityContent.date}</p>
-                                   <p className='commHeading'>{selectedCommunityContent.heading}</p>
-                                   <p className='commTitle'>{selectedCommunityContent.title}</p>
-                                   
-                                  </div>
-                                </Grid>
+                            {selectedCommunityContent &&
+                                <Grid container>
+                                    <Grid item xs={12} md={6}>
+                                        <div className='flex flex-col'>
+                                            <motion.div
+                                                key={selectedCommunityContent.date}
+                                                initial={{
+                                                    opacity: 0,
+                                                    y: 50,
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    y: 0,
+                                                    transition: {
+                                                        duration: 1,
+                                                    },
+                                                }}
+                                                viewport={{ once: true }}
+                                            // style={{ padding: '3rem 0' }}
 
-                                {/* Images */}
-                                <Grid item xs={12} md={6}>
-                                   <div className='flex flex-col'>
-                                     <img src={selectedCommunityContent.image1} className='my-2' />
-                                     <img src={selectedCommunityContent.image2} />
-                                   </div> 
-                                </Grid>
-                                <div className='flex' style={{margin:' 0 auto',marginTop:'1rem'}}>
+                                            >
+                                                <p className='commDate'>{selectedCommunityContent.date}</p>
+                                            </motion.div>
+
+                                            <motion.div
+                                                key={selectedCommunityContent.id}
+                                                initial={{
+                                                    opacity: 0,
+                                                    x: -100,
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    x: 0,
+                                                    transition: {
+                                                        duration: 2,
+                                                    },
+                                                }}
+                                                viewport={{ once: true }}
+                                            >
+
+                                                <p className='commHeading'>{selectedCommunityContent.heading}</p>
+                                                <p className='commTitle'>{selectedCommunityContent.title}</p>
+                                            </motion.div>
+
+                                        </div>
+                                    </Grid>
+
+                                    {/* Images */}
+                                    <Grid item xs={12} md={6}>
+
+                                        <motion.div
+                                            key={selectedCommunityContent.id}
+                                            initial={{
+                                                opacity: 0,
+                                                y: 100,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                                transition: {
+                                                    duration: 1,
+                                                },
+                                            }}
+                                            viewport={{ once: true }}
+                                            className='flex flex-col'
+
+                                        >
+                                            <img src={selectedCommunityContent.image1} className='my-2' />
+                                            <img src={selectedCommunityContent.image2} />
+                                        </motion.div>
+
+                                    </Grid>
+                                    <div className='flex' style={{ margin: ' 0 auto', marginTop: '1rem' }}>
                                         <div><WestIcon onClick={handlePrevContent}
                                             style={{ fontSize: '18px', color: 'rgb(123,124,125)', cursor: 'pointer' }} /></div>
-                                        
+
                                         <p className='pageNumber'>{selectedCommunityContent.id}/2</p>
-                                        
+
                                         <div><EastIcon onClick={handleNextContent} style={{ fontSize: '18px', color: 'rgb(123,124,125)', cursor: 'pointer' }} /></div>
                                     </div>
-                            </Grid>
+                                </Grid>
                             }
                         </TabPanel>
                     </TabContext>
