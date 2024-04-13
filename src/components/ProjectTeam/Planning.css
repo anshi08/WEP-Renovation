@@ -1,0 +1,46 @@
+@font-face {
+    font-family:'Futura PT Demi-Normal-5taag63X' ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.planningText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 52px;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.planningPara{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+.gridStyle1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 9rem;
+}
+
+@media (max-width:990px){
+    .gridStyle1{
+        padding: 0;
+    }
+    .planningText{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .planningPara{
+        font-size: 15px;
+        line-height: normal;
+    }
+}

@@ -4,6 +4,7 @@ import EyeSvg from "../../assets/image (6).svg";
 import "./FoodCourt.css"
 import { Grid } from '@mui/material'
 import bgWatermark from "../../assets/waterMarkReno.png"
+import EastIcon from '@mui/icons-material/East';
 
 const FoodCourt = () => {
     return (
@@ -39,23 +40,37 @@ const FoodCourt = () => {
 
             <div style={{ padding: '0 1rem 1rem' }}>
                 {/* Semi-transparent overlay */}
-                <div style={{ position: 'relative', backgroundColor: 'rgba(29, 29, 29, 0.85)', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', alignItems: 'center' }}>
+                <div style={{ position: 'relative', 
+                backgroundColor: 'rgba(29, 29, 29, 0.85)', display: 'flex', 
+                justifyContent: 'flex-end', flexWrap: 'wrap', alignItems: 'center',zIndex:'0' }}>
 
-                    {/* First column */}
-                    <div style={{ flex: '1 1 50%', padding: '1rem' }}>
-                        <p style={{ color: '#fff' }}>On the Look Out
-                            to Lease? Take a Look!</p>
+                    <div className='flex justify-center items-center' style={{ margin: '0 auto' }}>
+                        {/* First column */}
+                        <div style={{ padding: '7%' }}>
+                            <p className='bottomHeading'>On the Look Out
+                                to Lease? Take a Look!</p>
+                        </div>
+
+                        {/* Second column */}
+                        <div style={{ padding: '7%' }}>
+                            <p className='bottomText2'>
+                                Curious about our new look and the opportunities that are here?
+                                Food Court locations to retail shops.</p>
+
+                            <div style={{position:'relative'}}>
+                                <a href='https://brochure.thenewwep.com/' target='_blank' 
+                                 style={{ zIndex: '1', pointerEvents: 'auto' }}>
+                                <p className='cursor-pointer hyperLinkText'>View leasing opportunities here <EastIcon 
+                                  style={{ color: 'rgb(143,143,143)' }} /></p>
+                                  <span className="line"></span>
+                                  </a>
+                            </div>
+                        </div>
                     </div>
 
-                    {/* Second column */}
-                    <div style={{ flex: '1 1 50%', padding: '1rem' }}>
-                        <p style={{ color: '#fff' }}>
-                            Curious about our new look and the opportunities that are here?
-                            Food Court locations to retail shops.</p>
-                    </div>
-
-                    {/* Watermark image */}
-                    <img src={bgWatermark} style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.26 }} />
+                    {/* Watermark image */} 
+                    <img src={bgWatermark} style={{ position: 'absolute', top: '50%', right: 0, 
+                    transform: 'translateY(-50%)', width: 'auto', height: '100%', opacity: 0.26 }} />
                 </div>
             </div>
 
