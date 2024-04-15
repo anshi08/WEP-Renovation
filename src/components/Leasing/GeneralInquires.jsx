@@ -24,7 +24,7 @@ const GeneralInquires = () => {
                             },
                         }}
                         viewport={{ once: true }}
-                        className='styleDiv2'
+                        className='styleDiv5'
                     >
                         <p className='retailInq'>General
                             Inquiries:</p>

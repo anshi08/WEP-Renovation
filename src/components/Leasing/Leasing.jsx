@@ -48,13 +48,39 @@ const Leasing = () => {
       </div>
 
       <div style={{ backgroundColor: 'rgb(249,250,252)', padding: '0 1rem', position: 'relative', zIndex: 1 }}>
-        <div style={{ position: 'absolute', right: 0, zIndex: -1,height:'100%' }}>
+        <div style={{ position: 'absolute', right: 0, zIndex: -1, height: '100%' }}>
           <img src={Bgimage} className="bg-image" alt="Background" />
         </div>
         <LeasingInquires />
-        <hr style={{ borderColor: 'rgb(91, 92, 93)', borderWidth: '1px' }} className='my-8'/>
+
+        <motion.hr
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          // animate={{ scaleX: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          style={{
+            borderColor: 'rgb(91, 92, 93)',
+            borderWidth: '1px',
+            width: '100%',
+          }}
+          className='my-8'
+        />
         <OfficeInquires />
-        <hr style={{ borderColor: 'rgb(91, 92, 93)', borderWidth: '1px' }} className='my-8'/>
+
+        <motion.hr
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          // animate={{ scaleX: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          style={{
+            borderColor: 'rgb(91, 92, 93)',
+            borderWidth: '1px',
+            width: '100%',
+          }}
+          className='my-8'
+        />
         <GeneralInquires />
       </div>
 

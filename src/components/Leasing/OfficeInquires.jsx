@@ -12,21 +12,21 @@ const OfficeInquires = () => {
             <Grid container >
                 <Grid item xs={12} md={5} padding={3}>
                     <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}
-                                className='styleDiv2'
+                        initial={{
+                            opacity: 0,
+                            y: 100,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                            transition: {
+                                duration: 1,
+                            },
+                        }}
+                        viewport={{ once: true }}
+                        className='styleDiv2'
 
-                            >
+                    >
                         <p className='retailInq'>Office Leasing
                             Inquiries:</p>
                     </motion.div>
@@ -37,7 +37,7 @@ const OfficeInquires = () => {
 
                         {/* 1st Grid */}
                         <Grid item xs={12} md={4}>
-                
+
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -64,19 +64,23 @@ const OfficeInquires = () => {
                                         <strong className='T'>E.</strong>stephanie.thompson@quadreal.com</a>
                                 </div>
                                 <div className='styleBtn'>
-                                    <Link to="https://office.thenewwep.com/" className="button-link">
-                                        <img src={bookImg} style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                                    <Link to="https://office.thenewwep.com/" className="button-link button-container">
+                                        <img src={bookImg} style={{
+                                            width: '20px', height: '20px',
+                                            marginRight: '5px', backgroundColor: 'white',
+                                            transition: 'background-color 0.3s ease'
+                                        }} />
                                         <p className='btnText'> View Brochure </p>
                                     </Link>
                                 </div>
 
                             </motion.div>
-                            
+
                         </Grid>
 
                         {/* 2nd Grid */}
                         <Grid item xs={12} md={4}>
-   
+
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -89,15 +93,20 @@ const OfficeInquires = () => {
                                         duration: 1,
                                     },
                                 }}
+
                                 viewport={{ once: true }}
                                 className='styleBtn2'
-                                >
+                            >
                                 <Link to="https://quadreal.findspace.com/?search=world%20exchange&amp;min=0&amp;max=474250&amp;type=O"
-                                    className="button-link">
-                                    <img src={clipBoard} style={{ width: '20px', height: '20px', marginRight: '5px' }} />
+                                    className="button-link button-container">
+                                    <img src={clipBoard} style={{
+                                        width: '20px', height: '20px', marginRight: '5px',
+                                        backgroundColor: 'white',
+                                        transition: 'background-color 0.3s ease'
+                                    }} />
                                     <span className='btnText'> Availability </span>
                                 </Link>
-                                </motion.div>
+                            </motion.div>
 
                         </Grid>
 
