@@ -15,9 +15,9 @@ const ProjectTeam = () => {
           backgroundImage: `url(${bgImage})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          height: '459px',
+          height: '300px',
           position: 'relative',
-          filter: 'brightness(70%)' // Apply brightness filter to the background image
+          filter: 'brightness(50%)' // Apply brightness filter to the background image
         }}>
         </div>
         <motion.div
@@ -35,7 +35,7 @@ const ProjectTeam = () => {
           viewport={{ once: true }}
           style={{
             position: "absolute",
-            top: "25%",
+            top: "20%",
             left: "13%",
             opacity: '1',
             zIndex: '1' // Ensure the text is displayed above the background image
@@ -54,7 +54,7 @@ const ProjectTeam = () => {
       <div style={{ padding: '2rem', position: 'relative' }}>
         <Teams />
         <div className="bg-image-container">
-          <img src={Bgimage} className="bg-image" alt="Background" />
+          <img src={Bgimage} className="bg-image" />
         </div>
       </div>
 

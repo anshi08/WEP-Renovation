@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.Stephanie{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 26px;
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.salesRepresent{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+.styleBtn{
+    margin-top: 2rem;
+}
+
+.styleBtn2{
+    margin-top: 12rem;
+}
+
+@media (max-width:990px){
+    .styleBtn2{
+        margin-top: auto;
+    }
+}

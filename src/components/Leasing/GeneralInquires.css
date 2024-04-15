@@ -1,0 +1,22 @@
+.stylingWEP{
+    margin-top: 4rem;
+}
+
+@media (max-width:990px){
+    .stylingWEP{
+        margin-top: 2rem;
+    }
+}
+
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.btnTxt{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 22px;
+}

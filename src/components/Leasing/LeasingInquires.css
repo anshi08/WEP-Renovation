@@ -1,0 +1,140 @@
+.button-link {
+    display: flex;
+    padding: 5% 5%;
+    border: 2px solid grey;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white ;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.btnText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 24px;
+}
+
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.retailInq{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 52px;
+}
+
+@font-face {
+    font-family:'Futura PT Demi-Normal-5taag63X' ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.candiceText{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Futura PT Demi-Normal-5taag63X';
+}
+
+@font-face {
+    font-family: 'BookNormal';
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.firstVise{
+    line-height: 26px;
+    font-size: 13px;
+    font-family:'BookNormal' ;
+}
+
+@font-face {
+    font-family:'DemiNormal' ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.T{
+    font-family: 'DemiNormal';
+}
+
+@font-face {
+    font-family: 'BookNormal';
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.a{
+    line-height: 26px;
+    font-size: 16px;
+    font-family: 'BookNormal';
+}
+
+@font-face {
+    font-family:'Futura PT Demi-Normal-5taag63X' ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.Frasertext{
+    line-height: 26px;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Futura PT Demi-Normal-5taag63X';
+}
+
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.Review{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 32px;
+}
+
+.style{
+    margin-top: 2rem;
+}
+
+.styleDiv{
+    margin-top: 4rem;
+}
+
+.styleDiv1{
+    margin-top: 3rem;
+}
+
+.styleDiv2{
+    padding: 3rem;
+    margin-left: 7rem;
+}
+
+@media (max-width:990px) {
+    .styleDiv2{
+        padding: 0;
+        margin-left: 0;
+    }
+    .retailInq{
+        font-size: 25px;
+        line-height: normal;
+    }
+    .styleDiv1{
+        margin-top: 1rem;
+    }
+    .styleDiv{
+        margin-top: 1rem;
+    }
+    .Review{
+        font-size:20px;
+        line-height: normal;
+    }
+}
