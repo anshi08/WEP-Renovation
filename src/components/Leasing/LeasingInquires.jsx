@@ -3,16 +3,34 @@ import './LeasingInquires.css'
 import { Grid } from '@mui/material'
 import { Link } from 'react-router-dom'
 import bookImg from "../../assets/bookImg.png"
+import { motion } from 'framer-motion'
 
 const LeasingInquires = () => {
     return (
         <>
             <Grid container >
                 <Grid item xs={12} md={5} padding={3}>
-                    <div className='styleDiv2'>
+                    
+                    <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                className='styleDiv2'
+
+                            >
                         <p className='retailInq'>Retail Leasing
                             Inquiries:</p>
-                    </div>
+                            </motion.div>
+                    
                 </Grid>
                 <Grid item xs={12} md={7} padding={3}>
                     {/* Sub Grids */}
@@ -20,7 +38,21 @@ const LeasingInquires = () => {
 
                         {/* 1st Grid */}
                         <Grid item xs={12} md={4}>
-                            <div >
+                        <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+
+                            >
                             <div>
                                 <p className='candiceText'>Candice Lerner-Fry</p>
                                 <p className='firstVise'>First Vice President, Sales Representative</p>
@@ -40,19 +72,49 @@ const LeasingInquires = () => {
                                 <a href="mailto:Fraser.Paddison@MarcusMillichap.com" className='a'>
                                     <strong className='T'>E.</strong>Fraser.Paddison@MarcusMillichap.com</a>
                             </div>
-                            </div>
+                            </motion.div>
                         </Grid>
 
                         {/* 2nd Grid */}
                         <Grid item xs={12} md={4}>
                             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
-                                <div>
-                                    <p className='Review'>To Review Leasing Opportunities:</p>
-                                </div>
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
 
-                                <div className='styleDiv'>
+                            >
+                                    <p className='Review'>To Review Leasing Opportunities:</p>
+                                </motion.div>
+
+                                
+                                <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                className='styleDiv'
+
+                            >
                                     <p className='Review'>Download Ground Floor Availabilities:</p>
-                                </div>
+                                </motion.div>
 
                                 <div className='style'>
                                     <Link to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_GroundFloorRetailPackage.pdf" className="button-link">
@@ -68,16 +130,46 @@ const LeasingInquires = () => {
                         <Grid item xs={12} md={4}>
                         <div style={{ display: 'flex', flexDirection: 'column', 
                         justifyContent: 'space-between', height: '100%' }}>
-                                <div>
+                                    <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+
+                            >
                                     <Link to="https://brochure.thenewwep.com/" className="button-link">
                                         <img src={bookImg} style={{ width: '20px', height: '20px', marginRight: '5px' }} />
                                         <p className='btnText'> View Brochure </p>
                                     </Link>
-                                </div>
+                                </motion.div>
 
-                                <div className='styleDiv1'>
+                           
+                                <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 50,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                className='styleDiv1'
+
+                            >
                                     <p className='Review'>Download Food Court Availabilities:</p>
-                                </div>
+                                </motion.div>
                                 <div>
                                     <Link to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_FoodCourtPackage.pdf" className="button-link">
                                         <img src={bookImg} style={{ width: '20px', height: '20px', marginRight: '5px' }} />

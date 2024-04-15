@@ -4,17 +4,32 @@ import { Grid } from '@mui/material'
 import { Link } from 'react-router-dom'
 import bookImg from "../../assets/bookImg.png"
 import clipBoard from "../../assets/clipBoard.png"
-
+import { motion } from 'framer-motion'
 
 const OfficeInquires = () => {
     return (
         <>
             <Grid container >
                 <Grid item xs={12} md={5} padding={3}>
-                    <div className='styleDiv2'>
+                    <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 100,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                className='styleDiv2'
+
+                            >
                         <p className='retailInq'>Office Leasing
                             Inquiries:</p>
-                    </div>
+                    </motion.div>
                 </Grid>
                 <Grid item xs={12} md={7} padding={3}>
                     {/* Sub Grids */}
@@ -22,7 +37,22 @@ const OfficeInquires = () => {
 
                         {/* 1st Grid */}
                         <Grid item xs={12} md={4}>
-                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+                
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 100,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}
+                            >
                                 <div>
                                     <p className='Stephanie'>Stephanie Thompson</p>
                                     <p className='salesRepresent'>Leasing Manager, Sales Representative
@@ -40,20 +70,34 @@ const OfficeInquires = () => {
                                     </Link>
                                 </div>
 
-                            </div>
+                            </motion.div>
+                            
                         </Grid>
 
                         {/* 2nd Grid */}
                         <Grid item xs={12} md={4}>
-
-
-                            <div className='styleBtn2'>
+   
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 100,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}
+                                className='styleBtn2'
+                                >
                                 <Link to="https://quadreal.findspace.com/?search=world%20exchange&amp;min=0&amp;max=474250&amp;type=O"
                                     className="button-link">
                                     <img src={clipBoard} style={{ width: '20px', height: '20px', marginRight: '5px' }} />
                                     <span className='btnText'> Availability </span>
                                 </Link>
-                            </div>
+                                </motion.div>
 
                         </Grid>
 
