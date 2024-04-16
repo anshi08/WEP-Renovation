@@ -11,8 +11,6 @@ const PlazaGif = () => {
             <Grid container>
                 <Grid item xs={0} md={6}>
 
-
-
                 </Grid>
                 <Grid item xs={12} md={6} padding={3}>
 
@@ -30,13 +28,13 @@ const PlazaGif = () => {
                 <div>
                         <div className='horizontalYellowLine'></div>
                     <p className='plazaheading'>
-                        Head outside and you’ll experience The Plaza:<br/>
-                        a transformed landscaped outdoor environment<br/>
-                        where cultural events, concerts, group fitness, and<br/> connection to fresh air and nature can all take place.
+                        Head outside and you’ll experience The Plaza:
+                        a transformed landscaped outdoor environment
+                        where cultural events, concerts, group fitness, and connection to fresh air and nature can all take place.
                     </p>
                     <p className='my-3 plazaBoldHeading'>
-                        Culture. Community. Collaboration.<br/>
-                        That’s our future.<br/>
+                        Culture. Community. Collaboration.
+                        That’s our future.
                         Welcome to the WEP Community
                     </p>
                 </div>

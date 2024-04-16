@@ -79,7 +79,7 @@ const Home = () => {
                 </div> */}
                 <div>
 
-                    <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '5%' }}>
+                    <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '3rem' }}>
                         <NewWEP />
                     </div>
                     <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>

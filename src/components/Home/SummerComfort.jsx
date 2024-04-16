@@ -40,7 +40,11 @@ const SummerComfort = () => {
       <div>
       <div className='greenLine my-3'></div>
       <p className='summerComfort my-2'>
-      Summer comfort, winter warmth, and healthy temperatures all year round have also been a goal, and achieved through an optimized energy management plan – an important initiative that also helps us achieve many of our environmental  certifications – LEED EBOM Platinum, BOMA BEST Platinum certification, and Energy Star. The sum value: a happier, healthier workforce, elevated spirits and a sense of well-being for all guests and patrons. 
+      Summer comfort, winter warmth, and healthy temperatures all year round have also been a goal, and 
+      achieved through an optimized energy management plan – an important initiative that also helps us 
+      achieve many of our environmental  certifications – LEED EBOM Platinum, BOMA BEST Platinum certification, 
+      and Energy Star. The sum value: a happier, healthier workforce, elevated spirits and a sense of 
+      well-being for all guests and patrons. 
       </p>
       </div>
     </Grid>

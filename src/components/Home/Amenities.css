@@ -3,25 +3,25 @@
     src: url('../../fonts/futuraptmedium.woff') format('woff');
 }
 .amenities{
-    font-size: 16px !important;
+    font-size: 16px ;
     color: rgb(0, 0, 0);
-    font-family: "Futura PT Medium-Norma-sc4damH4" !important;
-    text-align: left !important;
-    line-height: 27px !important;
+    font-family: "Futura PT Medium-Norma-sc4damH4" ;
+    text-align: left ;
+    line-height: 27px ;
 }
 @font-face {
     font-family: "Futura PT Demi-Normal-5taag63X" ;
     src: url('../../fonts/futuraptdemi.woff') format('woff');
 }
 .boldHeading1{
-    font-style: normal !important;
-    font-size: 70px !important;
-    font-weight: bold !important;
+    font-style: normal ;
+    font-size: 70px ;
+    font-weight: bold ;
     color: rgb(236, 20, 90);
-    font-family: "Futura PT Demi-Normal-5taag63X" !important;
-    text-align: left !important;
+    font-family: "Futura PT Demi-Normal-5taag63X" ;
+    text-align: left ;
     padding: 0px;
-    line-height: 72px !important;
+    line-height: 72px ;
 }
 
 @font-face {
@@ -29,14 +29,14 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .body3{
-    font-size: 26px !important;
+    font-size: 26px ;
     color: rgb(0, 0, 0);
-    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     overflow: visible;
     white-space: pre-wrap;
-    text-align: left !important;
+    text-align: left ;
     padding: 0px;
-    line-height: 40px !important;
+    line-height: 40px ;
 }
 
 @font-face {
@@ -64,4 +64,25 @@
     cursor: inherit;
     border-width: 0px;
     background-color: rgb(236, 20, 90);
+}
+
+@media (max-width:690px){
+   .amenities{
+    font-size: 14px;
+    line-height: normal;
+   }
+   .boldHeading1{
+    font-size: 20px;
+    line-height: normal;
+   }
+   .body3{
+    font-size: 19px;
+    line-height: normal;
+    text-align: justify;
+   }
+   .body4{
+    font-size: 19px;
+    line-height: normal;
+    text-align: justify;
+   }
 }

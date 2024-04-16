@@ -4,7 +4,7 @@ import image2 from "../../assets/Food-after1.png"
 import image3 from "../../assets/Food-before2.png"
 import image4 from "../../assets/Food-after2.png"
 import { Grid, Typography } from '@mui/material'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import EastIcon from '@mui/icons-material/East';
 import "./FoodCourt.css"
 import { Link } from 'react-router-dom'
 
@@ -47,19 +47,21 @@ const FoodCourt = () => {
 
             </Grid>
             <Grid item xs={12} md={4}>
-              <img src={image3} />
+              <img src={image3} className='imgStyling' />
             </Grid>
           </div>
         </Grid>
-        <Grid item xs={12} md={6}>
-
-          <img src={image4} style={{ width: '100%' }} />
+        <Grid item xs={12} md={6} >
+          
+          <img src={image4} />
+          
         </Grid>
       </Grid>
       <div className='flex items-center justify-center'>
       <div className='RenovationBtn'>
-        <Link to="/p/2">
-        Learn more about THE RENOVATION <ArrowRightAltIcon />
+        <Link to="/p/2" style={{ display: 'flex',justifyContent:'center',alignItems:'center'}}>
+        <p className='btnTextLearnMore'>Learn more about THE RENOVATION</p> 
+        <EastIcon style={{color:'rgb(87,87,87)'}}  />
         </Link>
       </div>
       </div>

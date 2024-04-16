@@ -14,18 +14,18 @@ const Wellness = () => {
                     <p className='mainheading'>
                         WELLNESS
                     </p>
-                    <p className='boldtext1'>
-                        Well-Being. <br />
+                    <p className='boldtextWell'>
+                        Well-Being.
                         Well Done.
                     </p>
                     <p className='body'>
-                        Throughout our transformation the intent has been to make WEP a<br/> place conducive to 
-                        well-being. Our architectural design too aims at<br/> opening up our various spaces to 
-                        create a sense of airy, light-<br/>infused, spaciousness. Whether sitting in natural light 
-                        in one of our<br/> communal spaces, appreciating the cleaner air quality we’ve<br/> brought to 
-                        all interior areas, or basking in the relaxed atmosphere<br/> of our landscaped outdoor 
-                        Plaza where sun and blue skies, events<br/> and outdoor amenities greet you, WEP creates 
-                        an atmosphere<br/> where well-being thrives.
+                        Throughout our transformation the intent has been to make WEP a place conducive to 
+                        well-being. Our architectural design too aims at opening up our various spaces to 
+                        create a sense of airy, light-infused, spaciousness. Whether sitting in natural light 
+                        in one of our communal spaces, appreciating the cleaner air quality we’ve brought to 
+                        all interior areas, or basking in the relaxed atmosphere of our landscaped outdoor 
+                        Plaza where sun and blue skies, events and outdoor amenities greet you, WEP creates 
+                        an atmosphere where well-being thrives.
                     </p>
                 </div>
             </Grid>

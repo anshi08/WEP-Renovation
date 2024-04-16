@@ -22,7 +22,7 @@ const Amenities = () => {
                    AMENITIES
                  </p>
                  <p className='boldHeading1'>
-                 Tastefully <br/>
+                 Tastefully 
                  Transformed.
                  </p>
                  <div>

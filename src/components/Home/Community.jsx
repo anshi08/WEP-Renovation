@@ -15,14 +15,14 @@ const Community = () => {
                       COMMUNITY
                     </p>
                     <p className='boldtext1'>
-                    Designed<br/>
+                    Designed
                     for People.
                     </p>
                     <p className='body'>
-                    Community is where and how we interact, network, and build a<br/> better place and city. With this in mind 
-                    WEP has viewed all<br/> common spaces through the lens of places where people can meet,<br/> gather, interact. 
-                    Whether casually meeting for a professional chat,<br/> dining with a friend, or collaborating over coffee,
-                     WEP has all the space<br/> options you need. 
+                    Community is where and how we interact, network, and build a better place and city. With this in mind 
+                    WEP has viewed all common spaces through the lens of places where people can meet, gather, interact. 
+                    Whether casually meeting for a professional chat, dining with a friend, or collaborating over coffee,
+                     WEP has all the space options you need. 
                     </p>
                 </div>
             </Grid>

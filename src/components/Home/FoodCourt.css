@@ -1,14 +1,47 @@
-.horizontalLine{
+.horizontalLine {
     width: 60px;
     height: 5px;
     background-color: rgb(93, 199, 209);
+    z-index: 1;
+    position: relative;
 }
 
 
-.RenovationBtn{
+.RenovationBtn {
     text-align: center;
     margin: 3rem;
     border: 2px solid gray;
     /* width: 25%; */
     padding: 1rem;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.btnTextLearnMore{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+@media (max-width:650px) {
+    .imgStyling {
+        margin-right: 2rem !important;
+    }
+    /* Image4 */
+    .imageStyle{
+        width: 90% ;
+        margin-left: 1rem ;
+    }
+    .RenovationBtn{
+        margin: 1rem !important;
+    }
+    .btnTextLearnMore{
+        font-size: 10px;
+        line-height: normal;
+    }
 }

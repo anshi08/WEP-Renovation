@@ -2,13 +2,21 @@
     font-family: "Futura PT Demi-Normal-5taag63X";
     src: url('../../fonts/futuraptdemi.woff') format('woff');
 }
-.boldtext1{
+.boldtextWell{
     color: rgb(36, 180, 103);
-    font-style: normal !important;
-    font-size: 70px !important;
-    font-family: "Futura PT Demi-Normal-5taag63X" !important;
+    font-style: normal ;
+    font-size: 70px ;
+    font-family: "Futura PT Demi-Normal-5taag63X" ;
     overflow: visible;
-    white-space: pre-wrap !important;
-    text-align: left !important;
-    line-height: 72px !important;
+    white-space: pre-wrap ;
+    text-align: left ;
+    line-height: 72px ;
+    text-align: justify;
+}
+
+@media (max-width:690px){
+    .boldtextWell{
+        font-size: 20px;
+        line-height: normal;
+    }
 }

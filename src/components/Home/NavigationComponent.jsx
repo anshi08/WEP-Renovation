@@ -18,7 +18,7 @@ const NavigationComponent = () => {
           backgroundSize: 'cover'
         }}  >
             <img src={Image1} style={{ width: '200%'}} />
-            <img src={bikeImage} style={{ width: '200%', marginLeft: '1rem' }} />
+            <img src={bikeImage} className='bikeImg'/>
           </Grid>
         
         {/* Right side */}

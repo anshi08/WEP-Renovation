@@ -19,11 +19,11 @@ const Technology = () => {
                         TECHNOLOGY
                     </p>
                     <p className='boldtext1' style={{color: 'rgb(40, 92, 170)'}}>
-                        Digitally<br />
+                        Digitally
                         SMART.
                     </p>
                     <p className='body'>
-                        WEP is going contactless, efficiently<br /> “hands-free”- it’s the smart way for today<br />,
+                        WEP is going contactless, efficiently “hands-free”- it’s the smart way for today,
                         and the way of tomorrow.
                     </p>
                     {/* </div> */}

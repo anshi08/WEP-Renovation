@@ -3,12 +3,12 @@
     src: url("../../fonts/futuraptmedium.woff") format('woff');
 }
 .mainheading{
-    font-size: 16px !important; 
+    font-size: 16px ; 
     color: rgb(0, 0, 0);
-    font-family: "Futura PT Medium-Norma-sc4damH4" !important;
-    text-align: left !important;
-    line-height: 27px !important;
-    letter-spacing: 0.111em !important;
+    font-family: "Futura PT Medium-Norma-sc4damH4" ;
+    text-align: left ;
+    line-height: 27px ;
+    letter-spacing: 0.111em ;
 }
 
 @font-face {
@@ -16,14 +16,14 @@
     src: url('../../fonts/futuraptdemi.woff') format('woff');
 }
 .BoldText{
-    font-style: normal !important;
-    font-size: 70px !important;
+    font-style: normal ;
+    font-size: 70px ;
     color: rgb(93, 199, 209);
-    font-family: "Futura PT Demi-Normal-5taag63X" !important;
+    font-family: "Futura PT Demi-Normal-5taag63X" ;
     overflow: visible;
-    white-space: pre-wrap !important;
-    text-align: left !important;
-    line-height: 72px !important;
+    white-space: pre-wrap ;
+    text-align: left ;
+    line-height: 72px ;
     word-break: break-all;
 }
 
@@ -32,15 +32,28 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .body{
-    font-size: 26px !important;
+    font-size: 26px ;
     color: rgb(0, 0, 0);
-    z-index: 164;
-    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     overflow: visible;
-    white-space: pre-wrap !important;
+    white-space: pre-wrap ;
     text-align: left;
-    line-height: 40px !important;
+    line-height: 40px ;
     margin-top: 2rem;
 }
 
-  
+@media(max-width:650px){
+    .mainheading{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .BoldText{
+        font-size: 20px;
+        line-height: normal;
+        word-break: break-all;
+    }
+    .body{
+        font-size: 19px;
+        line-height: normal;
+    }
+}

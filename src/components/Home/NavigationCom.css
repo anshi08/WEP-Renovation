@@ -12,3 +12,23 @@
     text-align: left !important;
     line-height: 72px !important;
 }
+
+.bikeImg{
+    width: 200%;
+    margin-left: 1rem ; 
+}
+
+@media (max-width:990px){
+    .bikeImg
+    {
+      margin-left: 0 ;   
+    }
+}
+
+@media (max-width:690px){
+    .boldtext10{
+        font-size: 40px !important;
+        line-height: normal !important;
+        text-align: justify;
+    }
+}
