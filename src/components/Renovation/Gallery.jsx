@@ -15,6 +15,7 @@ import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 import "./Gallery.css"
 import { motion } from 'framer-motion'
+import GalleryModal from './GalleryModal'
 
 const GalleryImages = [
     {
@@ -58,6 +59,8 @@ const GalleryImages = [
 const Gallery = () => {
 
     const [selectedGalleryImage, setSelectedGalleryImage] = useState(GalleryImages[0])
+    const [showComponent, setShowComponent] = useState(false)
+    const [ImageId, setImageId] = useState()
 
     const handleNextContent = () => {
         const currentIndex = GalleryImages.findIndex((image) => image.id === selectedGalleryImage.id)
@@ -71,8 +74,14 @@ const Gallery = () => {
         setSelectedGalleryImage(GalleryImages[prevIndex]);
     };
 
+    const OpenModal = (Imgid) => {
+        setImageId(Imgid)
+        setShowComponent(true)
+    }
+
     return (
         <>
+        {!showComponent && 
             <div style={{ padding: '3rem' }}>
                 <motion.div
                     initial={{
@@ -118,15 +127,24 @@ const Gallery = () => {
                         >
                             <div class="row">
                                 <div class="column">
-                                    <img src={selectedGalleryImage.image1} alt="" style={{ width: "100%" }} />
+                                    <img src={selectedGalleryImage.image1} alt="" 
+                                    style={{ width: "100%",cursor:'pointer' }} 
+                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title1}</p>
                                 </div>
                                 <div class="column">
-                                    <img src={selectedGalleryImage.image2} alt="" style={{ width: "100%" }} />
+                                    <img src={selectedGalleryImage.image2} alt="" 
+                                    style={{ width: "100%",cursor:'pointer' }} 
+                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title2}</p>
                                 </div>
                                 <div class="column">
-                                    <img src={selectedGalleryImage.image3} alt="" style={{ width: "100%" }} />
+                                    <img src={selectedGalleryImage.image3} alt="" 
+                                    style={{ width: "100%",cursor:'pointer' }} 
+                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title3}</p>
                                 </div>
                             </div>
@@ -146,7 +164,10 @@ const Gallery = () => {
                     </>
                 }
             </div>
+        }
 
+        {showComponent && <GalleryModal ImageId={ImageId} 
+        setShowComponent={setShowComponent} showComponent={showComponent}/>}
 
         </>
     )
