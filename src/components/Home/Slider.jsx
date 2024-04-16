@@ -5,6 +5,7 @@ import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutl
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import "./Slider.css"
 import { Typography } from '@mui/material';
+import { motion } from 'framer-motion';
 
 const Slider = () => {
     // const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,26 +25,60 @@ const Slider = () => {
     // const images = [image1, image2];
     return (
         <>
-        
+
             <div class="row">
                 <div class="column1">
-                <div className="image-container">
-                        <img src={image2} alt="food court2" className='responsive' />
-                        <p className='restaurantInterior'>RESTAURANT INTERIOR</p>
+                    <div className="image-container">
+                        <motion.div
+                            initial={{
+                                opacity: 0,
+                                y: 100,
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: {
+                                    duration: 1,
+                                },
+                            }}
+                            viewport={{ once: true }}
+                        // style={{ padding: '3rem 0' }}
+
+                        >
+                            <img src={image2} alt="food court2" className='responsive' />
+                            <p className='restaurantInterior'>RESTAURANT INTERIOR</p>
+                        </motion.div>
                         <ArrowForwardIosOutlinedIcon className="arrow-icon" />
-                    </div> 
-                </div>  
+                    </div>
+                </div>
                 <div class="column1">
-                <div className="image-container">
-                        <img src={image1} alt="food court2" className='responsive' />
-                        <p className='restaurantInterior'>FOOD COURT</p>
-                        <ArrowBackIosNewOutlinedIcon className="left"  />
-                    </div>  
-                
+                    <div className="image-container">
+                        <motion.div
+                            initial={{
+                                opacity: 0,
+                                y: 100,
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: {
+                                    duration: 1,
+                                },
+                            }}
+                            viewport={{ once: true }}
+                        // style={{ padding: '3rem 0' }}
+
+                        >
+                            <img src={image1} alt="food court2" className='responsive' />
+                            <p className='restaurantInterior'>FOOD COURT</p>
+                        </motion.div>
+                        <ArrowBackIosNewOutlinedIcon className="left" />
+                    </div>
+
                 </div>
 
             </div>
-            
+
         </>
     )
 }

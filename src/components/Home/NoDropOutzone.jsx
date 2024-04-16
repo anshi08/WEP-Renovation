@@ -14,12 +14,12 @@ const NoDropOutzone = () => {
                 <div className='flex flex-col' >
                     <div className='line my-6'></div>
                     <p className='SmartTechText'>
-                        With SMART technology incorporated throughout the WEP<br /> complex, people will be able to enjoy hands-free
-                        “wave and<br /> open” access points, contactless food ordering and payment for<br /> speedy delivery. With high
-                        speed WI FI available throughout the<br /> public realm, and no drop-out-zones, tenants and guests will<br /> enjoy
-                        all the freedom today’s technology brings. Our SMART<br /> approach extends to creating a more sustainable,
-                        energy<br /> efficient, and healthier building through an optimized energy<br /> management plan based on a variety
-                        of sensors and data<br /> collection - a win win for the environment and all occupants.
+                        With SMART technology incorporated throughout the WEP complex, people will be able to enjoy hands-free
+                        “wave and open” access points, contactless food ordering and payment for speedy delivery. With high
+                        speed WI FI available throughout the public realm, and no drop-out-zones, tenants and guests will enjoy
+                        all the freedom today’s technology brings. Our SMART approach extends to creating a more sustainable,
+                        energy efficient, and healthier building through an optimized energy management plan based on a variety
+                        of sensors and data collection - a win win for the environment and all occupants.
                     </p>
                 </div>
             </div>

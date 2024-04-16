@@ -24,50 +24,64 @@ import AmenitiesImage from '../../assets/image4.svg';
 import comImage from "../../assets/image5.svg"
 import NavImage from "../../assets/image6.svg"
 import techImage from "../../assets/image7.svg"
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
 
-    const handleScroll = () => {
-        window.scrollTo({
-            top: window.innerHeight,
-            behavior: 'smooth'
-        });
+    const handleScrollDown = () => {
+        const targetComponent = document.getElementById('NewWEP');
+        targetComponent.scrollIntoView({ behavior: 'smooth' });
     };
 
 
     return (
         <>
-        <div style={{ width: '100%', height: '550px'}}> 
-            <div style={{
-                backgroundImage: `url(${Banner})`,
-                backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%',width:'100%',height:'100%', position: 'relative',
-                filter: 'brightness(90%)'
-            }}>
-
+            <div style={{ width: '100%', height: '550px' }}>
                 <div style={{
-                    position: 'absolute', top: '25%',
-                    left: '10%'
+                    backgroundImage: `url(${Banner})`,
+                    backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', width: '100%', height: '100%',
+                    position: 'relative',
+                    filter: 'brightness(90%)'
                 }}>
-                    <p className="TransformingText">
-                        Transforming<br />Place
-                    </p>
 
-                    <p className='paragraph'>
-                        THE NEW WORLD EXCHANGE PLAZA
-                    </p>
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            x: -50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                                duration: 1,
+                            },
+                        }}
+                        viewport={{ once: true }}
+                        style={{
+                            position: 'absolute', top: '25%',
+                            left: '10%'
+                        }}
+                    >
+                        <p className="TransformingText">
+                            Transforming<br />Place
+                        </p>
 
-                    {/* Down Arrow */}
-                    <div className='learnmore'>
-                        <div class="down-arrow"><SouthIcon /></div>
-                        <button onClick={handleScroll} className='text'>Learn More</button>
-                    </div>
+                        <p className='paragraph'>
+                            THE NEW WORLD EXCHANGE PLAZA
+                        </p>
+
+                        {/* Down Arrow */}
+                        <div className='learnmore'>
+                            <div class="down-arrow"><SouthIcon /></div>
+                            <button onClick={handleScrollDown} className='text'>Learn More</button>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
-        </div>
 
             {/* <div className='flex' > */}
-                {/* <div style={{ border: '2px solid black', width: '10%' }}>
+            {/* <div style={{ border: '2px solid black', width: '10%' }}>
 
                     <a href='#NewWEP'><img src={imageNewWep} /></a>
                     <a href='#Modernization'><img src={modernizationImage} /></a>
@@ -77,41 +91,41 @@ const Home = () => {
                     <a href='#Navigation'><img src={NavImage} /></a>
                     <a href='#Technology'><img src={techImage} /></a>
                 </div> */}
-                <div>
+            <div>
 
-                    <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '3rem' }}>
-                        <NewWEP />
+                <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '3rem' }}>
+                    <NewWEP />
+                </div>
+                <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+                    <Modernization />
+                    <GroundFloor />
+                    <FoodCourt />
+                </div>
+                <div id='Wellness' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
+                    <Wellness />
+                </div>
+                <img src={sofaImage} />
+                <SummerComfort />
+                <div id='Amenities' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
+                    <Amenities />
+                    <Slider />
+                </div>
+                <div id='Community'>
+                    <Community />
+                </div>
+                <div style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
+                    <PlazaGif />
+                    <div id='Navigation'>
+                        <NavigationComponent />
                     </div>
-                    <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
-                        <Modernization />
-                        <GroundFloor />
-                        <FoodCourt />
+                    <div id='Technology'>
+                        <Technology />
                     </div>
-                    <div id='Wellness' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                        <Wellness />
-                    </div>
-                    <img src={sofaImage} />
-                    <SummerComfort />
-                    <div id='Amenities' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                        <Amenities />
-                        <Slider />
-                    </div>
-                    <div id='Community'>
-                        <Community />
-                    </div>
-                    <div style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                        <PlazaGif />
-                        <div id='Navigation'>
-                            <NavigationComponent />
-                        </div>
-                        <div id='Technology'>
-                            <Technology />
-                        </div>
-                        <div style={{ padding: '2rem' }}>
-                            <NoDropOutzone />
-                        </div>
+                    <div style={{ padding: '2rem' }}>
+                        <NoDropOutzone />
                     </div>
                 </div>
+            </div>
             {/* </div> */}
         </>
     )

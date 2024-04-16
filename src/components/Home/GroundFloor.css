@@ -1,8 +1,20 @@
-.horizontalLineBlue{
+/* .horizontalLineBlue{
     width: 60px;
     height: 5px;
     background-color: rgb(93, 199, 209);
+    margin-left: 1rem;
+    animation: slideRight 1s forwards; 
 }
+
+@keyframes slideRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60px; /* Width of the line 
+    }
+} */
+
 
 @font-face {
     font-family: "Futura PT Book-Normal-PEtZdOHA";
@@ -11,6 +23,7 @@
 .spanTitle1{
     font-size: 18px ;
     color: rgb(0, 0, 0);
+    padding: 0 1rem !important;
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     white-space: pre-wrap;
     padding: 0px;

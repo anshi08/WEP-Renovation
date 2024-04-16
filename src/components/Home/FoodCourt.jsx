@@ -7,66 +7,182 @@ import { Grid, Typography } from '@mui/material'
 import EastIcon from '@mui/icons-material/East';
 import "./FoodCourt.css"
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const FoodCourt = () => {
   return (
     <>
-    <div>
-      <Grid container spacing={2} padding={4}>
-        <Grid item xs={12} md={6} className='relative' >
-          {/* Show sub items */}
-          <div className='flex'>
-            <Grid item xs={12} md={6}>
-              <div className='horizontalLine my-2'></div>
-              <p className='spanTitle1 my-2'>
-                <span>FOODCOURT</span>
-              </p>
+      <div>
+        <Grid container spacing={2} padding={4}>
+          <Grid item xs={12} md={6} className='relative' >
+            {/* Show sub items */}
+            <div className='flex'>
+              <Grid item xs={12} md={6}>
+                {/* <div className='horizontalLine my-2'></div> */}
+                <motion.div
+            className="horizontalLine my-2"
+            initial={{ width: '0px' }}
+            animate={{ width: '60px' }} 
+            transition={{ duration: 1 }}
+            style={{
+              width: '60px',
+              height: '5px',
+              backgroundColor: 'rgb(93, 199, 209)',
+              marginLeft: '1rem'
+            }}
+        />
 
-              <p className='spanTitle1 my-2'>
-              Enjoy delicious food in a lively and upbeat surrounding with plenty of seating in the revitalized Food Court.
-              </p>
-            </Grid>
-          </div>
-          
-           <div className='absolute right-0 bottom-0'>
+
+                
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 1,
+                  },
+                }}
+                viewport={{ once: true }}
+
+              >
+                <p className='spanTitle1 my-2'>
+                  <span>FOODCOURT</span>
+                </p>
+                </motion.div>
+
+
+                <motion.div
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 1,
+                  },
+                }}
+                viewport={{ once: true }}
+
+              >
+                <p className='spanTitle1 my-2'>
+                  Enjoy delicious food in a lively and upbeat surrounding with plenty of seating in the revitalized Food Court.
+                </p>
+                </motion.div>
+              </Grid>
+            </div>
+
+
+            <motion.div
+
+              initial={{
+                opacity: 0,
+                x: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+
+              viewport={{ once: true }}
+              className='absolute right-0 bottom-0'
+            >
               <img src={image1} style={{ width: '100%' }} />
-              </div>
-            
+            </motion.div>
+
+
+          </Grid>
+          <Grid item xs={12} md={6} >
+            <motion.div
+
+              initial={{
+                opacity: 0,
+                x: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+
+              viewport={{ once: true }}
+            >
+              <img src={image2} />
+            </motion.div>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={6} >
-          <img src={image2} />
+
+
+        {/* For showing bottom image */}
+        <Grid container spacing={3} >
+          <Grid item xs={12} md={6}>
+            <div className='flex justify-end'>
+              <Grid item xs={0} md={2}>
+
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <motion.div
+
+                  initial={{
+                    opacity: 0,
+                    x: 100,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                      duration: 1,
+                    },
+                  }}
+
+                  viewport={{ once: true }}
+                >
+                  <img src={image3} className='imgStyling' />
+                </motion.div>
+              </Grid>
+            </div>
+          </Grid>
+          <Grid item xs={12} md={6} >
+            <motion.div
+
+              initial={{
+                opacity: 0,
+                x: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+
+              viewport={{ once: true }}
+            >
+              <img src={image4} />
+            </motion.div>
+          </Grid>
         </Grid>
-      </Grid>
-
-
-      {/* For showing bottom image */}
-      <Grid container spacing={3} >
-        <Grid item xs={12} md={6}>
-          <div className='flex justify-end'>
-            <Grid item xs={12} md={2}>
-
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <img src={image3} className='imgStyling' />
-            </Grid>
+        <div className='flex items-center justify-center'>
+          <div className='RenovationBtn'>
+            <Link to="/p/2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <p className='btnTextLearnMore'>Learn more about THE RENOVATION</p>
+              <EastIcon style={{ color: 'rgb(87,87,87)' }} />
+            </Link>
           </div>
-        </Grid>
-        <Grid item xs={12} md={6} >
-          
-          <img src={image4} />
-          
-        </Grid>
-      </Grid>
-      <div className='flex items-center justify-center'>
-      <div className='RenovationBtn'>
-        <Link to="/p/2" style={{ display: 'flex',justifyContent:'center',alignItems:'center'}}>
-        <p className='btnTextLearnMore'>Learn more about THE RENOVATION</p> 
-        <EastIcon style={{color:'rgb(87,87,87)'}}  />
-        </Link>
+        </div>
       </div>
-      </div>
-    </div>
-  </>
+    </>
   )
 }
 
