@@ -1,0 +1,17 @@
+.ArrowStyle {
+    cursor: pointer;
+    font-Size: 40px !important;
+    color: white;
+}
+
+@media (max-width:700px){
+    .ArrowStyle{
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width:500px){
+    .ArrowStyle{
+        font-size: 20px !important;
+    }
+}
