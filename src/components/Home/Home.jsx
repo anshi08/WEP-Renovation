@@ -104,7 +104,7 @@ const Home = () => {
                 <div id='Wellness' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
                     <Wellness />
                 </div>
-                <img src={sofaImage} />
+                <img src={sofaImage} className='sofaImg' />
                 <SummerComfort />
                 <div id='Amenities' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
                     <Amenities />

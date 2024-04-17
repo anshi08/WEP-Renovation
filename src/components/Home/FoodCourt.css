@@ -16,6 +16,10 @@
     padding: 1rem;
 }
 
+.RenovationBtn:hover {
+    background-color: black; /* Background color on hover */
+  }
+
 @font-face {
     font-family:"Futura PT Book-Normal-PEtZdOHA" ;
     src: url('../../fonts/futurapt-book.woff') format('woff');
@@ -28,6 +32,14 @@
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 26px;
 }
+
+.RenovationBtn:hover .btnTextLearnMore {
+    color: white; /* Text color on hover */
+  }
+  
+  .RenovationBtn:hover svg {
+    color: white; /* Arrow color on hover */
+  }
 
 @media (max-width:650px) {
     .imgStyling {

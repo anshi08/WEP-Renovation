@@ -1,0 +1,89 @@
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.ProudlyText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.NumText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.gettingHere{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 26px;
+}
+@font-face {
+    font-family:"Futura PT Demi-Normal-5taag63X" ;
+    src: url('../../fonts/futuraptdemi.woff') format('woff');
+}
+.WepCom{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Demi-Normal-5taag63X";
+    line-height: 26px;
+}
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.Number{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 26px;
+}
+
+@font-face {
+    font-family:"Futura PT Medium-Norma-sc4damH4" ;
+    src: url('../../fonts/futuraptmedium.woff') format('woff');
+}
+.footerText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: rgb(121, 121, 121);
+    font-family: "Futura PT Medium-Norma-sc4damH4";
+    line-height: 14px;
+}
+
+@font-face {
+    font-family:"Futura PT Medium-Norma-sc4damH4" ;
+    src: url('../../fonts/futuraptmedium.woff') format('woff');
+}
+.DesignText{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: rgb(121, 121, 121);
+    font-family: "Futura PT Medium-Norma-sc4damH4";
+    line-height: 14px;
+}

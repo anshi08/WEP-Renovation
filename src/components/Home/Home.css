@@ -82,3 +82,26 @@
 .text:hover::after {
     width: 20%;
 }
+
+
+:root {
+    --img-width: 100%;
+    --img-height: 100%;
+}
+
+.sofaImg {
+    object-fit: cover;
+    object-position: 0 0; /* Start the image from the left */
+    width: 0;
+    height: var(--img-height);
+    animation: revealFromLeft 2s forwards;
+}
+
+@keyframes revealFromLeft {
+    0% {
+        width: 0; /* Start with no width */
+    }
+    100% {
+        width: var(--img-width); /* Gradually increase width to fully reveal the image */
+    }
+}
