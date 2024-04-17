@@ -112,6 +112,7 @@ const App = () => {
     <>
       <Header />
       <Outlet />
+      <hr style={{borderColor:'rgb(96,96,96)' , borderWidth:'1px'}}/>
       <Footer />
       
     </>
