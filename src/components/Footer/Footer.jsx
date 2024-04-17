@@ -86,13 +86,16 @@ export default function Footer() {
                     >
                         <div className="flex flex-col">
                             <div className="flex items-center">
-                                <strong>T.</strong>
-                                <p className="Number ml-1">613-690-7400</p>
+                                <Link to="tel:613-690-7400" className="flex items-center" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                    <strong>T.</strong>
+                                    <p className="Number ml-1">613-690-7400</p>
+                                </Link>
                             </div>
                             <Link to="https://goo.gl/maps/tGCSe7UbZxPvE2JU8" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center hover:underline">
                                 <p className="WepCom">WorldExchangePlaza.com <EastIcon style={{ color: 'rgb(171,171,171)' }} /></p>
                             </Link>
                         </div>
+
                     </motion.div>
 
                     {/* Fourth sub-div */}
