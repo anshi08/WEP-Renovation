@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Container, Box } from '@mui/material';
 import CircularProgress, {
@@ -6,6 +6,7 @@ import CircularProgress, {
 } from '@mui/material/CircularProgress';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import { motion } from 'framer-motion';
 
 const App = () => {
 
@@ -16,10 +17,10 @@ const App = () => {
   useEffect(() => {
     const handleOnline = () => setOffline(false);
     const handleOffline = () => setOffline(true);
- 
+
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
- 
+
     return () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
@@ -31,10 +32,10 @@ const App = () => {
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 3000);
- 
+
     return () => clearTimeout(timeout);
   }, []);
- 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -109,9 +110,10 @@ const App = () => {
 
   return (
     <>
-    <Header />
-    <Outlet />
-    <Footer />
+      <Header />
+      <Outlet />
+      <Footer />
+      
     </>
   )
 }
