@@ -1,7 +1,10 @@
-.line{
+.lineNoDrop{
     width: 59px;
     height: 5px;
     background-color: rgb(40, 92, 170);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @font-face {
@@ -9,11 +12,11 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .SmartTechText{
-    font-size: 20px !important;
+    font-size: 20px ;
     color: rgb(0, 0, 0);
-    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
-    text-align: left !important;
-    line-height: 30px !important;
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    text-align: left ;
+    line-height: 30px ;
 }
 
 @font-face {
@@ -21,9 +24,21 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .footertext{
-    font-size: 17px !important;
+    font-size: 17px ;
     color: rgb(0, 0, 0);
     /* z-index: 48; */
-    font-family: "Futura PT Book-Normal-PEtZdOHA" !important;
-    line-height: 27px !important;
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    line-height: 27px ;
+    margin-left: 4rem;
+}
+
+@media (max-width:690px){
+    .SmartTechText{
+        line-height: normal;
+        text-align: justify;
+    }
+    .footertext{
+        line-height: normal;
+        margin-left: 2rem;
+    }
 }
