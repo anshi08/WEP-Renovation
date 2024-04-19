@@ -9,7 +9,9 @@ import "./FoodCourt.css"
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-const FoodCourt = () => {
+const FoodCourt = ({ foodCourtData }) => {
+
+  const data = foodCourtData
   return (
     <>
       <div>
@@ -50,7 +52,7 @@ const FoodCourt = () => {
 
               >
                 <p className='spanTitle1 my-2'>
-                  <span>FOODCOURT</span>
+                  <span>{data.text}</span>
                 </p>
                 </motion.div>
 
@@ -71,7 +73,7 @@ const FoodCourt = () => {
 
               >
                 <p className='spanTitle1 my-2'>
-                  Enjoy delicious food in a lively and upbeat surrounding with plenty of seating in the revitalized Food Court.
+                  {data.sub_text}
                 </p>
                 </motion.div>
               </Grid>
@@ -176,7 +178,7 @@ const FoodCourt = () => {
         <div className='flex items-center justify-center'>
           <div className='RenovationBtn'>
             <Link to="/p/2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <p className='btnTextLearnMore'>Learn more about THE RENOVATION</p>
+              <p className='btnTextLearnMore'>{data.btn_text}</p>
               <EastIcon style={{ color: 'rgb(87,87,87)' }} />
             </Link>
           </div>

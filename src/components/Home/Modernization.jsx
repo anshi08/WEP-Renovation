@@ -5,7 +5,9 @@ import image from "../../assets/modernzation-at-2x-full.png"
 // import image2 from "../../assets/after-retail-1-at-2x-3934_2456_78_0-quarter.png"
 import { motion } from 'framer-motion'
 
-const Modernization = () => {
+const Modernization = ({ modernizationData }) => {
+
+  const data = modernizationData
   return (
     <Grid container padding={6}>
 
@@ -28,7 +30,7 @@ const Modernization = () => {
 
           >
             <p className='mainheading'>
-              MODERNIZATION
+              {data.heading}
             </p>
           </motion.div>
 
@@ -48,8 +50,7 @@ const Modernization = () => {
 
           >
             <p className='BoldText'>
-              Re-imagined.
-              Re-energized.
+              {data.sub_heading}
             </p>
           </motion.div>
 
@@ -68,14 +69,7 @@ const Modernization = () => {
           // style={{ padding: '3rem 0' }}
 
           >
-            <p className='body'>
-              The new World Exchange Plaza’s modernization is nothing short of transformative. It ushers
-              in a new spirit destined to resonate with all who gather, work, and visit. Where common and
-              public realm areas have been designed to be places to meet, gather, collaborate or spend a
-              solo moment, peacefully. Where every common area and amenity has been thoughtfully reconsidered
-              and renovated to reflect modern sensibilities. A place that beckons, inspires, and brings
-              a new appreciation for this legendary destination.
-            </p>
+            <p className='body'>{data.paragraph}</p>
           </motion.div>
         </div>
       </Grid>

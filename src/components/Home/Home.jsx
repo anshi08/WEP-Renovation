@@ -32,10 +32,14 @@ import slider5 from "../../assets/image (13).svg"
 import slider6 from "../../assets/image (14).svg"
 import slider7 from "../../assets/image (15).svg"
 import { motion } from 'framer-motion';
+import homeData from './Home.json'
 
 
 const Home = () => {
     const [activeImage, setActiveImage] = useState(imageNewWep);
+    
+    const data = homeData.response.data.data
+    console.log("dd",data)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -141,17 +145,17 @@ const Home = () => {
                         }}
                     >
                         <p className="TransformingText">
-                            Transforming<br />Place
+                            {data.gif_main_text.text_first}
                         </p>
 
                         <p className='paragraph'>
-                            THE NEW WORLD EXCHANGE PLAZA
+                            {data.gif_main_text.text_second}
                         </p>
 
                         {/* Down Arrow */}
                         <div className='learnmore'>
                             <div class="down-arrow"><SouthIcon /></div>
-                            <button onClick={handleScrollDown} className='text'>Learn More</button>
+                            <button onClick={handleScrollDown} className='text'>{data.gif_main_text.text_third}</button>
                         </div>
                     </motion.div>
                 </div>
@@ -213,35 +217,35 @@ const Home = () => {
             <div >
 
                 <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '3rem' }}>
-                    <NewWEP />
+                    <NewWEP data={data.new_wep_text} />
                 </div>
                 <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
-                    <Modernization />
-                    <GroundFloor />
-                    <FoodCourt />
+                    <Modernization modernizationData={data.modernization_text} />
+                    <GroundFloor groundFloorData={data.ground_floor_text}/>
+                    <FoodCourt foodCourtData={data.foodcourt_text}/>
                 </div>
                 <div id='Wellness' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <Wellness />
+                    <Wellness wellnessData={data.wellness_text}/>
                 </div>
                 <img src={sofaImage} className='sofaImg' />
-                <SummerComfort />
+                <SummerComfort summerComfortData={data.summer_comfort}/>
                 <div id='Amenities' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <Amenities />
+                    <Amenities amenitiesData={data.amenities}/>
                     <Slider />
                 </div>
                 <div id='Community'>
-                    <Community />
+                    <Community communityData={data.community}/>
                 </div>
                 <div style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <PlazaGif />
+                    <PlazaGif plaza_gif={data.plaza_gif}/>
                     <div id='Navigation'>
-                        <NavigationComponent />
+                        <NavigationComponent navigationComponent={data.navigationComponent}/>
                     </div>
                     <div id='Technology'>
-                        <Technology />
+                        <Technology technologyData={data.technology}/>
                     </div>
                     <div style={{ padding: '2rem' }}>
-                        <NoDropOutzone />
+                        <NoDropOutzone dropZoneData={data.drop_zone}/>
                     </div>
                 </div>
             </div>

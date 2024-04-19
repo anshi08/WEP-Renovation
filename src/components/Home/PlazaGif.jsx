@@ -5,7 +5,9 @@ import image from "../../assets/birdseye-view.png"
 import "./PlazaGif.css"
 import { motion } from 'framer-motion'
 
-const PlazaGif = () => {
+const PlazaGif = ({ plaza_gif }) => {
+
+    const data = plaza_gif
     return (
         <>
 
@@ -31,7 +33,7 @@ const PlazaGif = () => {
                         viewport={{ once: true }}
                     >
                         <img src={gif} />
-                        <p className='plaza'>PLAZA</p>
+                        <p className='plaza'>{data.gif_first_text}</p>
                     </motion.div>
                 </Grid>
             </Grid>
@@ -55,7 +57,7 @@ const PlazaGif = () => {
                             viewport={{ once: true }}
                         >
                             <img src={image} style={{ padding: '1rem', margin: '0 auto',width:'80%' }} alt="Your Image" />
-                            <p className='plaza' style={{marginLeft:'12%'}}>PLAZA. BIRDSEYE VIEW</p>
+                            <p className='plaza' style={{marginLeft:'12%'}}>{data.gif_second_text}</p>
                         </motion.div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -79,10 +81,7 @@ const PlazaGif = () => {
                                 viewport={{ once: true }}
                             >
                                 <p className='plazaheading'>
-                                    Head outside and you’ll experience The Plaza:
-                                    a transformed landscaped outdoor environment
-                                    where cultural events, concerts, group fitness, and connection to fresh 
-                                    air and nature can all take place.
+                                   {data.gif_second_para}
                                 </p>
                             </motion.div>
 
@@ -103,9 +102,7 @@ const PlazaGif = () => {
                                 viewport={{ once: true }}
                             >
                                 <p className='my-3 plazaBoldHeading'>
-                                    Culture. Community. Collaboration.
-                                    That’s our future.
-                                    Welcome to the WEP Community
+                                   {data.gif_second_sub_para}
                                 </p>
                             </motion.div>
                         </div>

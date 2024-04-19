@@ -5,7 +5,10 @@ import girlimage from "../../assets/wep-wellness-r3-tenth.png"
 import wellnessWaterMark from "../../assets/wellness-watermark-at-2x-2330_1945_0_403-half.png"
 import { motion } from 'framer-motion'
 
-const Wellness = () => {
+const Wellness = ({ wellnessData }) => {
+
+    const data = wellnessData
+
     return (
         <Grid container padding={6} style={{ backgroundImage: `url(${wellnessWaterMark})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
@@ -30,7 +33,7 @@ const Wellness = () => {
 
                     >
                         <p className='mainheading'>
-                            WELLNESS
+                            {data.wellness_heading}
                         </p>
                     </motion.div>
 
@@ -50,8 +53,7 @@ const Wellness = () => {
 
                     >
                         <p className='boldtextWell'>
-                            Well-Being.
-                            Well Done.
+                            {data.wellness_text}
                         </p>
                     </motion.div>
 
@@ -71,15 +73,7 @@ const Wellness = () => {
                     // style={{ padding: '3rem 0' }}
 
                     >
-                        <p className='body'>
-                            Throughout our transformation the intent has been to make WEP a place conducive to
-                            well-being. Our architectural design too aims at opening up our various spaces to
-                            create a sense of airy, light-infused, spaciousness. Whether sitting in natural light
-                            in one of our communal spaces, appreciating the cleaner air quality we’ve brought to
-                            all interior areas, or basking in the relaxed atmosphere of our landscaped outdoor
-                            Plaza where sun and blue skies, events and outdoor amenities greet you, WEP creates
-                            an atmosphere where well-being thrives.
-                        </p>
+                        <p className='body'>{data.wellness_para}</p>
                     </motion.div>
                 </div>
             </Grid>

@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom';
 import waterMark from "../../assets/homepage-watermark-at-2x-quarter.png"
 import { motion } from 'framer-motion';
 
-function NewWEP() {
+function NewWEP({ data }) {
+    const wepData = data
     return (
         <Grid container spacing={2}>
             <Grid item xs={12} md={8} style={{
@@ -34,7 +35,7 @@ function NewWEP() {
 
                 >
                     <p className='text1'>
-                        Get Ready. Get Excited for the New WEP!
+                        {wepData.wep_Heading}
                     </p>
                 </motion.div>
 
@@ -55,10 +56,7 @@ function NewWEP() {
 
                 >
                     <p className='body1'>
-                        Watch as our dynamic revitalization transforms this legendary
-                        downtown destination into a mindfully modernized, all-day people place.
-                        Work, meet, dine, gather, connect and engage with others in an environment that
-                        inspires the countless possibilities, opportunities, and unexpected delights of every day.
+                        {wepData.wep_paragraph}
                     </p>
                 </motion.div>
 
@@ -89,7 +87,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='heading'>THE RENOVATION</p>
+                                        <p className='heading'>{wepData.cards.first_card_heading}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -108,8 +106,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='title'>Learn more about our plans and get the latest
-                                            construction updates.</p>
+                                        <p className='title'>{wepData.cards.first_card_content}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -128,7 +125,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/2" className='hover:underline link'>Learn More <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/2" className='hover:underline link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>
@@ -156,7 +153,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='heading'>REDEVELOPMENT TEAM</p>
+                                        <p className='heading'>{wepData.cards.second_card_heading}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -175,7 +172,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='title'>Learn more about the team behind the project</p>
+                                        <p className='title'>{wepData.cards.second_card_content}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -194,7 +191,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/3" className='hover:underline link'>Learn More <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/3" className='hover:underline link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>
@@ -222,7 +219,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='heading'>CONTACT</p>
+                                        <p className='heading'>{wepData.cards.third_card_heading}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -241,7 +238,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <p className='title'>Curious about our new look and the opportunities that are here?</p>
+                                        <p className='title'>{wepData.cards.third_card_content}</p>
                                     </motion.div>
 
                                     <motion.div
@@ -260,7 +257,7 @@ function NewWEP() {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/4" className='hover:underline link'>Contact Us Now <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/4" className='hover:underline link'>{wepData.btn_text2} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>

@@ -8,7 +8,9 @@ import "./NavigationCom.css"
 import { motion } from 'framer-motion'
 
 
-const NavigationComponent = () => {
+const NavigationComponent = ({ navigationComponent }) => {
+
+  const data = navigationComponent
   return (
     <>
       <Grid container >
@@ -73,7 +75,7 @@ const NavigationComponent = () => {
 
             >
               <p className='mainheading'>
-                NAVIGATION
+                {data.nav_heading}
               </p>
             </motion.div>
 
@@ -93,8 +95,7 @@ const NavigationComponent = () => {
 
             >
               <p className='boldtext10'>
-                Find
-                Your Way.
+                 {data.nav_subHeading}
               </p>
             </motion.div>
 
@@ -114,8 +115,7 @@ const NavigationComponent = () => {
 
             >
               <p className='body'>
-                Commuters, make WEP your pedestrian gateway to the LRT Parliament station, via our new and improved Queen Street Entrance, strategically located at the pedestrian and cycle friendly intersection of Queen and O’Connor Streets.
-                Once you’re here, there’s no guessing; with new navigation and wayfinding initiatives, and barrier free access, everyone can get to where they’re going smoothly.
+                {data.nav_para}
               </p>
             </motion.div>
           </div>

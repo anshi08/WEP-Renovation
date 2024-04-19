@@ -5,7 +5,10 @@ import image from "../../assets/CommunityImage.png"
 import comWatermark from "../../assets/community-watermark-at-2x-2178_2400_0_0-half.png"
 import { motion } from 'framer-motion'
 
-const Community = () => {
+const Community = ({ communityData }) => {
+
+    const data = communityData
+
     return (
         <Grid container padding={6} style={{ backgroundColor: 'rgb(249, 250, 252)' }} >
 
@@ -29,7 +32,7 @@ const Community = () => {
 
                     >
                         <p className='mainheading'>
-                            COMMUNITY
+                            {data.com_heading}
                         </p>
                     </motion.div>
 
@@ -49,8 +52,7 @@ const Community = () => {
 
                     >
                         <p className='boldtext1'>
-                            Designed
-                            for People.
+                          {data.com_subHeading}
                         </p>
                     </motion.div>
 
@@ -70,10 +72,7 @@ const Community = () => {
 
                     >
                         <p className='body'>
-                            Community is where and how we interact, network, and build a better place and city. With this in mind
-                            WEP has viewed all common spaces through the lens of places where people can meet, gather, interact.
-                            Whether casually meeting for a professional chat, dining with a friend, or collaborating over coffee,
-                            WEP has all the space options you need.
+                           {data.com_para}
                         </p>
                     </motion.div>
                 </div>

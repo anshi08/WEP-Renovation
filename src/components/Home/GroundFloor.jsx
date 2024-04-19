@@ -7,8 +7,9 @@ import image4 from "../../assets/after-retail-2-at-2x-3680_2264_174_0-quarter.pn
 import "./GroundFloor.css"
 import { motion } from 'framer-motion';
 
-const GroundFloor = () => {
-
+const GroundFloor = ({ groundFloorData }) => {
+ 
+  const data = groundFloorData
 
   return (
     <>
@@ -47,7 +48,7 @@ const GroundFloor = () => {
                 viewport={{ once: true }}
               >
                 <p className='spanTitle1 my-2'>
-                  <span>GROUND FLOOR RETAIL</span>
+                  <span>{data.text}</span>
                 </p>
               </motion.div>
 
@@ -67,7 +68,7 @@ const GroundFloor = () => {
 
               >
                 <p className='spanTitle1 my-2'>
-                  Convenience and variety provide effortless shopping for tenants and visitors alike in this bright and cheerful space
+                  {data.sub_text}
                 </p>
               </motion.div>
             </div>

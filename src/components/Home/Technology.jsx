@@ -6,7 +6,10 @@ import Image2 from "../../assets/Image21.png"
 import { motion } from 'framer-motion'
 import { Grid, Typography } from '@mui/material'
 
-const Technology = () => {
+const Technology = ({ technologyData }) => {
+
+    const data = technologyData
+
     return (
         <>
             <Grid container style={{
@@ -35,7 +38,7 @@ const Technology = () => {
 
                     >
                         <p className='mainheading'>
-                            TECHNOLOGY
+                            {data.tech_heading}
                         </p>
                     </motion.div>
                     <motion.div
@@ -54,8 +57,7 @@ const Technology = () => {
 
                     >
                         <p className='boldtext1' style={{ color: 'rgb(40, 92, 170)' }}>
-                            Digitally
-                            SMART.
+                            {data.tech_subHeading}
                         </p>
                     </motion.div>
                     <motion.div
@@ -74,8 +76,7 @@ const Technology = () => {
 
                     >
                         <p className='body'>
-                            WEP is going contactless, efficiently “hands-free”- it’s the smart way for today,
-                            and the way of tomorrow.
+                          {data.tech_para}
                         </p>
                     </motion.div>
                 </Grid>

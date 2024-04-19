@@ -1,0 +1,82 @@
+{
+    "response": {
+        "data": {
+            "data": {
+                "gif_main_text": {
+                    "text_first": "Transforming Place",
+                    "text_second": "THE NEW WORLD EXCHANGE PLAZA",
+                    "text_third": "Learn More"
+                },
+                "new_wep_text": {
+                    "btn_text":"Learn More",
+                    "btn_text2":"Contact Us Now",
+                    "wep_Heading": "Get Ready. Get Excited for the New WEP!",
+                    "wep_paragraph": "Watch as our dynamic revitalization transforms this legendary downtown destination into a mindfully modernized, all-day people place. Work, meet, dine, gather, connect and engage with others in an environment that inspires the countless possibilities, opportunities, and unexpected delights of every day.",
+                    "cards": {
+                        "first_card_heading": "THE RENOVATION",
+                        "first_card_content": "Learn more about our plans and get the latest construction updates.",
+
+                        "second_card_heading":"REDEVELOPMENT TEAM",
+                        "second_card_content": "Learn more about the team behind the project",
+
+                        "third_card_heading":"CONTACT",
+                        "third_card_content": "Curious about our new look and the opportunities that are here?"
+                    }
+                },
+                "modernization_text":{
+                    "heading":"MODERNIZATION",
+                    "sub_heading":"Re-imagined. Re-energized.",
+                    "paragraph":"The new World Exchange Plaza’s modernization is nothing short of transformative. It ushers in a new spirit destined to resonate with all who gather, work, and visit. Where common and public realm areas have been designed to be places to meet, gather, collaborate or spend a solo moment, peacefully. Where every common area and amenity has been thoughtfully reconsidered and renovated to reflect modern sensibilities. A place that beckons, inspires, and brings a new appreciation for this legendary destination."
+                },
+                "ground_floor_text":{
+                    "text":"GROUND FLOOR RETAIL",
+                    "sub_text":"Convenience and variety provide effortless shopping for tenants and visitors alike in this bright and cheerful space"
+                },
+                "foodcourt_text":{
+                    "text":"FOODCOURT",
+                    "sub_text":"Enjoy delicious food in a lively and upbeat surrounding with plenty of seating in the revitalized Food Court.",
+                    "btn_text":"Learn more about THE RENOVATION"
+                },
+                "wellness_text":{
+                    "wellness_heading":"WELLNESS",
+                    "wellness_text":"Well-Being.Well Done.",
+                    "wellness_para": "Throughout our transformation the intent has been to make WEP a place conducive to well-being. Our architectural design too aims at opening up our various spaces to create a sense of airy, light-infused, spaciousness. Whether sitting in natural light in one of our communal spaces, appreciating the cleaner air quality we’ve brought to all interior areas, or basking in the relaxed atmosphere of our landscaped outdoor Plaza where sun and blue skies, events and outdoor amenities greet you, WEP creates an atmosphere where well-being thrives."
+                },
+                "summer_comfort":{
+                    "summer_comfort_text": "Summer comfort, winter warmth, and healthy temperatures all year round have also been a goal, and achieved through an optimized energy management plan – an important initiative that also helps us achieve many of our environmental certifications – LEED EBOM Platinum, BOMA BEST Platinum certification, and Energy Star. The sum value: a happier, healthier workforce, elevated spirits and a sense of well-being for all guests and patrons."
+                },
+                "amenities":{
+                    "amenities_heading":"AMENITIES",
+                    "amenities_text":"Tastefully Transformed.",
+                    "amenities_para1": "The new food court will be fully transformed and renovated with a modern design that honours the history and tradition of the building while infusing it with innovative technological advances, providing the best possible experience for both our retail partners and customers.",
+                    "amenities_para2": "Natural sunlight through large windows, together with enhanced hours will encourage people to meet, dine and enjoy this space certainly during working hours but also after work – whether it be take-home, happy hour with your colleagues, or dinner before a show! An enhanced service and amenity focused retail mix, complete with renovated shopfronts, will create conveniences and efficiencies for office occupants and the community at large."
+                },
+                "community":{
+                    "com_heading":"COMMUNITY",
+                    "com_subHeading":"Designed for People.",
+                    "com_para": "Community is where and how we interact, network, and build a better place and city. With this in mind WEP has viewed all common spaces through the lens of places where people can meet, gather, interact. Whether casually meeting for a professional chat, dining with a friend, or collaborating over coffee, WEP has all the space options you need."
+                },
+                "plaza_gif":{
+                   "gif_first_text":"PLAZA",
+                   "gif_second_text":"PLAZA. BIRDSEYE VIEW",
+                   "gif_second_para":"Head outside and you’ll experience The Plaza: a transformed landscaped outdoor environment where cultural events, concerts, group fitness, and connection to fresh air and nature can all take place.",
+                   "gif_second_sub_para":"Culture. Community. Collaboration. That’s our future. Welcome to the WEP Community"
+                },
+                "navigationComponent":{
+                    "nav_heading":"NAVIGATION",
+                    "nav_subHeading":"Find Your Way.",
+                    "nav_para":"Commuters, make WEP your pedestrian gateway to the LRT Parliament station, via our new and improved Queen Street Entrance, strategically located at the pedestrian and cycle friendly intersection of Queen and O’Connor Streets.Once you’re here, there’s no guessing; with new navigation and wayfinding initiatives, and barrier free access, everyone can get to where they’re going smoothly."
+                },
+                "technology":{
+                    "tech_heading":"TECHNOLOGY",
+                    "tech_subHeading":"Digitally SMART.",
+                    "tech_para":"WEP is going contactless, efficiently “hands-free”- it’s the smart way for today,and the way of tomorrow."
+                },
+                "drop_zone":{
+                    "img_text":"NO DROP-OUT ZONES",
+                    "text": "With SMART technology incorporated throughout the WEP complex, people will be able to enjoy hands-free “wave and open” access points, contactless food ordering and payment for speedy delivery. With high speed WI FI available throughout the public realm, and no drop-out-zones, tenants and guests will enjoy all the freedom today’s technology brings. Our SMART approach extends to creating a more sustainable, energy efficient, and healthier building through an optimized energy management plan based on a variety of sensors and data collection - a win-win for the environment and all occupants."
+                }
+            }
+        }
+    }
+}
