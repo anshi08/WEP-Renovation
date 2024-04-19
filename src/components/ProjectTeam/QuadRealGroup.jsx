@@ -4,7 +4,9 @@ import './QuadRealGroup.css'
 import { Grid } from '@mui/material'
 import { motion } from 'framer-motion'
 
-const QuadRealGroup = () => {
+const QuadRealGroup = ({ QuadRealData }) => {
+
+    const data = QuadRealData
     return (
         <>
             <Grid container padding={5} spacing={3}>
@@ -45,9 +47,7 @@ const QuadRealGroup = () => {
                         // style={{ padding: '3rem 0' }}
 
                         >
-                            <p className='paratext mt-4'><span className='spanText'>QuadReal Property Group </span>is a global real estate investment, operating and
-                                development company headquartered in Vancouver, British Columbia. Its assets under management
-                                total $61.2 billion.</p>
+                            <p className='paratext mt-4'><span className='spanText'>{data.main_heading} </span>{data.QuadRealGroup_Heading}</p>
                         </motion.div>
                     </div>
                 </Grid>
@@ -70,20 +70,14 @@ const QuadRealGroup = () => {
                     >
 
                         <div className='BlueLineQRG'></div>
-                        <p className='Quadtext mt-3'>
-                            From its foundation in Canada as a full-service real estate operating company, 
-                            QuadReal has evolved its capabilities to invest in public and private debt and 
-                            equity markets.</p>
+                        <p className='Quadtext mt-3'>{data.paragraphs.para1}</p>
 
-                        <p className='Quadtext mt-3'>QuadReal invests directly via programmatic partnerships 
-                        and through operating companies in which it holds an ownership interest.</p>
+                        <p className='Quadtext mt-3'>{data.paragraphs.para2}</p>
 
-                        <p className='Quadtext mt-3'>QuadReal seeks to deliver strong investment returns while creating sustainable 
-                            environments that bring value to the people and communities it serves. Now and 
-                            for generations to come.
+                        <p className='Quadtext mt-3'>{data.paragraphs.para3}
                         </p>
 
-                        <p className='QuadBottomText mt-3'>QuadReal: Excellence lives here.</p>
+                        <p className='QuadBottomText mt-3'>{data.bottom_text}</p>
                     </motion.div>
                 </Grid>
 

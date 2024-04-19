@@ -1,0 +1,45 @@
+{
+    "response": {
+        "data": {
+            "data": {
+                "main_text": {
+                    "text_first": "Redevelopment Team"
+                },
+                "QuadRealGroup_text": {
+                    "main_heading": "QuadReal Property Group",
+                    "QuadRealGroup_Heading": "is a global real estate investment, operating and development company headquartered in Vancouver, British Columbia. Its assets under management total $61.2 billion.",
+                    "paragraphs": {
+                        "para1": "From its foundation in Canada as a full-service real estate operating company,QuadReal has evolved its capabilities to invest in public and private debt and equity markets.",
+                        "para2": "QuadReal invests directly via programmatic partnerships and through operating companies in which it holds an ownership interest.",
+                        "para3": "QuadReal seeks to deliver strong investment returns while creating sustainable environments that bring value to the people and communities it serves. Now and for generations to come."
+                    },
+                    "bottom_text": "QuadReal: Excellence lives here."
+                },
+                "teams": {
+                    "team_one": {
+                        "heading": "Architect",
+                        "sub_text": "Established in 1996, Chmiel Architects is an Award Winning Architectural Design practice located in Ottawa, Canada. Through our practice we help our clients envision a better built environment through thoughtful design and our ability to produce innovative solutions that effect transformation. Every project is conceived to support an essential belief in the power of architecture to influence real world conditions."
+                    },
+                    "team_two": {
+                        "heading": "Designer",
+                        "sub_text": "GH+A consists of a curious team of 50+ passionate, creative and strategic thinkers who position and reinvent shopping centres, inject retail vitality into mixed-use developments and devise immersive experiences for our F&B, fashion, health & wellness projects. We design and transform spaces into inspiring and engaging environments with purpose and authenticity."
+                    },
+                    "team_three": {
+                        "heading": "Landscape Architect",
+                        "sub_text": "IBI is a global team of industry leading architects, engineers, planners, designers, and technology professionals united by a common desire: to create livable, sustainable, technologically advanced urban environments. We are a technology-driven design firm.",
+                        "sub_text2": "Our award-winning landscape architecture practice is one of the largest in the world, and driven by holistic, collaborative, environmentally responsible design."
+                    },
+                    "team_four":{
+                        "heading":"Construction",
+                        "sub_text":"We design, finance, construct, equip, operate, and manage anything that can be built.",
+                        "sub_text2": "EllisDon is a world-leading construction and building services company that completes in excess of $5 billion worth of contracts annually, in every market sector and across the globe. Over the last 70 years, we’ve grown from being a general contractor to a multi-faceted company that can deliver any aspect of a project."
+                    }
+                },
+                "planning_text":{
+                    "heading":"Planning",
+                    "text":"Fotenn is an award-winning planning, urban design, and landscape architecture firm with offices in Ottawa, Kingston, and Toronto. Established in 1992, the firm is celebrating thirty successful years leading innovative projects, founded on a commitment to a responsive and personal approach and to the honest and fair treatment of our clients and the communities in which we work."
+                }
+            }
+        }
+    }
+}

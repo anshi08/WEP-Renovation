@@ -8,7 +8,10 @@ import { motion } from 'framer-motion'
 
 
 import { Grid } from '@mui/material'
-const Teams = () => {
+const Teams = ({ TeamsData }) => {
+
+    const data = TeamsData
+
     return (
         <>
             <div >
@@ -30,7 +33,7 @@ const Teams = () => {
                                 }}
                                 viewport={{ once: true }}
                             >
-                                <p className='teamHeading1'>Architect</p>
+                                <p className='teamHeading1'>{data.team_one.heading}</p>
                             </motion.div>
 
                             <motion.div
@@ -66,10 +69,7 @@ const Teams = () => {
 
 
                             >
-                                <p className='teamTitle1'>Established in 1996, Chmiel Architects is an Award Winning Architectural Design practice located in
-                                    Ottawa, Canada. Through our practice we help our clients envision a better built environment through
-                                    thoughtful design and our ability to produce innovative solutions that effect transformation. Every
-                                    project is conceived to support an essential belief in the power of architecture to influence real world conditions.</p>
+                                <p className='teamTitle1'>{data.team_one.sub_text}</p>
                             </motion.div>
                         </div>
                     </Grid>
@@ -93,7 +93,7 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamHeading1'>Designer</p>
+                                <p className='teamHeading1'>{data.team_two.heading}</p>
 
                             </motion.div>
 
@@ -132,11 +132,7 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamTitle1'>GH+A consists of a curious team of 50+ passionate, creative and strategic thinkers who
-                                    position and reinvent shopping centres, inject retail vitality into mixed-use developments
-                                    and devise immersive experiences for our F&B, fashion, health & wellness projects. We
-                                    design and transform spaces into inspiring and engaging environments with purpose and
-                                    authenticity.</p>
+                                <p className='teamTitle1'>{data.team_two.sub_text}</p>
                             </motion.div>
                         </div>
 
@@ -163,7 +159,7 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamHeading1'>Landscape Architect</p>
+                                <p className='teamHeading1'>{data.team_three.heading}</p>
                             </motion.div>
 
                             <motion.div
@@ -201,12 +197,8 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamTitle1'>IBI is a global team of industry leading architects, engineers, planners,
-                                    designers, and technology professionals united by a common desire: to create livable, sustainable,
-                                    technologically advanced urban environments. We are a technology-driven design firm</p>
-                                <p className='teamTitle1'>Our award-winning landscape architecture practice is one
-                                    of the largest in the world, and driven by holistic, collaborative, environmentally responsible
-                                    design.</p>
+                                <p className='teamTitle1'>{data.team_three.sub_text}</p>
+                                <p className='teamTitle1 mt-4'>{data.team_three.sub_text2}</p>
                             </motion.div>
                         </div>
                     </Grid>
@@ -229,7 +221,7 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamHeading1'>Construction</p>
+                                <p className='teamHeading1'>{data.team_four.heading}</p>
                             </motion.div>
 
                             <motion.div
@@ -267,12 +259,8 @@ const Teams = () => {
                             // style={{ padding: '3rem 0' }}
 
                             >
-                                <p className='teamTitle1'>We design, finance, construct, equip, operate, and manage anything
-                                    that can be built.</p>
-                                <p className='teamTitle1'>EllisDon is a world-leading construction and building services company that completes in
-                                    excess of $5 billion worth of contracts annually, in every market sector and across the
-                                    globe. Over the last 70 years, we’ve grown from being a general contractor to a
-                                    multi-faceted company that can deliver any aspect of a project.</p>
+                                <p className='teamTitle1'>{data.team_four.sub_text}</p>
+                                <p className='teamTitle1 mt-4'>{data.team_four.sub_text2}</p>
                             </motion.div>
                         </div>
                     </Grid>

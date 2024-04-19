@@ -6,8 +6,11 @@ import Teams from './Teams';
 import Bgimage from "../../assets/TeamsBgImage.png"
 import Planning from './Planning';
 import { motion } from 'framer-motion';
+import ProjectTeamData from "./ProjectTeam.json"
 
 const ProjectTeam = () => {
+
+  const data = ProjectTeamData.response.data.data
   return (
     <>
       <div>
@@ -42,24 +45,24 @@ const ProjectTeam = () => {
           }}
         >
           <p className='redevelopmentTeam'>
-            Redevelopment Team
+            {data.main_text.text_first}
           </p>
         </motion.div>
       </div>
 
       <div style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '2rem' }}>
-        <QuadRealGroup />
+        <QuadRealGroup QuadRealData={data.QuadRealGroup_text}/>
       </div>
 
       <div style={{ padding: '2rem', position: 'relative' }}>
-        <Teams />
+        <Teams TeamsData={data.teams}/>
         <div className="bg-image-container">
           <img src={Bgimage} className="bg-image" />
         </div>
       </div>
 
       <div style={{ padding: '2rem' }}>
-        <Planning />
+        <Planning PlanningData={data.planning_text}/>
       </div>
     </>
   );

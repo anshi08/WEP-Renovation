@@ -31,6 +31,10 @@
     padding: 0 0 0 9rem;
 }
 
+.fotennImg{
+    margin-left: -2rem;
+}
+
 @media (max-width:990px){
     .gridStyle1{
         padding: 0;

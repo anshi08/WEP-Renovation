@@ -4,7 +4,10 @@ import './Planning.css'
 import { Grid } from '@mui/material'
 import { motion } from 'framer-motion'
 
-const Planning = () => {
+const Planning = ({ PlanningData }) => {
+
+    const data = PlanningData
+
     return (
         <>
             <Grid container spacing={5} padding={4} >
@@ -27,7 +30,7 @@ const Planning = () => {
                         // style={{ padding: '3rem 0' }}
 
                         >
-                            <p className='planningText'>Planning</p>
+                            <p className='planningText'>{data.heading}</p>
                         </motion.div>
 
                         <motion.div
@@ -43,8 +46,7 @@ const Planning = () => {
                                 },
                             }}
                             viewport={{ once: true }}
-                        // style={{ padding: '3rem 0' }}
-
+                            className='fotennImg'
                         >
                             <img src={FotennImg} />
                         </motion.div>
@@ -65,10 +67,7 @@ const Planning = () => {
                         // style={{ padding: '3rem 0' }}
 
                         >
-                            <p className='planningPara'>Fotenn is an award-winning planning, urban design, and landscape architecture firm with offices
-                                in Ottawa, Kingston, and Toronto. Established in 1992, the firm is celebrating thirty successful
-                                years leading innovative projects, founded on a commitment to a responsive and personal approach
-                                and to the honest and fair treatment of our clients and the communities in which we work. </p>
+                            <p className='planningPara'>{data.text} </p>
                         </motion.div>
                     </div>
                 </Grid>
