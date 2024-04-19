@@ -5,8 +5,9 @@ import "./GroundFloorRetail.css"
 import { motion } from 'framer-motion';
 import ImagesGallery from './ImagesGallery';
 
-const GroundFloorRetail = () => {
+const GroundFloorRetail = ({ GroundFloorRetailData }) => {
 
+    const data = GroundFloorRetailData
     const[showComponent, setShowComponent] = useState(false)
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -53,8 +54,7 @@ const GroundFloorRetail = () => {
                     // style={{ padding: '3rem 0' }}
 
                     >
-                        <p className='GFR'>Level 1
-                            Ground Floor Retail</p>
+                        <p className='GFR'>{data.text}</p>
                     </motion.div>
                 </div>
                 <div className='flex justify-center items-center mt-9' style={{ position: 'relative' }}>

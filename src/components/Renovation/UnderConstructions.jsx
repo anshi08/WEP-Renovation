@@ -218,7 +218,9 @@ const communityContent = [
     }
 ]
 
-const UnderConstructions = () => {
+const UnderConstructions = ({ UnderConstructionsData }) => {
+
+    const dataValue = UnderConstructionsData
 
     //For Selecting videos
     const [selectedVideo, setSelectedVideo] = useState(videos[0].url);
@@ -284,7 +286,7 @@ const UnderConstructions = () => {
                 // style={{ padding: '3rem 0' }}
 
                 >
-                    <p className='contructionHeading'>Watch Construction Updates Here<SouthIcon className='AnimateSouthIcon' /></p>
+                    <p className='contructionHeading'>{dataValue.under_construction_Heading}<SouthIcon className='AnimateSouthIcon' /></p>
                 </motion.div>
                 {selectedVideo && (
                     <div>
@@ -330,7 +332,7 @@ const UnderConstructions = () => {
                 // style={{ padding: '3rem 0' }}
 
                 >
-                    <p className='WEPHeading'>WEP’s Exciting Renovation is Well Underway. </p>
+                    <p className='WEPHeading'>{dataValue.under_construction_paragraph} </p>
                 </motion.div>
 
                 <motion.div
@@ -349,7 +351,7 @@ const UnderConstructions = () => {
                 // style={{ padding: '3rem 0' }}
 
                 >
-                    <p className='updatetext'>Click on each tab and you’ll be able to keep pace with our updates.</p>
+                    <p className='updatetext'>{dataValue.under_construction_text}</p>
                 </motion.div>
                 <Box sx={{ width: '100%', typography: 'body1' }}>
                     <TabContext value={value}>
@@ -381,7 +383,7 @@ const UnderConstructions = () => {
                                         >
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                                 <img src={TabSvg2} alt="Construction" /> {/* Make sure to add the alt attribute */}
-                                                Construction
+                                                {dataValue.tabs_heading.heading1}
                                             </div>
                                         </motion.div>
                                     }
@@ -409,7 +411,7 @@ const UnderConstructions = () => {
                                         >
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                                 <img src={TabSvg1} alt="Tenants" /> {/* Make sure to add the alt attribute */}
-                                                Tenants
+                                                {dataValue.tabs_heading.heading2}
                                             </div>
                                         </motion.div>
                                     }
@@ -434,7 +436,7 @@ const UnderConstructions = () => {
                                         >
                                             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                                 <img src={TabSvg3} alt="Community" /> {/* Make sure to add the alt attribute */}
-                                                Community
+                                                {dataValue.tabs_heading.heading3}
                                             </div>
                                         </motion.div>
                                     }
@@ -560,7 +562,7 @@ const UnderConstructions = () => {
                                 // style={{ padding: '3rem 0' }}
 
                                 >
-                                    <p className='panel2'>Meet Our Tenants!</p>
+                                    <p className='panel2'>{dataValue.tab_panel_text}</p>
                                 </motion.div>
 
                                 {/* Content 1 */}

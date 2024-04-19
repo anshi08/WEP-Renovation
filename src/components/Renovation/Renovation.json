@@ -1,0 +1,38 @@
+{
+    "response": {
+        "data": {
+            "data": {
+                "main_text": {
+                    "text_first": "Follow the build.",
+                    "text_second": "THE NEW WORLD EXCHANGE PLAZA",
+                    "text_third": "Learn More"
+                },
+                "UnderConstructions_text": {
+                    "under_construction_Heading": "Watch Construction Updates Here",
+                    "under_construction_paragraph": "WEP’s Exciting Renovation is Well Underway.",
+                    "under_construction_text":"Click on each tab and you’ll be able to keep pace with our updates.",
+                    "tabs_heading":{
+                        "heading1":"Construction",
+                        "heading2":"Tenants",
+                        "heading3":"Community"
+                    },
+                    "tab_panel_text":"Meet Our Tenants!"
+                },
+                "Gallery_text":{
+                    "heading":"Gallery"
+                },
+                "GroundFloorRetail_text":{
+                    "text":"Level 1 Ground Floor Retail"
+                },
+                "FoodCourt_text":{
+                    "text":"Level 2 Food Court",
+                    "heading":"FOOD COURT",
+                    "sub_text":"With extended hours to encourage public access and bright windows that flood the space with light,the WEP Food Court is the perfect place for a coffee break or a meal.",
+                    "bottom_text1":"On the Look Out to Lease? Take a Look!",
+                    "bottom_text2":"Curious about our new look and the opportunities that are here? Food Court locations to retail shops.",
+                    "bottom_btn_text":"View leasing opportunities here"
+                }
+            }
+        }
+    }
+}

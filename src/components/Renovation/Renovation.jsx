@@ -7,6 +7,7 @@ import Gallery from './Gallery';
 import GroundFloorRetail from './GroundFloorRetail';
 import FoodCourt from './FoodCourt';
 import { motion } from "framer-motion"
+import renovationData from './Renovation.json'
 
 const Renovation = () => {
 
@@ -14,6 +15,8 @@ const Renovation = () => {
         const targetComponent = document.getElementById('UC');
         targetComponent.scrollIntoView({ behavior: 'smooth' });
     };
+
+    const data = renovationData.response.data.data
 
     return (
         <>
@@ -44,28 +47,28 @@ const Renovation = () => {
                     }}
                 >
                     <p className='FollowTheText'>
-                        Follow the build.
+                       {data.main_text.text_first}
                     </p>
 
                     <p className='paragraph'>
-                        THE NEW WORLD EXCHANGE PLAZA
+                        {data.main_text.text_second}
                     </p>
 
                     {/* Down Arrow */}
                     <div className='learnmore'>
                         <div className="down-arrow"><SouthIcon /></div>
-                        <button onClick={handleScrollDown} className='text'>Learn More</button>
+                        <button onClick={handleScrollDown} className='text'>{data.main_text.text_third}</button>
                     </div>
                 </motion.div>
             </div>
 
             <div style={{ backgroundColor: 'rgb(249,250,252)' }}>
                 <div id='UC'>
-                    <UnderConstructions />
+                    <UnderConstructions UnderConstructionsData={data.UnderConstructions_text} />
                 </div>
-                <Gallery />
-                <GroundFloorRetail />
-                <FoodCourt />
+                <Gallery galleryData={data.Gallery_text}/>
+                <GroundFloorRetail GroundFloorRetailData={data.GroundFloorRetail_text}/>
+                <FoodCourt FoodCourtData={data.FoodCourt_text}/>
             </div>
         </>
     )

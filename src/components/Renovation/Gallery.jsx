@@ -56,8 +56,9 @@ const GalleryImages = [
     }
 ]
 
-const Gallery = () => {
+const Gallery = ({ galleryData }) => {
 
+    const GalleryDataValue = galleryData
     const [selectedGalleryImage, setSelectedGalleryImage] = useState(GalleryImages[0])
     const [showComponent, setShowComponent] = useState(false)
     const [ImageId, setImageId] = useState()
@@ -100,7 +101,7 @@ const Gallery = () => {
                 // style={{ padding: '3rem 0' }}
 
                 >
-                    <p className='gallery'>Gallery</p>
+                    <p className='gallery'>{GalleryDataValue.heading}</p>
                 </motion.div>
                 {selectedGalleryImage &&
                     <>

@@ -8,8 +8,9 @@ import EastIcon from '@mui/icons-material/East';
 import { motion } from 'framer-motion';
 import FoodCourtModal from './FoodCourtModal';
 
-const FoodCourt = () => {
+const FoodCourt = ({ FoodCourtData }) => {
 
+    const food_data = FoodCourtData
     const [showComponent, setShowComponent] = useState(false)
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -53,8 +54,7 @@ const FoodCourt = () => {
                             style={{ marginLeft: '6%' }}
 
                         >
-                            <p className='FoodCourtText'>Level 2 <br />
-                                Food Court</p>
+                            <p className='FoodCourtText'>{food_data.text}</p>
                         </motion.div>
 
                         {/* Map Image */}
@@ -115,10 +115,8 @@ const FoodCourt = () => {
                                         viewport={{ once: true }}
                                         className='mainStyleofPara'
                                     >
-                                        <p className='textFC mt-4'>FOOD COURT</p>
-                                        <p className='textFC'>With extended hours to encourage public access
-                                            and bright windows that flood the space with light,
-                                            the WEP Food Court is the perfect place for a coffee break or a meal.</p>
+                                        <p className='textFC mt-4'>{food_data.heading}</p>
+                                        <p className='textFC'>{food_data.sub_text}</p>
                                     </motion.div>
                                 </div>
                             </Grid>
@@ -136,20 +134,17 @@ const FoodCourt = () => {
                             <div className='flex justify-center items-center' style={{ margin: '0 auto' }}>
                                 {/* First column */}
                                 <div style={{ padding: '7%' }}>
-                                    <p className='bottomHeading'>On the Look Out
-                                        to Lease? Take a Look!</p>
+                                    <p className='bottomHeading'>{food_data.bottom_text1}</p>
                                 </div>
 
                                 {/* Second column */}
                                 <div style={{ padding: '7%' }}>
-                                    <p className='bottomText2'>
-                                        Curious about our new look and the opportunities that are here?
-                                        Food Court locations to retail shops.</p>
+                                    <p className='bottomText2'>{food_data.bottom_text2}</p>
 
                                     <div style={{ position: 'relative' }}>
                                         <a href='https://brochure.thenewwep.com/' target='_blank'
                                             style={{ zIndex: '1', pointerEvents: 'auto' }}>
-                                            <p className='cursor-pointer hyperLinkText'>View leasing opportunities here <EastIcon
+                                            <p className='cursor-pointer hyperLinkText'>{food_data.bottom_btn_text} <EastIcon
                                                 style={{ color: 'rgb(143,143,143)' }} /></p>
                                             <span className="line"></span>
                                         </a>
