@@ -54,7 +54,8 @@ const PlazaGif = () => {
                             }}
                             viewport={{ once: true }}
                         >
-                            <img src={image} style={{ padding: '1rem', margin: '0 auto' }} alt="Your Image" />
+                            <img src={image} style={{ padding: '1rem', margin: '0 auto',width:'80%' }} alt="Your Image" />
+                            <p className='plaza' style={{marginLeft:'12%'}}>PLAZA. BIRDSEYE VIEW</p>
                         </motion.div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -80,7 +81,8 @@ const PlazaGif = () => {
                                 <p className='plazaheading'>
                                     Head outside and you’ll experience The Plaza:
                                     a transformed landscaped outdoor environment
-                                    where cultural events, concerts, group fitness, and connection to fresh air and nature can all take place.
+                                    where cultural events, concerts, group fitness, and connection to fresh 
+                                    air and nature can all take place.
                                 </p>
                             </motion.div>
 

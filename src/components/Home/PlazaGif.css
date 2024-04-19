@@ -45,6 +45,8 @@
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 22px;
+    text-align: justify;
+    word-break: break-all;
   }
 
 @media (max-width:690px){
