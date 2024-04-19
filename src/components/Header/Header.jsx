@@ -38,7 +38,7 @@ const Header = () => {
       };
 
   return (
-    <AppBar position="sticky" style={{ backgroundColor: 'rgb(255, 255, 255)'}}>
+    <AppBar position="sticky" style={{ backgroundColor: 'rgb(255, 255, 255)',zIndex:3000}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <Link to="/" style={{ flexGrow: 1 }}>
@@ -73,7 +73,7 @@ const Header = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              style={{ display: { xs: 'block', md: 'none' } }}
+              style={{ display: { xs: 'block', md: 'none' },zIndex:3000 }}
             >
               <MenuItem onClick={handleCloseNavMenu} component={Link} to="/p/1">
                 The History

@@ -45,7 +45,8 @@
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 26px;
-    word-break: break-all;
+    /* word-break: break-all; */
+    text-align: justify;
 }
 
 @font-face {
@@ -73,6 +74,7 @@
     .Quadtext{
         font-size: 15px;
         line-height: normal;
+        text-align: justify;
     }
     .QuadBottomText{
         font-size: 15px;

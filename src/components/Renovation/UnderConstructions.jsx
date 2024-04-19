@@ -46,6 +46,7 @@ import comm2 from "../../assets/comm2.jpg";
 import comm3 from "../../assets/comm3.jpg";
 import comm4 from "../../assets/comm4.jpg";
 import { motion } from 'framer-motion'
+import SouthIcon from '@mui/icons-material/South';
 
 const videos = [
     {
@@ -283,7 +284,7 @@ const UnderConstructions = () => {
                 // style={{ padding: '3rem 0' }}
 
                 >
-                    <p className='contructionHeading'>Watch Construction Updates Here</p>
+                    <p className='contructionHeading'>Watch Construction Updates Here<SouthIcon className='AnimateSouthIcon' /></p>
                 </motion.div>
                 {selectedVideo && (
                     <div>
@@ -310,6 +311,7 @@ const UnderConstructions = () => {
             </Grid>
 
             {/* vertical Line */}
+            
 
             <Grid item xs={12} md={6} padding={2} >
                 <motion.div

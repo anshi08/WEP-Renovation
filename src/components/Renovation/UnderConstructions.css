@@ -247,6 +247,26 @@
     line-height: 24px;
 }
 
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px); /* Adjust the distance as needed */
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0; /* Hide the arrow completely */
+    }
+  }
+  
+  .AnimateSouthIcon {
+    animation: moveUpDown 2s infinite; /* Adjust the duration as needed */
+    color: rgb(114, 207, 244) ;
+  }
+  
+  
+
 @media (max-width:600px){
     .contructionHeading{
         font-size: 20px;

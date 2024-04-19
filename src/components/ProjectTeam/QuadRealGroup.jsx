@@ -70,13 +70,17 @@ const QuadRealGroup = () => {
                     >
 
                         <div className='BlueLineQRG'></div>
-                        <p className='Quadtext mt-3'>
-                            From its foundation in Canada as a full-service real estate operating company, QuadReal has evolved its capabilities to invest in public and private debt and equity markets.
+                        <p className='Quadtext mt-4'>
+                            From its foundation in Canada as a full-service real estate operating company, 
+                            QuadReal has evolved its capabilities to invest in public and private debt and 
+                            equity markets.</p>
 
-                            QuadReal invests directly via programmatic partnerships and through operating companies in which it holds an ownership interest.
+                        <p className='Quadtext mt-4'>QuadReal invests directly via programmatic partnerships 
+                        and through operating companies in which it holds an ownership interest.</p>
 
-                            QuadReal seeks to deliver strong investment returns while creating sustainable environments that bring value to the people and communities it serves. Now and for generations to come.
-
+                        <p className='Quadtext mt-4'>QuadReal seeks to deliver strong investment returns while creating sustainable 
+                            environments that bring value to the people and communities it serves. Now and 
+                            for generations to come.
                         </p>
 
                         <p className='QuadBottomText mt-3'>QuadReal: Excellence lives here.</p>

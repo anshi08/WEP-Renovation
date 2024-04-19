@@ -37,7 +37,7 @@ const LeasingInquires = () => {
                     <Grid container spacing={2}>
 
                         {/* 1st Grid */}
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} >
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -69,14 +69,14 @@ const LeasingInquires = () => {
                                     <a href='tel:613-364-2303' className='a'
                                         style={{ color: 'black', display: 'inline-block', marginRight: '1em' }}>
                                         <strong className='T'>T.</strong>613-364-2303</a>
-                                    <a href="mailto:Fraser.Paddison@MarcusMillichap.com" className='a'>
+                                    <a href="mailto:Fraser.Paddison@MarcusMillichap.com" className='a break-words'>
                                         <strong className='T'>E.</strong>Fraser.Paddison@MarcusMillichap.com</a>
                                 </div>
                             </motion.div>
                         </Grid>
 
                         {/* 2nd Grid */}
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} >
                             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
                                 <motion.div
                                     initial={{
@@ -131,7 +131,7 @@ const LeasingInquires = () => {
 
 
                         {/* 3rd Grid */}
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={4} >
                             <div style={{
                                 display: 'flex', flexDirection: 'column',
                                 justifyContent: 'space-between', height: '100%'

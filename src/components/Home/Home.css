@@ -84,14 +84,14 @@
 }
 
 
-:root {
+/* :root {
     --img-width: 100%;
     --img-height: 100%;
 }
 
 .sofaImg {
     object-fit: cover;
-    object-position: 0 0; /* Start the image from the left */
+    object-position: 0 0; 
     width: 0;
     height: var(--img-height);
     animation: revealFromLeft 2s forwards;
@@ -99,9 +99,31 @@
 
 @keyframes revealFromLeft {
     0% {
-        width: 0; /* Start with no width */
+        width: 0; 
     }
     100% {
-        width: var(--img-width); /* Gradually increase width to fully reveal the image */
+        width: var(--img-width); 
+    }
+} */
+
+.verticalSliderContainer {
+    position: fixed;
+    top: 35%;
+    left: 1%;
+    transform: translateY(-50%);
+    z-index: 1000; 
+}
+
+.verticalSliderContainer a {
+    display: block;
+    margin-bottom: 20px; 
+}
+
+
+
+@media (max-width:767px){
+    .verticalSliderContainer{
+        top: 24%;
     }
 }
+
