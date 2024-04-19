@@ -12,52 +12,39 @@ import image10 from "../../assets/FoodCourt10.png"
 import image11 from "../../assets/FoodCourt11.png"
 import image12 from "../../assets/FoodCourt12.png"
 import CloseIcon from '@mui/icons-material/Close';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import EastIcon from '@mui/icons-material/East';
+import WestIcon from '@mui/icons-material/West';
 import './GalleryModal.css'
 
 const Images = [
     {
-        "id": 1,
-        "images": [image1, image2, image3],
-        "titles": ['FOOD COURT', 'FOOD COURT', 'FOOD COURT']
-    },
-    {
-        "id": 2,
-        "images": [image4, image5, image6],
-        "titles": ['PLAZA', 'PLAZA: BIRDSEYE VIEW', 'QUEEN ST ENTRANCE']
-    },
-    {
-        "id": 3,
-        "images": [image7, image8, image9],
-        "titles": ['QUEEN ST ENTRANCE INTERIOR', 'PLAZA RESTAURANT OPPORTUNITY', 'PLAZA RESTAURANT OPPORTUNITY']
-        
-    },
-    {
-        "id": 4,
-        "images": [image10, image11, image12],
-        "titles": ['GROUND FLOOR RETAIL', 'GROUND FLOOR RETAIL', 'GROUND FLOOR RETAIL']
+        "images": [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12],
+        "titles": ['FOOD COURT', 'FOOD COURT', 'FOOD COURT', 'PLAZA', 'PLAZA: BIRDSEYE VIEW',
+            'QUEEN ST ENTRANCE', 'QUEEN ST ENTRANCE INTERIOR', 'PLAZA RESTAURANT OPPORTUNITY',
+            'PLAZA RESTAURANT OPPORTUNITY', 'GROUND FLOOR RETAIL', 'GROUND FLOOR RETAIL', 'GROUND FLOOR RETAIL']
     }
 ]
 
+
 const GalleryModal = ({ ImageId, setShowComponent, showComponent }) => {
-   
-    const selectedImage = Images.find(image => image.id === ImageId);
+
+    const selectedImage = Images[0]; // Assuming there's only one item in the Images array
     const [currentIndex, setCurrentIndex] = useState(selectedImage.images.findIndex(img => img === ImageId));
 
-   
-
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % Images.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % selectedImage.images.length);
     };
 
     const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + Images.length) % Images.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + selectedImage.images.length) % selectedImage.images.length);
     };
 
     const handleClose = () => {
         setShowComponent(false)
     };
+
+    const image = selectedImage.images[currentIndex];
+    const title = selectedImage.titles[currentIndex];
 
     return (
         <>
@@ -66,19 +53,27 @@ const GalleryModal = ({ ImageId, setShowComponent, showComponent }) => {
                     <CloseIcon onClick={handleClose} className='ArrowStyle2' />
                 </div>
                 <div className='flex justify-center'>
-                    {/* {Images.find(image => image.id == ImageId && */}
-                    <img src={selectedImage.images[currentIndex]} alt={`Image ${currentIndex + 1}`}
-                        style={{ maxWidth: '70%', marginBottom: '10px' }} />
-                    {/* )} */}
+                    <img
+                        src={image}
+                        alt={title}
+                        style={{
+                            maxWidth: '100%',
+                            maxHeight: '70%', // Adjust as needed
+                            marginBottom: '10px',
+                            width: '70%', // Adjust as needed
+                            height: '70%', // Adjust as needed
+                        }}
+                    />
                 </div>
+                    <div className="titleTextImage">{title}</div>
                 <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', left: '10px' }}>
-                    <ArrowBackIosIcon onClick={handlePrev} style={{
+                    <WestIcon onClick={handlePrev} style={{
                         cursor: 'pointer', color: 'rgb(128,128,128)',
                         fontSize: '40px'
                     }} />
                 </div>
                 <div style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', right: '10px' }}>
-                    <ArrowForwardIosIcon onClick={handleNext} style={{
+                    <EastIcon onClick={handleNext} style={{
                         cursor: 'pointer', color: 'rgb(128,128,128)',
                         fontSize: '40px'
                     }} />
@@ -89,5 +84,6 @@ const GalleryModal = ({ ImageId, setShowComponent, showComponent }) => {
 }
 
 export default GalleryModal
+
 
 

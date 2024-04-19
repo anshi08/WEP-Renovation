@@ -15,3 +15,17 @@
         font-size: 20px !important;
     }
 }
+
+@font-face {
+    font-family:"Futura PT Book-Normal-PEtZdOHA" ;
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.titleTextImage{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    line-height: 40px;
+    margin-left: 15%;
+}

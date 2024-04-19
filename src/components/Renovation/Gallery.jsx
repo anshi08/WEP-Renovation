@@ -75,6 +75,7 @@ const Gallery = () => {
     };
 
     const OpenModal = (Imgid) => {
+        console.log(Imgid);
         setImageId(Imgid)
         setShowComponent(true)
     }
@@ -129,21 +130,21 @@ const Gallery = () => {
                                 <div class="column">
                                     <img src={selectedGalleryImage.image1} alt="" 
                                     style={{ width: "100%",cursor:'pointer' }} 
-                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    onClick={() => OpenModal(selectedGalleryImage.image1)}
                                     />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title1}</p>
                                 </div>
                                 <div class="column">
                                     <img src={selectedGalleryImage.image2} alt="" 
                                     style={{ width: "100%",cursor:'pointer' }} 
-                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    onClick={() => OpenModal(selectedGalleryImage.image2)}
                                     />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title2}</p>
                                 </div>
                                 <div class="column">
                                     <img src={selectedGalleryImage.image3} alt="" 
                                     style={{ width: "100%",cursor:'pointer' }} 
-                                    onClick={() => OpenModal(selectedGalleryImage.id)}
+                                    onClick={() => OpenModal(selectedGalleryImage.image3)}
                                     />
                                     <p className='GalleryTitle'>{selectedGalleryImage.title3}</p>
                                 </div>
