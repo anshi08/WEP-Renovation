@@ -6,8 +6,11 @@ import LeasingInquires from './LeasingInquires'
 import OfficeInquires from './OfficeInquires'
 import GeneralInquires from './GeneralInquires'
 import Bgimage from "../../assets/TeamsBgImage.png"
+import LeasingData from './Leasing.json'
 
 const Leasing = () => {
+
+  const data = LeasingData.response.data.data
   return (
     <>
       <div>
@@ -42,7 +45,7 @@ const Leasing = () => {
           }}
         >
           <p className='contactUs'>
-            Contact Us
+            {data.main_text.text_first}
           </p>
         </motion.div>
       </div>
@@ -51,7 +54,7 @@ const Leasing = () => {
         <div style={{ position: 'absolute', right: 0, zIndex: -1, height: '100%' }}>
           <img src={Bgimage} className="bg-image" alt="Background" />
         </div>
-        <LeasingInquires />
+        <LeasingInquires LeasingInqData={data.retail_inquiries_text}/>
 
         <motion.hr
           initial={{ scaleX: 0 }}
@@ -66,7 +69,7 @@ const Leasing = () => {
           }}
           className='my-8'
         />
-        <OfficeInquires />
+        <OfficeInquires OfficeInquiresData={data.office_inquires}/>
 
         <motion.hr
           initial={{ scaleX: 0 }}
@@ -81,7 +84,7 @@ const Leasing = () => {
           }}
           className='my-8'
         />
-        <GeneralInquires />
+        <GeneralInquires GeneralInquiresData={data.general_inquires}/>
       </div>
 
     </>

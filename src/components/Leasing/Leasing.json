@@ -1,0 +1,56 @@
+{
+    "response": {
+        "data": {
+            "data": {
+                "main_text": {
+                    "text_first": "Contact Us"
+                },
+                "retail_inquiries_text": {
+                    "main_heading": "Retail Leasing Inquiries:",
+                    "T":"T.",
+                    "E":"E.",
+                    "btn_text_avail":"Availabilities",
+                    "btn_text_brochure":"View Brochure",
+                    "part_one_info": {
+                        "name": "Candice Lerner-Fry",
+                        "title": "First Vice President, Sales Representative",
+                        "number": "613-364-2323",
+                        "email": "Candice.LF@MarcusMillichap.com"
+                    },
+                    "part_two_info": {
+                        "name": "Fraser Paddison",
+                        "title": "Vice President, Broker",
+                        "number": "613-364-2303",
+                        "email": "Fraser.Paddison@MarcusMillichap.com"
+                    },
+                    "part_three_info":{
+                        "text1":"To Review Leasing Opportunities:",
+                        "text2":"Download Ground Floor Availabilities:"
+                    },
+                    "part_four_info":{
+                        "text1":"Download Food Court Availabilities:"
+                    }
+                },
+                "office_inquires": {
+                    "main_heading":"Office Leasing Inquiries:",
+                    "T":"T.",
+                    "E":"E.",
+                    "btn_text_avail":"Availability",
+                    "btn_text_brochure":"View Brochure",
+                    "information": {
+                        "name": "Stephanie Thompson",
+                        "title": "Leasing Manager, Sales Representative QuadReal Property Group, Brokerage",
+                        "number": "613-690-7394",
+                        "email": "stephanie.thompson@quadreal.com"
+                    }
+                },
+                "general_inquires":{
+                    "main_heading":"General Inquiries:",
+                    "T":"T.",
+                    "number":"613-690-7400",
+                    "email":"WorldExchangePlaza.com"
+                }
+            }
+        }
+    }
+}

@@ -6,7 +6,9 @@ import bookImg from "../../assets/bookImg.png"
 import clipBoard from "../../assets/clipBoard.png"
 import { motion } from 'framer-motion'
 
-const OfficeInquires = () => {
+const OfficeInquires = ({ OfficeInquiresData }) => {
+
+    const data = OfficeInquiresData
     return (
         <>
             <Grid container >
@@ -27,8 +29,7 @@ const OfficeInquires = () => {
                         className='styleDiv2'
 
                     >
-                        <p className='retailInq'>Office Leasing
-                            Inquiries:</p>
+                        <p className='retailInq'>{data.main_heading}</p>
                     </motion.div>
                 </Grid>
                 <Grid item xs={12} md={7} padding={3}>
@@ -54,14 +55,13 @@ const OfficeInquires = () => {
                                 style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}
                             >
                                 <div>
-                                    <p className='Stephanie'>Stephanie Thompson</p>
-                                    <p className='salesRepresent'>Leasing Manager, Sales Representative
-                                        QuadReal Property Group, Brokerage</p>
+                                    <p className='Stephanie'>{data.information.name}</p>
+                                    <p className='salesRepresent'>{data.information.title}</p>
                                     <a href='tel: 613-690-7394' className='a'
                                         style={{ color: 'black', display: 'inline-block', marginRight: '1em' }}>
-                                        <strong className='T'>T.</strong>613-690-7394</a>
+                                        <strong className='T'>{data.T}</strong>{data.information.number}</a>
                                     <a href="mailto: stephanie.thompson@quadreal.com" className='a'>
-                                        <strong className='T'>E.</strong>stephanie.thompson@quadreal.com</a>
+                                        <strong className='T'>{data.E}</strong>{data.information.email}</a>
                                 </div>
                                 <div className='styleBtn'>
                                     <Link to="https://office.thenewwep.com/" className="button-link button-container">
@@ -70,7 +70,7 @@ const OfficeInquires = () => {
                                             marginRight: '5px', backgroundColor: 'white',
                                             transition: 'background-color 0.3s ease'
                                         }} />
-                                        <p className='btnText'> View Brochure </p>
+                                        <p className='btnText'> {data.btn_text_brochure} </p>
                                     </Link>
                                 </div>
 
@@ -104,7 +104,7 @@ const OfficeInquires = () => {
                                         backgroundColor: 'white',
                                         transition: 'background-color 0.3s ease'
                                     }} />
-                                    <span className='btnText'> Availability </span>
+                                    <span className='btnText'> {data.btn_text_avail} </span>
                                 </Link>
                             </motion.div>
 

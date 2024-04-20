@@ -5,7 +5,10 @@ import EastIcon from '@mui/icons-material/East';
 import './GeneralInquires.css'
 import { motion } from 'framer-motion';
 
-const GeneralInquires = () => {
+const GeneralInquires = ({ GeneralInquiresData }) => {
+
+    const data = GeneralInquiresData
+
     return (
         <>
             <Grid container >
@@ -26,8 +29,7 @@ const GeneralInquires = () => {
                         viewport={{ once: true }}
                         className='styleDiv5'
                     >
-                        <p className='retailInq'>General
-                            Inquiries:</p>
+                        <p className='retailInq'>{data.main_heading}</p>
                     </motion.div>
                 </Grid>
                 <Grid item xs={12} md={7} padding={3}>
@@ -53,13 +55,13 @@ const GeneralInquires = () => {
                                 className=' stylingWEP'
                                 >
                                 <div className="flex flex-col">
-                                    <Link to="tel:613-690-7400" className='a'><strong>T.</strong>
-                                        613-690-7400</Link>
+                                    <Link to="tel:613-690-7400" className='a'><strong>{data.T}</strong>
+                                        {data.number}</Link>
 
                                     <Link to="https://worldexchangeplaza.com/" target="_blank"
                                         rel="noopener noreferrer">
                                         <button className="mt-2 inline-flex items-center btnTxt">
-                                            WorldExchangePlaza.com<EastIcon style={{ color: 'rgb(158,159,160)', fontSize: '20px', marginLeft: '5px' }} />
+                                            {data.email}<EastIcon style={{ color: 'rgb(158,159,160)', fontSize: '20px', marginLeft: '5px' }} />
                                         </button>
                                     </Link>
                                 </div>
