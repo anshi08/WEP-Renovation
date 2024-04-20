@@ -8,6 +8,7 @@ import GroundFloorRetail from './GroundFloorRetail';
 import FoodCourt from './FoodCourt';
 import { motion } from "framer-motion"
 import renovationData from './Renovation.json'
+import BottomPart from './BottomPart';
 
 const Renovation = () => {
 
@@ -69,6 +70,7 @@ const Renovation = () => {
                 <Gallery galleryData={data.Gallery_text}/>
                 <GroundFloorRetail GroundFloorRetailData={data.GroundFloorRetail_text}/>
                 <FoodCourt FoodCourtData={data.FoodCourt_text}/>
+                <BottomPart FoodCourtData={data.FoodCourt_text} />
             </div>
         </>
     )

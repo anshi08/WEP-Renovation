@@ -123,8 +123,8 @@ const FoodCourt = ({ FoodCourtData }) => {
                         </Grid>
                     </div>
 
-                    <div style={{ padding: '0 1rem 1rem' }}>
-                        {/* Semi-transparent overlay */}
+                    {/* <div style={{ padding: '0 1rem 1rem' }}>
+                        
                         <div style={{
                             position: 'relative',
                             backgroundColor: 'rgba(29, 29, 29, 0.85)', display: 'flex',
@@ -132,12 +132,12 @@ const FoodCourt = ({ FoodCourtData }) => {
                         }}>
 
                             <div className='flex justify-center items-center' style={{ margin: '0 auto' }}>
-                                {/* First column */}
+                                
                                 <div style={{ padding: '7%' }}>
                                     <p className='bottomHeading'>{food_data.bottom_text1}</p>
                                 </div>
 
-                                {/* Second column */}
+                                
                                 <div style={{ padding: '7%' }}>
                                     <p className='bottomText2'>{food_data.bottom_text2}</p>
 
@@ -152,13 +152,13 @@ const FoodCourt = ({ FoodCourtData }) => {
                                 </div>
                             </div>
 
-                            {/* Watermark image */}
+                            
                             <img src={bgWatermark} style={{
                                 position: 'absolute', top: '50%', right: 0,
                                 transform: 'translateY(-50%)', width: 'auto', height: '100%', opacity: 0.26
                             }} />
                         </div>
-                    </div>
+                    </div> */}
                 </>
             }
 
