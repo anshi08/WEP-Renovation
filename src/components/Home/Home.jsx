@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Banner from "../../assets/good-hero-banner.jpg"
+import Banner from "../../assets/gif.mp4"
 import { Typography } from '@mui/material'
 import "./Home.css"
 import SouthIcon from '@mui/icons-material/South';
@@ -33,13 +33,14 @@ import slider6 from "../../assets/image (14).svg"
 import slider7 from "../../assets/image (15).svg"
 import { motion } from 'framer-motion';
 import homeData from './Home.json'
+import ReactPlayer from 'react-player';
 
 
 const Home = () => {
     const [activeImage, setActiveImage] = useState(imageNewWep);
-    
+
     const data = homeData.response.data.data
-    console.log("dd",data)
+    console.log("dd", data)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -116,15 +117,44 @@ const Home = () => {
         setActiveImage(image);
     };
 
+    //Responsive gif
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const isMobile = windowSize.width <= 767;
+    const playerHeight = isMobile ? 'auto' : '760px';
+
     return (
         <>
-            <div style={{ width: '100%', height: '550px' }}>
+            <div style={{ width: '100%'}}>
                 <div style={{
-                    backgroundImage: `url(${Banner})`,
-                    backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', width: '100%', height: '100%',
                     position: 'relative', zIndex: 2000,
                     filter: 'brightness(90%)'
-                }}>
+                }} >
+                    <ReactPlayer 
+                    url={Banner} 
+                    width="100%" height={playerHeight}
+                        playing={true}
+                        loop={true}
+                        muted={true}
+                    />
 
                     <motion.div
                         initial={{
@@ -141,7 +171,7 @@ const Home = () => {
                         viewport={{ once: true }}
                         style={{
                             position: 'absolute', top: '25%',
-                            left: '10%'
+                            left: '10%', zIndex: 3000,
                         }}
                     >
                         <p className="TransformingText">
@@ -221,31 +251,31 @@ const Home = () => {
                 </div>
                 <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                     <Modernization modernizationData={data.modernization_text} />
-                    <GroundFloor groundFloorData={data.ground_floor_text}/>
-                    <FoodCourt foodCourtData={data.foodcourt_text}/>
+                    <GroundFloor groundFloorData={data.ground_floor_text} />
+                    <FoodCourt foodCourtData={data.foodcourt_text} />
                 </div>
                 <div id='Wellness' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <Wellness wellnessData={data.wellness_text}/>
+                    <Wellness wellnessData={data.wellness_text} />
                 </div>
                 <img src={sofaImage} className='sofaImg' />
-                <SummerComfort summerComfortData={data.summer_comfort}/>
+                <SummerComfort summerComfortData={data.summer_comfort} />
                 <div id='Amenities' style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <Amenities amenitiesData={data.amenities}/>
+                    <Amenities amenitiesData={data.amenities} />
                     <Slider />
                 </div>
                 <div id='Community'>
-                    <Community communityData={data.community}/>
+                    <Community communityData={data.community} />
                 </div>
                 <div style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
-                    <PlazaGif plaza_gif={data.plaza_gif}/>
+                    <PlazaGif plaza_gif={data.plaza_gif} />
                     <div id='Navigation'>
-                        <NavigationComponent navigationComponent={data.navigationComponent}/>
+                        <NavigationComponent navigationComponent={data.navigationComponent} />
                     </div>
                     <div id='Technology'>
-                        <Technology technologyData={data.technology}/>
+                        <Technology technologyData={data.technology} />
                     </div>
                     <div style={{ padding: '2rem' }}>
-                        <NoDropOutzone dropZoneData={data.drop_zone}/>
+                        <NoDropOutzone dropZoneData={data.drop_zone} />
                     </div>
                 </div>
             </div>

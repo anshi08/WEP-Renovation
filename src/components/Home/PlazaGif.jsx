@@ -1,5 +1,6 @@
 import React from 'react'
-import gif from "../../assets/videoframe_5458.png"
+import gif from "../../assets/gif.mp4"
+import ReactPlayer from 'react-player'
 import { Grid, Typography } from '@mui/material'
 import image from "../../assets/birdseye-view.png"
 import "./PlazaGif.css"
@@ -32,7 +33,12 @@ const PlazaGif = ({ plaza_gif }) => {
 
                         viewport={{ once: true }}
                     >
-                        <img src={gif} />
+                        <ReactPlayer
+                            url={gif}
+                            playing={true}
+                            loop={true}
+                            muted={true}
+                        />
                         <p className='plaza'>{data.gif_first_text}</p>
                     </motion.div>
                 </Grid>
@@ -56,8 +62,9 @@ const PlazaGif = ({ plaza_gif }) => {
                             }}
                             viewport={{ once: true }}
                         >
-                            <img src={image} style={{ padding: '1rem', margin: '0 auto',width:'80%' }} alt="Your Image" />
-                            <p className='plaza' style={{marginLeft:'12%'}}>{data.gif_second_text}</p>
+                            <img src={image} style={{ padding: '1rem', margin: '0 auto', width: '80%' }}
+                                alt="Your Image" />
+                            <p className='plaza' style={{ marginLeft: '12%' }}>{data.gif_second_text}</p>
                         </motion.div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -81,7 +88,7 @@ const PlazaGif = ({ plaza_gif }) => {
                                 viewport={{ once: true }}
                             >
                                 <p className='plazaheading'>
-                                   {data.gif_second_para}
+                                    {data.gif_second_para}
                                 </p>
                             </motion.div>
 
@@ -102,7 +109,7 @@ const PlazaGif = ({ plaza_gif }) => {
                                 viewport={{ once: true }}
                             >
                                 <p className='my-3 plazaBoldHeading'>
-                                   {data.gif_second_sub_para}
+                                    {data.gif_second_sub_para}
                                 </p>
                             </motion.div>
                         </div>

@@ -27,7 +27,7 @@ const BottomPart = ({ FoodCourtData }) => {
                                 <div style={{ padding: '7%' }}>
                                     <p className='bottomText2'>{food_data.bottom_text2}</p>
 
-                                    <div style={{ position: 'relative' }}>
+                                    <div style={{ position: 'relative', zIndex: 2000 }}>
                                         <a href='https://brochure.thenewwep.com/' target='_blank'
                                             style={{ zIndex: '1', pointerEvents: 'auto' }}>
                                             <p className='cursor-pointer hyperLinkText'>{food_data.bottom_btn_text} <EastIcon

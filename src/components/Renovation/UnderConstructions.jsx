@@ -51,35 +51,35 @@ import SouthIcon from '@mui/icons-material/South';
 const videos = [
     {
         "id": 1,
-        "url": 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        "url": 'https://the-renovation.azurewebsites.net/media/2023-08-15-UpdateVideo5.mp4',
         "thumb": image1,
         "date": '2023-08-23',
         "title": 'Ground floor retail construction is nearing completion. The Food Court is 99% complete and ready for tenant build-out. Take a look inside!'
     },
     {
         "id": 2,
-        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "url": "https://the-renovation.azurewebsites.net/media/a62e27c6e85020a1f4a6cae9e5c6f084/2023-05-29-quadreal-worldexchange-day-17-v03-1080p-h264-2040.mp4",
         "thumb": image2,
         "date": '2023-05-29',
         "title": 'Construction Update Video 4. Feature columns complete throughout; lighting and electrical complete throughout Food Court; and so much more!'
     },
     {
         "id": 3,
-        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "url": "https://the-renovation.azurewebsites.net/media/e408b1644e63bd097e54ffb074bcad48/2022-12-09-construction-update-video-3-h264-2040.mp4",
         "thumb": image3,
         "date": '2022-12-14',
         "title": 'Construction Update Video 3 - Infill of rotunda complete, food court ceiling installation underway.'
     },
     {
         "id": 4,
-        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "url": "https://the-renovation.azurewebsites.net/media/5a9631ee9a03559465567766c790a257/2022-07-19-construction-update-video-2-h264-2040.mp4",
         "thumb": image4,
         "date": '2022-09-8',
         "title": 'Construction Update Video 2 - more demolition, and rotunda stairs begin to transform!'
     },
     {
         "id": 5,
-        "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+        "url": "https://the-renovation.azurewebsites.net/media/7db12423f2a0b583d4ecc7bb7f29fa82/2021-09-17-construction-update-video-1-h264-2040.mp4",
         "thumb": image5,
         "date": '2021-09-17',
         "title": 'Construction Update Video 1 - Demolition is underway! Take a look inside.'
@@ -224,9 +224,11 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
 
     //For Selecting videos
     const [selectedVideo, setSelectedVideo] = useState(videos[0].url);
+    const [selectedThumbnailId, setSelectedThumbnailId] = useState(videos[0].id);
 
-    const handleThumbnailClick = (videoUrl) => {
+    const handleThumbnailClick = (videoUrl,thumbnailId) => {
         setSelectedVideo(videoUrl);
+        setSelectedThumbnailId(thumbnailId);
     };
 
     const [selectedCarousal, setSelectedCarousal] = useState(carousalImages[0])
@@ -291,7 +293,8 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                 {selectedVideo && (
                     <div>
                         <ReactPlayer url={selectedVideo} controls width="100%" height="auto"
-                            light={<img src={videos.find(video => video.url === selectedVideo)?.thumb} width="100%" height="auto" />} />
+                            light={<img src={videos.find(video => video.url === selectedVideo)?.thumb} 
+                            width="100%" height="auto" />} />
                         <div>
                             <p className='date'>{videos.find(video => video.url === selectedVideo)?.date}</p>
                             <p className='vedioTitle'>{videos.find(video => video.url === selectedVideo)?.title}</p>
@@ -305,8 +308,11 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                             key={video.id}
                             src={video.thumb}
                             // alt={video.title}
-                            onClick={() => handleThumbnailClick(video.url)}
-                            style={{ cursor: 'pointer', marginRight: 10, marginBottom: 10, width: 100, height: 'auto' }}
+                            onClick={() => handleThumbnailClick(video.url , video.id)}
+                            style={{ cursor: 'pointer', marginRight: 10, marginBottom: 10, width: 100, 
+                            height: 'auto' ,
+                            border: selectedThumbnailId === video.id ? '5px solid rgb(93,199,209)' : 'none'
+                        }}
                         />
                     ))}
                 </div>
