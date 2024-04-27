@@ -74,9 +74,9 @@ const GroundFloorRetail = ({ GroundFloorRetailData }) => {
 
                     >
                         <img src={Map1} style={{ height: 'auto' }} />
-                        {eyePositions.map((position, index) => (
+                        {eyePositions.map((position) => (
                             <img
-                                key={index}
+                                
                                 src={EyeSvg}
                                 alt={`Eye Icon`}
                                 style={{

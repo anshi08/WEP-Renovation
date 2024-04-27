@@ -3,7 +3,8 @@
         "data": {
             "data": {
                 "main_text": {
-                    "text_first": "Follow the build.",
+                    "text_first": "Follow",
+                    "text_first1": "the build.",
                     "text_second": "THE NEW WORLD EXCHANGE PLAZA",
                     "text_third": "Learn More"
                 },

@@ -50,8 +50,11 @@ const Renovation = () => {
                     <p className='FollowTheText'>
                        {data.main_text.text_first}
                     </p>
+                    <p className='FollowTheText'>
+                       {data.main_text.text_first1}
+                    </p>
 
-                    <p className='paragraph'>
+                    <p className='paragraph1'>
                         {data.main_text.text_second}
                     </p>
 

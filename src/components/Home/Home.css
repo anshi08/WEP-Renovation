@@ -30,7 +30,7 @@
         line-height: normal !important;
     }
     .paragraph{
-        font-size: 20px !important;
+        font-size: 20px ;
         line-height: normal !important;
     }
 }
@@ -41,7 +41,7 @@
         line-height: normal ;
     }
     .paragraph{
-        font-size: 17px !important;
+        font-size: 17px;
         line-height: normal !important;
     }
 }
@@ -135,5 +135,8 @@
     }
 }
 
+.newWepPadding{
+    padding: 4rem;
+}
 
 

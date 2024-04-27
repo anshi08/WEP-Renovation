@@ -59,7 +59,7 @@ export default function Footer() {
                         <div className="flex flex-col">
                             <p className="NumText">45 O'Connor Street, Suite 730<br />Ottawa, ON K1P 1A4</p>
                             <a href="https://goo.gl/maps/tGCSe7UbZxPvE2JU8" target="_blank" rel="noopener noreferrer">
-                                <button className="mt-2 inline-flex items-center hover:underline">
+                                <button className="mt-2 inline-flex items-center">
                                     <p className="gettingHere">Getting here <EastIcon style={{ color: 'rgb(171,171,171)' }} /></p>
                                 </button>
                             </a>
@@ -91,7 +91,8 @@ export default function Footer() {
                                     <p className="Number ml-1">613-690-7400</p>
                                 </Link>
                             </div>
-                            <Link to="https://goo.gl/maps/tGCSe7UbZxPvE2JU8" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center hover:underline">
+                            <Link to="https://goo.gl/maps/tGCSe7UbZxPvE2JU8" target="_blank" 
+                            rel="noopener noreferrer" className="mt-2 inline-flex items-center">
                                 <p className="WepCom">WorldExchangePlaza.com <EastIcon style={{ color: 'rgb(171,171,171)' }} /></p>
                             </Link>
                         </div>

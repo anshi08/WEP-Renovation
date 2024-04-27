@@ -12,13 +12,26 @@
     text-align: center;
     margin: 3rem;
     border: 2px solid gray;
-    /* width: 25%; */
+    position: relative;
     padding: 1rem;
 }
 
-.RenovationBtn:hover {
-    background-color: black; /* Background color on hover */
-  }
+.RenovationBtn::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%; /* Set the width */
+    height: 100%; /* Set the height */
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s; /* Apply transition only to the transform property */
+}
+
+.RenovationBtn:hover::after {
+    transform: scaleX(1);
+}
+
 
 @font-face {
     font-family:"Futura PT Book-Normal-PEtZdOHA" ;
@@ -31,14 +44,21 @@
     color: black;
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 26px;
+    z-index: 20000;
+}
+
+.svg{
+    color: rgb(87,87,87);
 }
 
 .RenovationBtn:hover .btnTextLearnMore {
-    color: white; /* Text color on hover */
-  }
+    color: white;
+    transition: color 0.3s; /* Smoothly transition text color on hover */
+}
   
   .RenovationBtn:hover svg {
-    color: white; /* Arrow color on hover */
+    color: white !important; /* Arrow color on hover */
+    transition: color 0.3s; /* Smoothly transition text color on hover */
   }
 
 @media (max-width:650px) {
@@ -55,6 +75,18 @@
     }
     .btnTextLearnMore{
         font-size: 10px;
+        line-height: normal;
+    }
+}
+
+.fcStyle{
+    right: -4rem;
+}
+
+/* groundFloor.css */
+@media(min-width:767px) and (max-width:1120px){
+    .spanTitle1{
+        font-size: 14px;
         line-height: normal;
     }
 }

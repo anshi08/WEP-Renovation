@@ -10,11 +10,12 @@ const Wellness = ({ wellnessData }) => {
     const data = wellnessData
 
     return (
-        <Grid container padding={6} style={{ backgroundImage: `url(${wellnessWaterMark})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <Grid container style={{ backgroundImage: `url(${wellnessWaterMark})`, 
+        backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
             {/* Left Side */}
             <Grid item xs={12} md={8} >
-                <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
 
 
                     <motion.div
@@ -29,7 +30,7 @@ const Wellness = ({ wellnessData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                    style={{ padding: '3rem 10% 0 10%' }}
 
                     >
                         <p className='mainheading'>
@@ -49,11 +50,14 @@ const Wellness = ({ wellnessData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 0 10%' }}
 
                     >
                         <p className='boldtextWell'>
                             {data.wellness_text}
+                        </p>
+                        <p className='boldtextWell'>
+                            {data.wellness_text1}
                         </p>
                     </motion.div>
 
@@ -70,7 +74,7 @@ const Wellness = ({ wellnessData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 8% 10%' }}
 
                     >
                         <p className='body'>{data.wellness_para}</p>
@@ -93,10 +97,10 @@ const Wellness = ({ wellnessData }) => {
                         },
                     }}
                     viewport={{ once: true }}
-                // style={{ padding: '3rem 0' }}
+                    style={{height:'100%',position:'relative'}}
 
                 >
-                    <img src={girlimage} />
+                    <img src={girlimage} style={{position:"absolute" , bottom:0 , height:'90%'}} />
                 </motion.div>
             </Grid>
         </Grid>

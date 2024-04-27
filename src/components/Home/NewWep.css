@@ -9,7 +9,7 @@
     white-space: pre-wrap;
     text-align: left ;
     line-height: 64px ;
-    padding: 2%;
+    /* padding: 2%; */
     /* word-break: break-all; */
 }
 
@@ -24,8 +24,8 @@
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     text-align: left ;
     line-height: 40px ;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 15%;
+    /* padding-left: 2%; */
 }
 
 @font-face {
@@ -56,6 +56,21 @@
 
 }
 
+@media (min-width: 767px) and (max-width: 1085px) {
+    .heading{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .title{
+        font-size: 16px;
+        line-height: normal;
+    }
+    /* .css-1tvu61-MuiPaper-root-MuiCard-root{
+        height: auto !important;
+    } */
+  }
+  
+
 @font-face {
     font-family:"Futura PT Book-Normal-PEtZdOHA" ;
     src: url('../../fonts/futurapt-book.woff') format('woff');
@@ -67,6 +82,23 @@
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 26px;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.link:hover::after{
+    transform: scaleX(1);
 }
 
 .clearfix::after {

@@ -52,6 +52,9 @@ const Modernization = ({ modernizationData }) => {
             <p className='BoldText'>
               {data.sub_heading}
             </p>
+            <p className='BoldText'>
+              {data.sub_heading1}
+            </p>
           </motion.div>
 
           <motion.div

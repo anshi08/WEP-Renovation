@@ -3,14 +3,17 @@
         "data": {
             "data": {
                 "gif_main_text": {
-                    "text_first": "Transforming Place",
+                    "text_first": "Transforming",
+                    "text":"Place",
                     "text_second": "THE NEW WORLD EXCHANGE PLAZA",
                     "text_third": "Learn More"
                 },
                 "new_wep_text": {
                     "btn_text":"Learn More",
                     "btn_text2":"Contact Us Now",
-                    "wep_Heading": "Get Ready. Get Excited for the New WEP!",
+                    "wep_Heading": "Get Ready.",
+                    "wep_text1":"Get Excited for",
+                    "wep_text2":"the New WEP!",
                     "wep_paragraph": "Watch as our dynamic revitalization transforms this legendary downtown destination into a mindfully modernized, all-day people place. Work, meet, dine, gather, connect and engage with others in an environment that inspires the countless possibilities, opportunities, and unexpected delights of every day.",
                     "cards": {
                         "first_card_heading": "THE RENOVATION",
@@ -25,7 +28,8 @@
                 },
                 "modernization_text":{
                     "heading":"MODERNIZATION",
-                    "sub_heading":"Re-imagined. Re-energized.",
+                    "sub_heading":"Re-imagined.",
+                    "sub_heading1":"Re-energized.",
                     "paragraph":"The new World Exchange Plaza’s modernization is nothing short of transformative. It ushers in a new spirit destined to resonate with all who gather, work, and visit. Where common and public realm areas have been designed to be places to meet, gather, collaborate or spend a solo moment, peacefully. Where every common area and amenity has been thoughtfully reconsidered and renovated to reflect modern sensibilities. A place that beckons, inspires, and brings a new appreciation for this legendary destination."
                 },
                 "ground_floor_text":{
@@ -39,7 +43,8 @@
                 },
                 "wellness_text":{
                     "wellness_heading":"WELLNESS",
-                    "wellness_text":"Well-Being.Well Done.",
+                    "wellness_text":"Well-Being.",
+                    "wellness_text1":"Well Done.",
                     "wellness_para": "Throughout our transformation the intent has been to make WEP a place conducive to well-being. Our architectural design too aims at opening up our various spaces to create a sense of airy, light-infused, spaciousness. Whether sitting in natural light in one of our communal spaces, appreciating the cleaner air quality we’ve brought to all interior areas, or basking in the relaxed atmosphere of our landscaped outdoor Plaza where sun and blue skies, events and outdoor amenities greet you, WEP creates an atmosphere where well-being thrives."
                 },
                 "summer_comfort":{
@@ -53,23 +58,29 @@
                 },
                 "community":{
                     "com_heading":"COMMUNITY",
-                    "com_subHeading":"Designed for People.",
+                    "com_subHeading":"Designed",
+                    "com_subHeading1":"for People.",
                     "com_para": "Community is where and how we interact, network, and build a better place and city. With this in mind WEP has viewed all common spaces through the lens of places where people can meet, gather, interact. Whether casually meeting for a professional chat, dining with a friend, or collaborating over coffee, WEP has all the space options you need."
                 },
                 "plaza_gif":{
                    "gif_first_text":"PLAZA",
                    "gif_second_text":"PLAZA. BIRDSEYE VIEW",
                    "gif_second_para":"Head outside and you’ll experience The Plaza: a transformed landscaped outdoor environment where cultural events, concerts, group fitness, and connection to fresh air and nature can all take place.",
-                   "gif_second_sub_para":"Culture. Community. Collaboration. That’s our future. Welcome to the WEP Community"
+                   "gif_second_sub_para":"Culture. Community. Collaboration.",
+                   "gif_second_sub_para1":"That’s our future.",
+                   "gif_second_sub_para2":"Welcome to the WEP Community"
+                
                 },
                 "navigationComponent":{
                     "nav_heading":"NAVIGATION",
-                    "nav_subHeading":"Find Your Way.",
+                    "nav_subHeading":"Find",
+                    "nav_subHeading1":"Your Way.",
                     "nav_para":"Commuters, make WEP your pedestrian gateway to the LRT Parliament station, via our new and improved Queen Street Entrance, strategically located at the pedestrian and cycle friendly intersection of Queen and O’Connor Streets.Once you’re here, there’s no guessing; with new navigation and wayfinding initiatives, and barrier free access, everyone can get to where they’re going smoothly."
                 },
                 "technology":{
                     "tech_heading":"TECHNOLOGY",
-                    "tech_subHeading":"Digitally SMART.",
+                    "tech_subHeading":"Digitally",
+                    "tech_subHeading1":"SMART.",
                     "tech_para":"WEP is going contactless, efficiently “hands-free”- it’s the smart way for today,and the way of tomorrow."
                 },
                 "drop_zone":{

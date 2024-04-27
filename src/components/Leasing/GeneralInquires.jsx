@@ -61,7 +61,8 @@ const GeneralInquires = ({ GeneralInquiresData }) => {
                                     <Link to="https://worldexchangeplaza.com/" target="_blank"
                                         rel="noopener noreferrer">
                                         <button className="mt-2 inline-flex items-center btnTxt">
-                                            {data.email}<EastIcon style={{ color: 'rgb(158,159,160)', fontSize: '20px', marginLeft: '5px' }} />
+                                            {data.email}<EastIcon style={{ color: 'rgb(158,159,160)', 
+                                            fontSize: '20px', marginLeft: '5px' }} />
                                         </button>
                                     </Link>
                                 </div>

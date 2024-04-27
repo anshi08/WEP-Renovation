@@ -60,16 +60,16 @@ const OfficeInquires = ({ OfficeInquiresData }) => {
                                     <a href='tel: 613-690-7394' className='a'
                                         style={{ color: 'black', display: 'inline-block', marginRight: '1em' }}>
                                         <strong className='T'>{data.T}</strong>{data.information.number}</a>
-                                    <a href="mailto: stephanie.thompson@quadreal.com" className='a'>
+                                    <a href="mailto: stephanie.thompson@quadreal.com" className='a1'>
                                         <strong className='T'>{data.E}</strong>{data.information.email}</a>
                                 </div>
                                 <div className='styleBtn'>
-                                    <Link to="https://office.thenewwep.com/" className="button-link button-container">
+                                    <Link to="https://office.thenewwep.com/" className="button-link">
                                         <img src={bookImg} style={{
                                             width: '20px', height: '20px',
                                             marginRight: '5px', backgroundColor: 'white',
-                                            transition: 'background-color 0.3s ease'
-                                        }} />
+
+                                        }} className='imgStylingHover' />
                                         <p className='btnText'> {data.btn_text_brochure} </p>
                                     </Link>
                                 </div>
@@ -98,12 +98,12 @@ const OfficeInquires = ({ OfficeInquiresData }) => {
                                 className='styleBtn2'
                             >
                                 <Link to="https://quadreal.findspace.com/?search=world%20exchange&amp;min=0&amp;max=474250&amp;type=O"
-                                    className="button-link button-container">
+                                    className="button-link">
                                     <img src={clipBoard} style={{
                                         width: '20px', height: '20px', marginRight: '5px',
                                         backgroundColor: 'white',
-                                        transition: 'background-color 0.3s ease'
-                                    }} />
+
+                                    }} className='imgStylingHover' />
                                     <span className='btnText'> {data.btn_text_avail} </span>
                                 </Link>
                             </motion.div>

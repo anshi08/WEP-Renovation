@@ -40,7 +40,6 @@ const Home = () => {
     const [activeImage, setActiveImage] = useState(imageNewWep);
 
     const data = homeData.response.data.data
-    console.log("dd", data)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -117,29 +116,29 @@ const Home = () => {
         setActiveImage(image);
     };
 
-    //Responsive gif
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
+    // Responsive gif
+    // const [windowSize, setWindowSize] = useState({
+    //     width: window.innerWidth,
+    //     height: window.innerHeight
+    // });
 
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight
-            });
-        };
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setWindowSize({
+    //             width: window.innerWidth,
+    //             height: window.innerHeight
+    //         });
+    //     };
 
-        window.addEventListener('resize', handleResize);
+    //     window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
 
-    const isMobile = windowSize.width <= 767;
-    const playerHeight = isMobile ? 'auto' : '760px';
+    // const isMobile = windowSize.width <= 767;
+    // const playerHeight = isMobile ? 'auto' : '760px';
 
     return (
         <>
@@ -150,7 +149,7 @@ const Home = () => {
                 }} >
                     <ReactPlayer 
                     url={Banner} 
-                    width="100%" height={playerHeight}
+                    width="100%" height="auto"
                         playing={true}
                         loop={true}
                         muted={true}
@@ -176,6 +175,9 @@ const Home = () => {
                     >
                         <p className="TransformingText">
                             {data.gif_main_text.text_first}
+                        </p>
+                        <p className="TransformingText">
+                            {data.gif_main_text.text}
                         </p>
 
                         <p className='paragraph'>
@@ -246,7 +248,7 @@ const Home = () => {
             </div>
             <div >
 
-                <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)', padding: '3rem' }}>
+                <div id="NewWEP" style={{ backgroundColor: 'rgb(249, 250, 252)'}} className='newWepPadding'>
                     <NewWEP data={data.new_wep_text} />
                 </div>
                 <div id="Modernization" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>

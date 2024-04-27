@@ -1,4 +1,4 @@
-.button-link {
+.button-link1 {
     display: flex;
     padding: 5% 5%;
     border: 2px solid grey;
@@ -11,6 +11,37 @@
     background-color: white ;
 }
 
+.button-link {
+    display: flex;
+    padding: 5% 5%;
+    border: 2px solid grey;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white ;
+    position: relative;
+}
+
+.button-link::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%; /* Set the width */
+    height: 100%; /* Set the height */
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s; /* Apply transition only to the transform property */
+}
+
+.button-link:hover::after {
+    transform: scaleX(1);
+}
+
+
 @font-face {
     font-family:"Futura PT Book-Normal-PEtZdOHA" ;
     src: url('../../fonts/futurapt-book.woff') format('woff');
@@ -22,6 +53,16 @@
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
     line-height: 24px;
+    z-index: 20000;
+}
+
+.button-link:hover .btnText {
+    color: white;
+    transition: color 0.3s; /* Smoothly transition text color on hover */
+}
+
+.button-link:hover .imgStylingHover{
+    z-index: 20000;
 }
 
 @font-face {
@@ -74,6 +115,34 @@
     line-height: 26px;
     font-size: 16px;
     font-family: 'BookNormal';
+    position: relative;
+}
+
+@font-face {
+    font-family: 'BookNormal';
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.a1{
+    line-height: 26px;
+    font-size: 16px;
+    font-family: 'BookNormal';
+    position: relative;
+}
+
+.a1::after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    width: 100%; /* Set the width */
+    height: 2px; /* Set the height */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s; /* Apply transition only to the transform property */
+}
+
+.a1:hover::after {
+    transform: scaleX(1);
 }
 
 @font-face {

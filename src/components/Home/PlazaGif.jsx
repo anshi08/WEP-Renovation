@@ -16,7 +16,7 @@ const PlazaGif = ({ plaza_gif }) => {
                 <Grid item xs={0} md={6}>
 
                 </Grid>
-                <Grid item xs={12} md={6} padding={3}>
+                <Grid item xs={12} md={6} >
                     <motion.div
 
                         initial={{
@@ -32,12 +32,16 @@ const PlazaGif = ({ plaza_gif }) => {
                         }}
 
                         viewport={{ once: true }}
+                       style={{padding:'0 2rem'}}
+
                     >
                         <ReactPlayer
                             url={gif}
                             playing={true}
                             loop={true}
                             muted={true}
+                            width='auto' height='auto'
+                            
                         />
                         <p className='plaza'>{data.gif_first_text}</p>
                     </motion.div>
@@ -108,8 +112,14 @@ const PlazaGif = ({ plaza_gif }) => {
 
                                 viewport={{ once: true }}
                             >
-                                <p className='my-3 plazaBoldHeading'>
+                                <p className='plazaBoldHeading'>
                                     {data.gif_second_sub_para}
+                                </p>
+                                <p className='plazaBoldHeading'>
+                                    {data.gif_second_sub_para1}
+                                </p>
+                                <p className='plazaBoldHeading'>
+                                    {data.gif_second_sub_para2}
                                 </p>
                             </motion.div>
                         </div>

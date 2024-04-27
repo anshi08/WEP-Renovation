@@ -37,6 +37,12 @@ function NewWEP({ data }) {
                     <p className='text1'>
                         {wepData.wep_Heading}
                     </p>
+                    <p className='text1'>
+                        {wepData.wep_text1}
+                    </p>
+                    <p className='text1'>
+                        {wepData.wep_text2}
+                    </p>
                 </motion.div>
 
 
@@ -125,7 +131,7 @@ function NewWEP({ data }) {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/2" className='hover:underline link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/2" className='link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>
@@ -191,7 +197,8 @@ function NewWEP({ data }) {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/3" className='hover:underline link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/3" 
+                                        className='link'>{wepData.btn_text} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>
@@ -257,7 +264,7 @@ function NewWEP({ data }) {
 
                                         viewport={{ once: true }}
                                     >
-                                        <Link to="/p/4" className='hover:underline link'>{wepData.btn_text2} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
+                                        <Link to="/p/4" className='link'>{wepData.btn_text2} <EastIcon style={{ color: 'rgb(87,87,87)' }} /></Link>
                                     </motion.div>
                                 </CardContent>
                             </Card>
@@ -283,8 +290,9 @@ function NewWEP({ data }) {
                     }}
 
                     viewport={{ once: true }}
+                    style={{height: '100%'}}
                 >
-                    <img src={Image} />
+                    <img src={Image} style={{height: '100%'}}/>
                 </motion.div>
             </Grid>
         </Grid>

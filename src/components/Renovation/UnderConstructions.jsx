@@ -268,10 +268,10 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
     };
 
     return (
-        <Grid container padding={3}>
+        <Grid container padding={4}>
 
             {/* Right Side  */}
-            <Grid item xs={12} md={6} padding={2}>
+            <Grid item xs={12} md={6} padding={2} className='verticalLine'>
                 <motion.div
                     initial={{
                         opacity: 0,
@@ -304,22 +304,23 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
 
                 <div className='flex flex-row flex-wrap mt-2'>
                     {videos.map(video => (
+                        <>
                         <img
                             key={video.id}
                             src={video.thumb}
                             // alt={video.title}
+                            className='thumbnail'
                             onClick={() => handleThumbnailClick(video.url , video.id)}
                             style={{ cursor: 'pointer', marginRight: 10, marginBottom: 10, width: 100, 
                             height: 'auto' ,
                             border: selectedThumbnailId === video.id ? '5px solid rgb(93,199,209)' : 'none'
                         }}
                         />
+                        
+                        </>
                     ))}
                 </div>
             </Grid>
-
-            {/* vertical Line */}
-            
 
             <Grid item xs={12} md={6} padding={2} >
                 <motion.div
@@ -367,102 +368,72 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                             <TabList onChange={handleChange}
                                 variant="scrollable"
                                 scrollButtons="auto"
+                                
                             >
-                                <Tab
-                                    value="1"
-                                    label={
-
-                                        <motion.div
-                                            initial={{
-                                                opacity: 0,
-                                            }}
-                                            whileInView={{
-                                                opacity: 1,
-                                                // y: 0,
-                                                transition: {
-                                                    duration: 2,
-                                                },
-                                            }}
-                                            viewport={{ once: true }}
-                                        // style={{ padding: '3rem 0' }}
-
-                                        >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                                <img src={TabSvg2} alt="Construction" /> {/* Make sure to add the alt attribute */}
-                                                {dataValue.tabs_heading.heading1}
-                                            </div>
-                                        </motion.div>
-                                    }
-                                    className={value === '1' ? 'construction' : 'notSelected'}
-
-                                />
-
-                                <Tab
-                                    value="2"
-                                    label={
-                                        <motion.div
-                                            initial={{
-                                                opacity: 0,
-                                            }}
-                                            whileInView={{
-                                                opacity: 1,
-                                                // y: 0,
-                                                transition: {
-                                                    duration: 2,
-                                                },
-                                            }}
-                                            viewport={{ once: true }}
-                                        // style={{ padding: '3rem 0' }}
-
-                                        >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                                <img src={TabSvg1} alt="Tenants" /> {/* Make sure to add the alt attribute */}
-                                                {dataValue.tabs_heading.heading2}
-                                            </div>
-                                        </motion.div>
-                                    }
-                                    className={value === '2' ? 'tenants' : 'notSelected'}
-                                />
-                                <Tab value="3"
-                                    label={
-                                        <motion.div
-                                            initial={{
-                                                opacity: 0,
-                                            }}
-                                            whileInView={{
-                                                opacity: 1,
-                                                // y: 0,
-                                                transition: {
-                                                    duration: 2,
-                                                },
-                                            }}
-                                            viewport={{ once: true }}
-                                        // style={{ padding: '3rem 0' }}
-
-                                        >
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                                <img src={TabSvg3} alt="Community" /> {/* Make sure to add the alt attribute */}
-                                                {dataValue.tabs_heading.heading3}
-                                            </div>
-                                        </motion.div>
-                                    }
-                                    className={value === '3' ? 'community' : 'notSelected'}
-                                />
+                               <Tab
+                value="1"
+                label={
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+                        viewport={{ once: true }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            <img src={TabSvg1} alt="Construction" />
+                            {dataValue.tabs_heading.heading1}
+                        </div>
+                    </motion.div>
+                }
+                className={value === '1' ? 'construction' : 'notSelected'}
+            />
+            <Tab
+                value="2"
+                label={
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+                        viewport={{ once: true }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            <img src={TabSvg2} alt="Tenants" />
+                            {dataValue.tabs_heading.heading2}
+                        </div>
+                    </motion.div>
+                }
+                className={value === '2' ? 'tenants' : 'notSelected'}
+            />
+            <Tab
+                value="3"
+                label={
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: { duration: 2 } }}
+                        viewport={{ once: true }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            <img src={TabSvg3} alt="Community" />
+                            {dataValue.tabs_heading.heading3}
+                        </div>
+                    </motion.div>
+                }
+                className={value === '3' ? 'community' : 'notSelected'}
+            />
                             </TabList>
                         </Box>
 
                         {selectedCarousal &&
                             <>
-                                <TabPanel value="1">
-                                    <div className='flex flex-row'>
+                                <TabPanel value="1" >
+                                    <div className='flex flex-row' >
                                         <>
 
-                                            <div className='flex flex-col flex-wrap' style={{ maxHeight: '100%', width: '100%' }}>
+                                            <div className='flex flex-col flex-wrap' 
+                                            style={{ maxHeight: '100%', width: '100%' }}>
                                                 <motion.div
                                                     key={selectedCarousal.date}
                                                     initial={{
                                                         opacity: 0,
-                                                        y: 50,
+                                                        y: 20,
                                                     }}
                                                     whileInView={{
                                                         opacity: 1,
@@ -482,7 +453,7 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                                                     key={selectedCarousal.title}
                                                     initial={{
                                                         opacity: 0,
-                                                        y: 50,
+                                                        y: 20,
                                                     }}
                                                     whileInView={{
                                                         opacity: 1,
@@ -593,7 +564,7 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                                                 key={selectedCommunityContent.date}
                                                 initial={{
                                                     opacity: 0,
-                                                    y: 50,
+                                                    y: 30,
                                                 }}
                                                 whileInView={{
                                                     opacity: 1,
@@ -613,13 +584,13 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                                                 key={selectedCommunityContent.id}
                                                 initial={{
                                                     opacity: 0,
-                                                    x: -100,
+                                                    x: -40,
                                                 }}
                                                 whileInView={{
                                                     opacity: 1,
                                                     x: 0,
                                                     transition: {
-                                                        duration: 2,
+                                                        duration: 1,
                                                     },
                                                 }}
                                                 viewport={{ once: true }}

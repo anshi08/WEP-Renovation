@@ -57,7 +57,7 @@ const NavigationComponent = ({ navigationComponent }) => {
         </Grid>
 
         {/* Right side */}
-        <Grid item xs={12} md={6} padding={3} columnSpacing={5}>
+        <Grid item xs={12} md={6} >
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <motion.div
               initial={{
@@ -71,7 +71,7 @@ const NavigationComponent = ({ navigationComponent }) => {
                 },
               }}
               viewport={{ once: true }}
-            // style={{ padding: '3rem 0' }}
+              style={{ padding: '3rem 10% 0 10%' }}
 
             >
               <p className='mainheading'>
@@ -91,11 +91,14 @@ const NavigationComponent = ({ navigationComponent }) => {
                 },
               }}
               viewport={{ once: true }}
-            // style={{ padding: '3rem 0' }}
+              style={{ padding: '0 10% 0 10%' }}
 
             >
               <p className='boldtext10'>
                  {data.nav_subHeading}
+              </p>
+              <p className='boldtext10'>
+                 {data.nav_subHeading1}
               </p>
             </motion.div>
 
@@ -111,7 +114,7 @@ const NavigationComponent = ({ navigationComponent }) => {
                 },
               }}
               viewport={{ once: true }}
-            // style={{ padding: '3rem 0' }}
+              style={{ padding: '0 10% 8% 10%' }}
 
             >
               <p className='body'>

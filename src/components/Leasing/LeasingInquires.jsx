@@ -119,7 +119,7 @@ const LeasingInquires = ({ LeasingInqData }) => {
 
                                 <div className='style'>
                                     <Link
-                                        to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_GroundFloorRetailPackage.pdf" className="button-link ">
+                                        to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_GroundFloorRetailPackage.pdf" className="button-link1 ">
                                         <img src={bookImg} style={{
                                             width: '20px', height: '20px',
                                             marginRight: '5px'
@@ -152,12 +152,13 @@ const LeasingInquires = ({ LeasingInqData }) => {
                                     viewport={{ once: true }}
 
                                 >
-                                    <Link to="https://brochure.thenewwep.com/" className="button-link button-container">
+                                    <Link to="https://brochure.thenewwep.com/" 
+                                    className="button-link">
                                         <img src={bookImg} style={{
                                             width: '20px', height: '20px',
                                             marginRight: '5px', backgroundColor: 'white',
-                                            transition: 'background-color 0.3s ease'
-                                        }} />
+                                            
+                                        }} className='imgStylingHover'/>
                                         <p className='btnText'> {data.btn_text_brochure} </p>
                                     </Link>
                                 </motion.div>
@@ -182,7 +183,7 @@ const LeasingInquires = ({ LeasingInqData }) => {
                                     <p className='Review'>{data.part_four_info.text1}</p>
                                 </motion.div>
                                 <div>
-                                    <Link to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_FoodCourtPackage.pdf" className="button-link">
+                                    <Link to="https://the-renovation.azurewebsites.net/assets/WEP_RetailFeatureSheet_FoodCourtPackage.pdf" className="button-link1">
                                         <img src={bookImg} style={{ width: '20px', height: '20px', marginRight: '5px' }} />
                                         <p className='btnText'> {data.btn_text_avail} </p>
                                     </Link>

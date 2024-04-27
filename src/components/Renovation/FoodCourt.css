@@ -104,19 +104,25 @@
 }
 
 .line {
-    position: absolute;
-    bottom: -5px;
-    /* left: 50%; */
-    /* right: 50%; */
-    width: 0;
-    height: 2px;
-    background-color: white; /* Change the color as desired */
-    transition: width 0.3s ease, left 5s ease, right 5s ease;
+    position: relative;
+    background-color: white; 
 }
 
-a:hover .line {
-    width: 65%; /* Adjust the width as needed */
-    left: 0;
-    right: 0;
+.line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    transform: scaleX(0);
+    transition: 1s;
 }
+
+a.line:hover::after{
+    transform: scaleX(1);
+}
+
+
 

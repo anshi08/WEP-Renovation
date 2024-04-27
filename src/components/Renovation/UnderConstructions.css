@@ -138,6 +138,8 @@
     letter-spacing: normal !important;
 }
 
+
+
 .community{
     font-weight: 400 !important;
     font-style: normal !important;
@@ -283,4 +285,23 @@
     .imageTitle{
         line-height: normal;
     }
+}
+
+.thumbnail {
+    transition: filter 0.3s ease; /* Smooth transition for the filter effect */
+    /* position: 'relative'; */
+  }
+  
+  .thumbnail:hover {
+    filter: brightness(1.5); /* Increase brightness on hover */
+  }
+.verticalLine{
+    border-right: 2px solid rgb(225,226,227);
+}
+
+@media (max-width:767px) {
+    .verticalLine{
+        border-right: 0;
+    }
+    
 }

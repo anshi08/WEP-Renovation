@@ -22,59 +22,59 @@ const FoodCourt = ({ foodCourtData }) => {
               <Grid item xs={12} md={6}>
                 {/* <div className='horizontalLine my-2'></div> */}
                 <motion.div
-            className="horizontalLine my-2"
-            initial={{ width: '0px' }}
-            animate={{ width: '60px' }} 
-            transition={{ duration: 1 }}
-            style={{
-              width: '60px',
-              height: '5px',
-              backgroundColor: 'rgb(93, 199, 209)',
-              marginLeft: '1rem'
-            }}
-        />
+                  className="horizontalLine my-2"
+                  initial={{ width: '0px' }}
+                  animate={{ width: '60px' }}
+                  transition={{ duration: 1 }}
+                  style={{
+                    width: '60px',
+                    height: '5px',
+                    backgroundColor: 'rgb(93, 199, 209)',
+                    marginLeft: '1rem'
+                  }}
+                />
 
 
-                
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  x: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1,
-                  },
-                }}
-                viewport={{ once: true }}
 
-              >
-                <p className='spanTitle1 my-2'>
-                  <span>{data.text}</span>
-                </p>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                      duration: 1,
+                    },
+                  }}
+                  viewport={{ once: true }}
+
+                >
+                  <p className='spanTitle1 my-2'>
+                    <span>{data.text}</span>
+                  </p>
                 </motion.div>
 
 
                 <motion.div
-                initial={{
-                  opacity: 0,
-                  x: -50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 1,
-                  },
-                }}
-                viewport={{ once: true }}
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                      duration: 1,
+                    },
+                  }}
+                  viewport={{ once: true }}
 
-              >
-                <p className='spanTitle1 my-2'>
-                  {data.sub_text}
-                </p>
+                >
+                  <p className='spanTitle1 my-2'>
+                    {data.sub_text}
+                  </p>
                 </motion.div>
               </Grid>
             </div>
@@ -95,9 +95,16 @@ const FoodCourt = ({ foodCourtData }) => {
               }}
 
               viewport={{ once: true }}
-              className='absolute right-0 bottom-0'
+              className='absolute bottom-0 fcStyle'
+
             >
-              <img src={image1} style={{ width: '100%' }} />
+              <img src={image1} style={{ width: '80%' }} />
+              <div style={{
+                position: 'absolute', bottom: 0, left: 0, color: '#fff',
+                padding: '10px'
+              }} className='text'>
+                BEFORE 1
+              </div>
             </motion.div>
 
 
@@ -118,8 +125,15 @@ const FoodCourt = ({ foodCourtData }) => {
               }}
 
               viewport={{ once: true }}
+              className='relative'
             >
               <img src={image2} />
+              <div style={{
+                position: 'absolute', bottom: 0, left: 0, color: '#fff',
+                padding: '10px'
+              }} className='text'>
+                AFTER 1
+              </div>
             </motion.div>
           </Grid>
         </Grid>
@@ -148,8 +162,15 @@ const FoodCourt = ({ foodCourtData }) => {
                   }}
 
                   viewport={{ once: true }}
+                  className='relative'
                 >
                   <img src={image3} className='imgStyling' />
+                  <div style={{
+                    position: 'absolute', bottom: 0, left: 0, color: '#fff',
+                    padding: '10px'
+                  }} className='text'>
+                    BEFORE 2
+                  </div>
                 </motion.div>
               </Grid>
             </div>
@@ -170,16 +191,23 @@ const FoodCourt = ({ foodCourtData }) => {
               }}
 
               viewport={{ once: true }}
+              className='relative'
             >
               <img src={image4} />
+              <div style={{
+                position: 'absolute', bottom: 0, left: 0, color: '#fff',
+                padding: '10px'
+              }} className='text'>
+                AFTER 1
+              </div>
             </motion.div>
           </Grid>
         </Grid>
         <div className='flex items-center justify-center'>
           <div className='RenovationBtn'>
             <Link to="/p/2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <p className='btnTextLearnMore'>{data.btn_text}</p>
-              <EastIcon style={{ color: 'rgb(87,87,87)' }} />
+              <p className='btnTextLearnMore'>{data.btn_text}
+              <EastIcon className='svg'/></p>
             </Link>
           </div>
         </div>

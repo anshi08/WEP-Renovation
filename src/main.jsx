@@ -13,8 +13,6 @@ import Leasing from './components/Leasing/Leasing.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-        <Route path="/" element={<Home />} />
-      {/* Add another route for "/p/1" pointing to the Home component */}
       <Route path="/p/1" element={<Home />} />
       <Route path="/p/2" element={<Renovation />} />
       <Route path="/p/3" element={<ProjectTeam />} />

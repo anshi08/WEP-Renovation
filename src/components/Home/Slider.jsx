@@ -48,7 +48,7 @@ const Slider = () => {
                             <img src={image2} alt="food court2" className='responsive' />
                             <p className='restaurantInterior'>RESTAURANT INTERIOR</p>
                         </motion.div>
-                        <ArrowForwardIosOutlinedIcon className="arrow-icon" />
+                        {/* <ArrowForwardIosOutlinedIcon className="arrow-icon" /> */}
                     </div>
                 </div>
                 <div class="column1">
@@ -72,7 +72,7 @@ const Slider = () => {
                             <img src={image1} alt="food court2" className='responsive' />
                             <p className='restaurantInterior'>FOOD COURT</p>
                         </motion.div>
-                        <ArrowBackIosNewOutlinedIcon className="left" />
+                        {/* <ArrowBackIosNewOutlinedIcon className="left" /> */}
                     </div>
 
                 </div>

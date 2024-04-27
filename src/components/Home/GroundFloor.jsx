@@ -8,30 +8,30 @@ import "./GroundFloor.css"
 import { motion } from 'framer-motion';
 
 const GroundFloor = ({ groundFloorData }) => {
- 
+
   const data = groundFloorData
 
   return (
     <>
 
-      <Grid container spacing={2} padding={3}>
+      <Grid container spacing={2} padding={5}>
         <Grid item xs={12} md={6} className='relative'>
           {/* Show sub items */}
           <div className='flex absolute right-0 bottom-0' >
             <div>
               {/* <div className='horizontalLineBlue my-2'></div> */}
               <motion.div
-            className="horizontalLineBlue my-2"
-            initial={{ width: '0px' }}
-            animate={{ width: '60px' }} 
-            transition={{ duration: 1 }}
-            style={{
-              width: '60px',
-              height: '5px',
-              backgroundColor: 'rgb(93, 199, 209)',
-              marginLeft: '1rem'
-            }}
-        />
+                className="horizontalLineBlue my-2"
+                initial={{ width: '0px' }}
+                animate={{ width: '60px' }}
+                transition={{ duration: 1 }}
+                style={{
+                  width: '60px',
+                  height: '5px',
+                  backgroundColor: 'rgb(93, 199, 209)',
+                  marginLeft: '1rem'
+                }}
+              />
 
               <motion.div
                 initial={{
@@ -88,11 +88,14 @@ const GroundFloor = ({ groundFloorData }) => {
               }}
 
               viewport={{ once: true }}
-              style={{ width: '100%', height: '100%' }}
+              style={{ width: '100%', height: '100%', position: 'relative' }}
             >
 
               <img src={image1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-
+              <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', 
+              padding: '10px' }} className='text'>
+                BEFORE 1
+              </div>
             </motion.div>
 
           </div>
@@ -114,15 +117,19 @@ const GroundFloor = ({ groundFloorData }) => {
             }}
 
             viewport={{ once: true }}
+            className='relative'
           >
             <img src={image2} />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', padding: '10px' }} className='text'>
+                AFTER 1
+              </div>
           </motion.div>
         </Grid>
       </Grid>
 
 
       {/* For showing bottom image */}
-      <Grid container spacing={3} padding={4}>
+      <Grid container spacing={2} padding={2}>
         <Grid item xs={12} md={6}>
           <div className='flex justify-end'>
             <Grid item xs={12} md={2}>
@@ -144,9 +151,13 @@ const GroundFloor = ({ groundFloorData }) => {
                 }}
 
                 viewport={{ once: true }}
-
+                className='relative'
               >
                 <img src={image3} />
+                <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', 
+                padding: '10px' }} className='text'>
+                BEFORE 2
+              </div>
               </motion.div>
             </Grid>
           </div>
@@ -167,9 +178,14 @@ const GroundFloor = ({ groundFloorData }) => {
             }}
 
             viewport={{ once: true }}
+            className='relative'
 
           >
             <img src={image4} style={{ width: '100%' }} />
+            <div style={{ position: 'absolute', bottom: 0, left: 0,color: '#fff', 
+            padding: '10px' }} className='text'>
+                AFTER 2
+              </div>
           </motion.div>
         </Grid>
       </Grid>

@@ -8,14 +8,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link} from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 import logo from "../../assets/wep-logo-at-2x-tenth.png"
 import "./Header.css"
 
 const Header = () => {
-    const [activeTab, setActiveTab] = useState();
+
+
+  const [activeTab, setActiveTab] = useState('p/1');
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -41,8 +45,8 @@ const Header = () => {
     <AppBar position="sticky" style={{ backgroundColor: 'rgb(255, 255, 255)',zIndex:3000}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Link to="/" style={{ flexGrow: 1 }}>
-            <img src={logo} alt="Logo" style={{ height: 30 }} />
+        <Link to="https://worldexchangeplaza.com/" target="_blank" style={{ flexGrow: 1 }}>
+            <img src={logo} alt="Logo" style={{ height: '25px' }} />
           </Link>
        
 
@@ -100,12 +104,26 @@ const Header = () => {
               component={Link}
               className='headerNames'
               to="/p/1"
-              sx={{ mx: 1,
-              textDecoration: activeTab === 'p/1' ? '3px underline' : 'none',
-              '&:hover': {
-                textDecoration: activeTab === 'p/1' ? '3px underline' : 'none',
-              }
-            }}
+              sx={{
+                mx: 1,
+                position: 'relative',
+                textDecoration: 'none',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  left: 0,
+                  bottom: '-5px',
+                  width: '100%',
+                  transform: activeTab === 'p/1' ? '' : 'scaleX(0)' ,
+                  transition: '1s',
+                  borderBottom: activeTab === 'p/1' ? '3px solid black' : 'none',
+                },
+                '&:hover::after': {
+                  borderBottom: '3px solid black',
+                  transform:'scaleX(1)'
+                
+                },
+              }}
             onClick={() => handleTabClick('p/1')}
              
             >
@@ -115,12 +133,26 @@ const Header = () => {
               component={Link}
               to="/p/2"
               className='headerNames'
-              sx={{ mx: 1, 
-              textDecoration: activeTab === 'p/2' ? '3px underline' : 'none',
-              '&:hover': {
-                textDecoration: activeTab === 'p/2' ? '3px underline' : 'none',
-              }
-            }}
+              sx={{
+                mx: 1,
+                position: 'relative',
+                textDecoration: 'none',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  left: 0,
+                  bottom: '-5px',
+                  width: '100%',
+                  transform: activeTab === 'p/2' ? '' : 'scaleX(0)' ,
+                  transition: '1s',
+                  borderBottom: activeTab === 'p/2' ? '3px solid black' : 'none',
+                },
+                '&:hover::after': {
+                  borderBottom: '3px solid black',
+                  transform:'scaleX(1)'
+                
+                },
+              }}
             onClick={() => handleTabClick('p/2')}
             >
               THE RENOVATION
@@ -129,12 +161,26 @@ const Header = () => {
               component={Link}
               to="/p/3"
               className='headerNames'
-              sx={{ mx: 1,
-              textDecoration: activeTab === 'p/3' ? '3px underline' : 'none',
-              '&:hover': {
-                textDecoration: activeTab === 'p/3' ? '3px underline' : 'none',
-              }
-            }}
+              sx={{
+                mx: 1,
+                position: 'relative',
+                textDecoration: 'none',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  left: 0,
+                  bottom: '-5px',
+                  width: '100%',
+                  transform: activeTab === 'p/3' ? '' : 'scaleX(0)' ,
+                  transition: '1s',
+                  borderBottom: activeTab === 'p/3' ? '3px solid black' : 'none',
+                },
+                '&:hover::after': {
+                  borderBottom: '3px solid black',
+                  transform:'scaleX(1)'
+                
+                },
+              }}
             onClick={() => handleTabClick('p/3')}
             >
               PROJECT TEAM
@@ -143,12 +189,25 @@ const Header = () => {
               component={Link}
               to="/p/4"
               className='headerNames'
-              sx={{ mx: 1, 
-              textDecoration: activeTab === 'p/4' ? '3px underline' : 'none',
-              '&:hover': {
-                textDecoration: activeTab === 'p/4' ? '3px underline' : 'none',
-              }
-            }}
+              sx={{
+                mx: 1,
+                position: 'relative',
+                textDecoration: 'none',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  left: 0,
+                  bottom: '-5px',
+                  width: '100%',
+                  transform: activeTab === 'p/4' ? '' : 'scaleX(0)' ,
+                  transition: '1s',
+                  borderBottom: activeTab === 'p/4' ? '3px solid black' : 'none',
+                },
+                '&:hover::after': {
+                  borderBottom: '3px solid black',
+                  transform:'scaleX(1)'
+                },
+              }}
             onClick={() => handleTabClick('p/4')}
             >
               LEASING

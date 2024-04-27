@@ -10,7 +10,7 @@ const Community = ({ communityData }) => {
     const data = communityData
 
     return (
-        <Grid container padding={6} style={{ backgroundColor: 'rgb(249, 250, 252)' }} >
+        <Grid container  style={{ backgroundColor: 'rgb(249, 250, 252)' }} >
 
             {/* Left Side */}
             <Grid item xs={12} md={8} >
@@ -28,7 +28,7 @@ const Community = ({ communityData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '3rem 10% 0 10%' }}
 
                     >
                         <p className='mainheading'>
@@ -48,11 +48,14 @@ const Community = ({ communityData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 0 10%' }}
 
                     >
                         <p className='boldtext1'>
                           {data.com_subHeading}
+                        </p>
+                        <p className='boldtext1'>
+                          {data.com_subHeading1}
                         </p>
                     </motion.div>
 
@@ -68,7 +71,7 @@ const Community = ({ communityData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 8% 10%' }}
 
                     >
                         <p className='body'>
@@ -79,7 +82,8 @@ const Community = ({ communityData }) => {
             </Grid>
 
             {/* Right Side */}
-            <Grid item xs={12} md={4} style={{ backgroundImage: `url(${comWatermark})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <Grid item xs={12} md={4} style={{ backgroundImage: `url(${comWatermark})`, 
+            backgroundSize: 'cover', backgroundPosition: 'center' ,zIndex:1}}>
                 <motion.div
                     initial={{
                         opacity: 0,
@@ -92,10 +96,10 @@ const Community = ({ communityData }) => {
                         },
                     }}
                     viewport={{ once: true }}
-                // style={{ padding: '3rem 0' }}
+                    style={{height:'100%',position:'relative'}}
 
                 >
-                    <img src={image} />
+                    <img src={image} style={{height:'100%',position:'absolute',bottom:'0',zIndex:-1}}/>
                 </motion.div>
             </Grid>
         </Grid>

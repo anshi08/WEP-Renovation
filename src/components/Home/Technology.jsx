@@ -34,7 +34,8 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        
+                        style={{ padding: '3rem 10% 0 10%' }}
 
                     >
                         <p className='mainheading'>
@@ -53,11 +54,14 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 0 10%' }}
 
                     >
                         <p className='boldtext1' style={{ color: 'rgb(40, 92, 170)' }}>
                             {data.tech_subHeading}
+                        </p>
+                        <p className='boldtext1' style={{ color: 'rgb(40, 92, 170)' }}>
+                            {data.tech_subHeading1}
                         </p>
                     </motion.div>
                     <motion.div
@@ -72,7 +76,7 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 10% 8% 10%' }}
 
                     >
                         <p className='body'>
@@ -95,7 +99,7 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        
 
                     >
                         <img src={MenImage} style={{ transform: "scaleX(-1)" }} />
@@ -104,7 +108,7 @@ const Technology = ({ technologyData }) => {
             </Grid>
 
             {/* Bottom Image */}
-            <Grid container padding={4} spacing={3}>
+            <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
                     <motion.div
                         initial={{
@@ -119,7 +123,7 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                    style={{ padding: '0 0 0 2rem' }}
 
                     >
                         <img src={Image1} />
@@ -139,7 +143,7 @@ const Technology = ({ technologyData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                    // style={{ padding: '3rem 0' }}
+                        style={{ padding: '0 2rem 0 0' }}
 
                     >
                         <img src={Image2} />

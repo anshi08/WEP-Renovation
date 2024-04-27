@@ -19,6 +19,23 @@
     color: rgb(0, 0, 0);
     font-family: "Futura PT Demi-Normal-5taag63X";
     line-height: 22px;
+    position: relative;
+}
+
+.btnTxt::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%; /* Set the width */
+    height: 2px; /* Set the height */
+    bottom: -2%;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 1s; /* Apply transition only to the transform property */
+}
+
+.btnTxt:hover::after {
+    transform: scaleX(1);
 }
 
 .styleDiv5{
