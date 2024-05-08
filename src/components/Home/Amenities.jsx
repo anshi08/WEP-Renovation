@@ -28,10 +28,10 @@ const Amenities = ({ amenitiesData }) => {
                         },
                     }}
                     viewport={{ once: true }}
-                    className='flex justify-center'
+                    className='flex justify-center relative'
 
                 >
-                  <img src={MenImage} width={300} style={{marginTop:'1rem'}}/>
+                  <img src={MenImage} width={300} style={{marginTop:'10%',position:'absolute',bottom:0,top:0}}/>
                   </motion.div>
                   
             </Grid>
@@ -75,6 +75,9 @@ const Amenities = ({ amenitiesData }) => {
                 >
                  <p className='boldHeading1'>
                    {data.amenities_text}
+                 </p>
+                 <p className='boldHeading1'>
+                   {data.amenities_text1}
                  </p>
                  </motion.div>
                  <div>

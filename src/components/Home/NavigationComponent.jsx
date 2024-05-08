@@ -51,6 +51,7 @@ const NavigationComponent = ({ navigationComponent }) => {
               },
             }}
             viewport={{ once: true }}
+            className='relative'
           >
             <img src={bikeImage} className='bikeImg' />
           </motion.div>
@@ -117,7 +118,7 @@ const NavigationComponent = ({ navigationComponent }) => {
               style={{ padding: '0 10% 8% 10%' }}
 
             >
-              <p className='body'>
+              <p className='bodyNav'>
                 {data.nav_para}
               </p>
             </motion.div>
@@ -137,7 +138,8 @@ const NavigationComponent = ({ navigationComponent }) => {
             }}
             viewport={{ once: true }}
           >
-            <img src={SignImage} alt="Sign" style={{ width: '70%', height: 'auto', marginTop: '2rem', marginLeft: '2rem' }} />
+            <img src={SignImage} alt="Sign" 
+            style={{ width: '70%', height: 'auto', marginTop: '2rem', marginLeft: '2rem' }} />
           </motion.div>
         </Grid>
       </Grid>

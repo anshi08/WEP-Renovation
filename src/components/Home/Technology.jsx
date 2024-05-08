@@ -102,13 +102,13 @@ const Technology = ({ technologyData }) => {
                         
 
                     >
-                        <img src={MenImage} style={{ transform: "scaleX(-1)" }} />
+                        <img src={MenImage} style={{ transform: "scaleX(-1)",marginTop:'3rem' }} />
                     </motion.div>
                 </Grid>
             </Grid>
 
             {/* Bottom Image */}
-            <Grid container spacing={3}>
+            <Grid container style={{marginLeft:'7%'}}>
                 <Grid item xs={12} md={6}>
                     <motion.div
                         initial={{
@@ -126,7 +126,7 @@ const Technology = ({ technologyData }) => {
                     style={{ padding: '0 0 0 2rem' }}
 
                     >
-                        <img src={Image1} />
+                        <img src={Image1} style={{width:'90%'}} />
                     </motion.div>
                 </Grid>
                 <Grid item xs={12} md={6}   >
@@ -146,7 +146,7 @@ const Technology = ({ technologyData }) => {
                         style={{ padding: '0 2rem 0 0' }}
 
                     >
-                        <img src={Image2} />
+                        <img src={Image2} style={{width:'90%'}}/>
                     </motion.div>
                 </Grid>
             </Grid>

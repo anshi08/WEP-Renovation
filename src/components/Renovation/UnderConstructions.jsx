@@ -292,7 +292,7 @@ const UnderConstructions = ({ UnderConstructionsData }) => {
                 </motion.div>
                 {selectedVideo && (
                     <div>
-                        <ReactPlayer url={selectedVideo} controls width="100%" height="auto"
+                        <ReactPlayer url={selectedVideo} controls width="90%" height="auto"
                             light={<img src={videos.find(video => video.url === selectedVideo)?.thumb} 
                             width="100%" height="auto" />} />
                         <div>

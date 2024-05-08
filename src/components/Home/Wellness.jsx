@@ -77,7 +77,7 @@ const Wellness = ({ wellnessData }) => {
                         style={{ padding: '0 10% 8% 10%' }}
 
                     >
-                        <p className='body'>{data.wellness_para}</p>
+                        <p className='body1'>{data.wellness_para}</p>
                     </motion.div>
                 </div>
             </Grid>

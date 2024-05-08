@@ -11,12 +11,13 @@ const QuadRealGroup = ({ QuadRealData }) => {
         <>
             <Grid container padding={5} spacing={3}>
 
-                <Grid item xs={12} md={6} display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
+                <Grid item xs={12} md={6} padding={5}
+                display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
                     <div>
                         <motion.div
                             initial={{
                                 opacity: 0,
-                                y: 100,
+                                y: 40,
                             }}
                             whileInView={{
                                 opacity: 1,
@@ -34,7 +35,7 @@ const QuadRealGroup = ({ QuadRealData }) => {
                         <motion.div
                             initial={{
                                 opacity: 0,
-                                y: 100,
+                                y: 40,
                             }}
                             whileInView={{
                                 opacity: 1,
@@ -56,7 +57,7 @@ const QuadRealGroup = ({ QuadRealData }) => {
                     <motion.div
                         initial={{
                             opacity: 0,
-                            y: 100,
+                            y: 40,
                         }}
                         whileInView={{
                             opacity: 1,
@@ -66,15 +67,15 @@ const QuadRealGroup = ({ QuadRealData }) => {
                             },
                         }}
                         viewport={{ once: true }}
-                        className='mt-4 md:mt-40'
+                        className='mt-4 md:mt-35'
                     >
 
                         <div className='BlueLineQRG'></div>
                         <p className='Quadtext mt-3'>{data.paragraphs.para1}</p>
 
-                        <p className='Quadtext mt-3'>{data.paragraphs.para2}</p>
+                        <p className='Quadtext mt-8'>{data.paragraphs.para2}</p>
 
-                        <p className='Quadtext mt-3'>{data.paragraphs.para3}
+                        <p className='Quadtext mt-8'>{data.paragraphs.para3}
                         </p>
 
                         <p className='QuadBottomText mt-3'>{data.bottom_text}</p>

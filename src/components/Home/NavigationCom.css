@@ -5,17 +5,35 @@
 .boldtext10{
     color: rgb(247, 150, 29);
     font-style: normal !important;
-    font-size: 70px !important;
+    font-size: 60px !important;
     font-family: "Futura PT Demi-Normal-5taag63X" !important;
     overflow: visible;
     white-space: pre-wrap !important;
     text-align: left !important;
-    line-height: 72px !important;
+    line-height: 60px !important;
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.bodyNav{
+    font-size: 20px ;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    overflow: visible;
+    white-space: pre-wrap ;
+    text-align: left;
+    line-height: 30px ;
+    margin-top: 2rem;
+    padding-right: 4rem;
 }
 
 .bikeImg{
-    width: 200%;
+    width: 100%;
     margin-left: 1rem ; 
+    position: absolute !important;
+    top: -9rem !important;
 }
 
 @media (max-width:990px){

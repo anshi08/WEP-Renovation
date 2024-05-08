@@ -9,10 +9,10 @@ const Modernization = ({ modernizationData }) => {
 
   const data = modernizationData
   return (
-    <Grid container padding={6}>
+    <Grid container>
 
       {/* Left Side */}
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={6} style={{padding : '0 2% 0 10%' , marginTop:'3rem'}}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <motion.div
             initial={{
@@ -91,10 +91,10 @@ const Modernization = ({ modernizationData }) => {
             },
           }}
           viewport={{ once: true }}
-        // style={{ padding: '3rem 0' }}
+        style={{ position: 'relative' }}
 
         >
-          <img src={image} />
+          <img src={image} style={{position:'absolute',bottom:0 , top:0}}/>
         </motion.div>
         {/* <img src={image2} className="image second-image" /> */}
       </Grid>

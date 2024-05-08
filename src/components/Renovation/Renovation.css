@@ -17,10 +17,10 @@
 .FollowTheText{
     font-weight: 400;
     font-style: normal;
-    font-size: 108px;
+    font-size: 80px;
     color: rgb(255, 255, 255);
     font-family: "Futura PT Demi-Normal-5taag63X";
-    line-height: 101px;   
+    line-height: 80px;   
 }
 
 @media (max-width:670px){

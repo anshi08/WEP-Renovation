@@ -57,10 +57,11 @@
 .summerComfort{
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
   font-family: "Futura PT Book-Normal-PEtZdOHA";
-  line-height: 30px;
+  line-height: 25px;
   text-align: justify;
+  padding-right: 2rem;
 }
 

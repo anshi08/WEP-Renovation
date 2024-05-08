@@ -5,7 +5,7 @@
 .spanText{
     font-weight: 400;
     font-style: normal;
-    font-size: 26px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Demi-Normal-5taag63X";
     line-height: 40px;
@@ -19,10 +19,11 @@
     /* width: 568px; */
     font-weight: 400;
     font-style: normal;
-    font-size: 26px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
-    line-height: 40px;
+    line-height: 30px;
+    padding-right: 2rem;
 }
 
 .BlueLineQRG{
@@ -41,12 +42,13 @@
     /* width: 448px; */
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA";
-    line-height: 26px;
+    line-height: 22px;
     /* word-break: break-all; */
     text-align: justify;
+    padding-right: 20%;
 }
 
 @font-face {

@@ -10,15 +10,15 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .plazaheading{
-    font-size: 20px ;
+    font-size: 15px ;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     text-align: left ;
     padding: 0px ;
-    line-height: 30px ;
+    line-height: 24px ;
     margin-top: 12px ;
     margin-bottom: 12px ;
-    width: 448px;
+    width: 350px;
 }
 
 @font-face {

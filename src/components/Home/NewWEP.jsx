@@ -58,7 +58,7 @@ function NewWEP({ data }) {
                         },
                     }}
                     viewport={{ once: true }}
-                // style={{ padding: '3rem 0' }}
+                style={{ marginBottom:'2rem' }}
 
                 >
                     <p className='body1'>

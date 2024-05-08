@@ -3,7 +3,7 @@
     src: url("../../fonts/futuraptmedium.woff") format('woff');
 }
 .mainheading{
-    font-size: 16px ; 
+    font-size: 12px ; 
     color: rgb(0, 0, 0);
     font-family: "Futura PT Medium-Norma-sc4damH4" ;
     text-align: left ;
@@ -17,13 +17,13 @@
 }
 .BoldText{
     font-style: normal ;
-    font-size: 70px ;
+    font-size: 50px ;
     color: rgb(93, 199, 209);
     font-family: "Futura PT Demi-Normal-5taag63X" ;
     overflow: visible;
     white-space: pre-wrap ;
     text-align: left ;
-    line-height: 72px ;
+    line-height: 50px ;
     word-break: break-all;
 }
 
@@ -32,13 +32,13 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .body{
-    font-size: 26px ;
+    font-size: 20px ;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     overflow: visible;
     white-space: pre-wrap ;
     text-align: left;
-    line-height: 40px ;
+    line-height: 30px ;
     margin-top: 2rem;
 }
 

@@ -127,7 +127,7 @@ const FoodCourt = ({ foodCourtData }) => {
               viewport={{ once: true }}
               className='relative'
             >
-              <img src={image2} />
+              <img src={image2} style={{width:'90%'}}/>
               <div style={{
                 position: 'absolute', bottom: 0, left: 0, color: '#fff',
                 padding: '10px'
@@ -164,7 +164,7 @@ const FoodCourt = ({ foodCourtData }) => {
                   viewport={{ once: true }}
                   className='relative'
                 >
-                  <img src={image3} className='imgStyling' />
+                  <img src={image3} className='imgStyling'  />
                   <div style={{
                     position: 'absolute', bottom: 0, left: 0, color: '#fff',
                     padding: '10px'
@@ -193,7 +193,7 @@ const FoodCourt = ({ foodCourtData }) => {
               viewport={{ once: true }}
               className='relative'
             >
-              <img src={image4} />
+              <img src={image4} style={{width:'90%'}}/>
               <div style={{
                 position: 'absolute', bottom: 0, left: 0, color: '#fff',
                 padding: '10px'

@@ -23,10 +23,12 @@
                     "heading":"Gallery"
                 },
                 "GroundFloorRetail_text":{
-                    "text":"Level 1 Ground Floor Retail"
+                    "text":"Level 1",
+                    "text1":"Ground Floor Retail"
                 },
                 "FoodCourt_text":{
-                    "text":"Level 2 Food Court",
+                    "text":"Level 2",
+                    "text1":"Food Court",
                     "heading":"FOOD COURT",
                     "sub_text":"With extended hours to encourage public access and bright windows that flood the space with light,the WEP Food Court is the perfect place for a coffee break or a meal.",
                     "bottom_text1":"On the Look Out to Lease? Take a Look!",

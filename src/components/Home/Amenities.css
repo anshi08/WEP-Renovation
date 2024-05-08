@@ -15,13 +15,13 @@
 }
 .boldHeading1{
     font-style: normal ;
-    font-size: 70px ;
+    font-size: 60px ;
     font-weight: bold ;
     color: rgb(236, 20, 90);
     font-family: "Futura PT Demi-Normal-5taag63X" ;
     text-align: left ;
     padding: 0px;
-    line-height: 72px ;
+    line-height: 60px ;
 }
 
 @font-face {
@@ -29,14 +29,15 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .body3{
-    font-size: 26px ;
+    font-size: 22px ;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     overflow: visible;
     white-space: pre-wrap;
     text-align: left ;
     padding: 0px;
-    line-height: 40px ;
+    line-height: 35px ;
+    padding-right: 5rem;
 }
 
 @font-face {
@@ -44,7 +45,7 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .body4{
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(0, 0, 0);
     z-index: 100;
     font-family: "Futura PT Book-Normal-PEtZdOHA";
@@ -52,7 +53,8 @@
     white-space: pre-wrap;
     text-align: left;
     padding: 0px;
-    line-height: 30px;
+    line-height: 25px;
+    padding-right: 5rem;
 }
 
 .hrLine{

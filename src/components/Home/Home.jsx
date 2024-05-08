@@ -145,7 +145,7 @@ const Home = () => {
             <div style={{ width: '100%'}}>
                 <div style={{
                     position: 'relative', zIndex: 2000,
-                    filter: 'brightness(90%)'
+                    filter: 'brightness(70%)'
                 }} >
                     <ReactPlayer 
                     url={Banner} 
@@ -154,7 +154,8 @@ const Home = () => {
                         loop={true}
                         muted={true}
                     />
-
+                    </div>
+<div>
                     <motion.div
                         initial={{
                             opacity: 0,
@@ -169,7 +170,7 @@ const Home = () => {
                         }}
                         viewport={{ once: true }}
                         style={{
-                            position: 'absolute', top: '25%',
+                            position: 'absolute', top: '35%',
                             left: '10%', zIndex: 3000,
                         }}
                     >
@@ -270,7 +271,7 @@ const Home = () => {
                 </div>
                 <div style={{ backgroundColor: 'rgb(249, 250, 252)' }}>
                     <PlazaGif plaza_gif={data.plaza_gif} />
-                    <div id='Navigation'>
+                    <div id='Navigation' style={{padding:'4rem'}}>
                         <NavigationComponent navigationComponent={data.navigationComponent} />
                     </div>
                     <div id='Technology'>

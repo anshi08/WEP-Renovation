@@ -14,7 +14,7 @@ const GroundFloor = ({ groundFloorData }) => {
   return (
     <>
 
-      <Grid container spacing={2} padding={5}>
+      <Grid container spacing={1} padding={3} style={{marginLeft:'5%'}}>
         <Grid item xs={12} md={6} className='relative'>
           {/* Show sub items */}
           <div className='flex absolute right-0 bottom-0' >
@@ -91,7 +91,7 @@ const GroundFloor = ({ groundFloorData }) => {
               style={{ width: '100%', height: '100%', position: 'relative' }}
             >
 
-              <img src={image1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src={image1} style={{ width: '90%', height: '100%', objectFit: 'cover' }} />
               <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', 
               padding: '10px' }} className='text'>
                 BEFORE 1
@@ -119,7 +119,7 @@ const GroundFloor = ({ groundFloorData }) => {
             viewport={{ once: true }}
             className='relative'
           >
-            <img src={image2} />
+            <img src={image2} style={{width:'90%'}}/>
             <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', padding: '10px' }} className='text'>
                 AFTER 1
               </div>
@@ -129,7 +129,7 @@ const GroundFloor = ({ groundFloorData }) => {
 
 
       {/* For showing bottom image */}
-      <Grid container spacing={2} padding={2}>
+      <Grid container spacing={2} style={{marginLeft:'-5%'}}>
         <Grid item xs={12} md={6}>
           <div className='flex justify-end'>
             <Grid item xs={12} md={2}>
@@ -153,7 +153,7 @@ const GroundFloor = ({ groundFloorData }) => {
                 viewport={{ once: true }}
                 className='relative'
               >
-                <img src={image3} />
+                <img src={image3} style={{width:'100%'}}/>
                 <div style={{ position: 'absolute', bottom: 0, left: 0, color: '#fff', 
                 padding: '10px' }} className='text'>
                 BEFORE 2
@@ -181,7 +181,7 @@ const GroundFloor = ({ groundFloorData }) => {
             className='relative'
 
           >
-            <img src={image4} style={{ width: '100%' }} />
+            <img src={image4} style={{ width: '90%' }} />
             <div style={{ position: 'absolute', bottom: 0, left: 0,color: '#fff', 
             padding: '10px' }} className='text'>
                 AFTER 2

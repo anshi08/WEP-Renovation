@@ -21,11 +21,13 @@ const Renovation = () => {
 
     return (
         <>
+        <div>
             <div style={{
                 backgroundImage: `url(${BgImage})`,
                 backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '550px', position: 'relative',
-                filter: 'brightness(70%)'
+                filter: 'brightness(50%)'
             }}>
+            </div>
 
                 <motion.div
                     initial={{
@@ -42,7 +44,7 @@ const Renovation = () => {
                     viewport={{ once: true }}
                     style={{
                         position: "absolute",
-                        bottom: "20px",
+                        bottom: "80px",
                         left: "50px",
                         opacity: '1'
                     }}

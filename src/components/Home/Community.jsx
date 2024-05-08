@@ -74,7 +74,7 @@ const Community = ({ communityData }) => {
                         style={{ padding: '0 10% 8% 10%' }}
 
                     >
-                        <p className='body'>
+                        <p className='bodyCom'>
                            {data.com_para}
                         </p>
                     </motion.div>

@@ -5,11 +5,12 @@
 .redevelopmentTeam{
     font-weight: 400;
     font-style: normal;
-    font-size: 108px;
+    font-size: 90px;
     color: rgb(255, 255, 255);
     font-family: "Futura PT Demi-Normal-5taag63X";
-    line-height: 101px;
+    line-height: 80px;
     width: 809px;
+    margin-left: -2rem;
 }
 
 @media (max-width:990px){

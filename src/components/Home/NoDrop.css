@@ -3,7 +3,7 @@
     height: 5px;
     background-color: rgb(40, 92, 170);
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 0;
 }
 
@@ -12,11 +12,13 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .SmartTechText{
-    font-size: 20px ;
+    font-size: 15px ;
     color: rgb(0, 0, 0);
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     text-align: left ;
-    line-height: 30px ;
+    line-height: 25px ;
+    padding-right: 5rem;
+    
 }
 
 @font-face {
@@ -24,12 +26,13 @@
     src: url('../../fonts/futurapt-book.woff') format('woff');
 }
 .footertext{
-    font-size: 17px ;
+    font-size: 15px ;
     color: rgb(0, 0, 0);
     /* z-index: 48; */
     font-family: "Futura PT Book-Normal-PEtZdOHA" ;
     line-height: 27px ;
     margin-left: 4rem;
+    margin-top: 1rem;
 }
 
 @media (max-width:690px){

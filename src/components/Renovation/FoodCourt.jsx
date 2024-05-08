@@ -55,6 +55,7 @@ const FoodCourt = ({ FoodCourtData }) => {
 
                         >
                             <p className='FoodCourtText'>{food_data.text}</p>
+                            <p className='FoodCourtText'>{food_data.text1}</p>
                         </motion.div>
 
                         {/* Map Image */}
@@ -73,7 +74,7 @@ const FoodCourt = ({ FoodCourtData }) => {
                                     }}
                                     viewport={{ once: true }}
                                     className='mt-4'
-                                    style={{ position: 'relative' }}
+                                    style={{ position: 'relative',marginLeft:'2rem' }}
 
                                 >
                                     <img src={Map2} />

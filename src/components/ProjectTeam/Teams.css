@@ -47,7 +47,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 9rem;
+    padding: 6rem;
 }
 
 @media (max-width:990px){

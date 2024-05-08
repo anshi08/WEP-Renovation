@@ -5,12 +5,12 @@
 .boldtextWell{
     color: rgb(36, 180, 103);
     font-style: normal ;
-    font-size: 70px ;
+    font-size: 50px ;
     font-family: "Futura PT Demi-Normal-5taag63X" ;
     overflow: visible;
     white-space: pre-wrap ;
     text-align: left ;
-    line-height: 72px ;
+    line-height: 60px ;
     text-align: justify;
 }
 
@@ -19,4 +19,19 @@
         font-size: 20px;
         line-height: normal;
     }
+}
+
+@font-face {
+    font-family: "Futura PT Book-Normal-PEtZdOHA";
+    src: url('../../fonts/futurapt-book.woff') format('woff');
+}
+.body1{
+    font-size: 20px ;
+    color: rgb(0, 0, 0);
+    font-family: "Futura PT Book-Normal-PEtZdOHA" ;
+    overflow: visible;
+    white-space: pre-wrap ;
+    text-align: left;
+    line-height: 30px ;
+    margin-top: 2rem;
 }

@@ -55,6 +55,7 @@ const GroundFloorRetail = ({ GroundFloorRetailData }) => {
 
                     >
                         <p className='GFR'>{data.text}</p>
+                        <p className='GFR'>{data.text1}</p>
                     </motion.div>
                 </div>
                 <div className='flex justify-center items-center mt-9' style={{ position: 'relative' }}>
